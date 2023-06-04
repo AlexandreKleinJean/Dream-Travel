@@ -1,0 +1,65 @@
+/*----------------------------------HEADER---------------------------*/
+
+/*-----------HEADER NAV----------*/
+
+#menu__logo{
+  color: rgb(99, 97, 97);
+  text-shadow: white 1px 0 10px;
+}
+
+.menu__item{
+
+  background-image: linear-gradient(to right,rgb(167, 161, 161),rgb(167, 161, 161) 50%,whitesmoke 50%);
+  }
+
+.menu__item:before{ 
+  background: rgb(167, 161, 161);
+  }
+
+/*-----HEADER IMG----------*/
+
+#header-banner{ 
+  background-image: url(../img/flights.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:80vh;
+}
+
+/*--------HEADER TEXT/FORM------*/
+
+.menu__text-title{
+  color:whitesmoke;
+  text-shadow: black 1px 0 10px;
+  }
+
+.header__form{
+  bottom: 40%;
+  }
+
+#btn{
+  background-color:rgb(129, 126, 126);
+  }
+  
+#btn:hover{
+  background-color: rgb(167, 161, 161);
+  }
+
+/*-----------------------------------------------------MAIN----------------------------------------------*/
+
+.companies__title{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    height: 20vh;
+    margin-bottom: 3%;
+    background-color: whitesmoke;
+    }
+
+.companies__article__article{
+    display:flex;
+    justify-content: center;
+    padding: 1% 2%;
+    margin: 2% 40%;
+    background-color: rgba(55, 172, 1, 0.5);
+    }

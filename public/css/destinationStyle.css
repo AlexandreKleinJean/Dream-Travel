@@ -1,0 +1,67 @@
+
+/*---------------------------------------------------HEADER-----------------------------------------*/
+
+/*-----------HEADER NAV----------*/
+
+#menu__logo{
+    font-size:1.5rem;
+    font-weight: bold;
+    color: #26860d;
+    padding: 1% 1%;
+    width: 40%;
+    text-align: center;
+    text-shadow: white 1px 0 10px;
+  }
+  
+  .menu__item{
+    color:black;
+    text-shadow: whitesmoke 1px 0 20px;
+  }
+  
+
+/*-----HEADER IMG----------*/
+
+#header-banner{ 
+    background-image: url(../img/destination.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:80vh;
+    color: white;
+  }
+
+/*-----------------------------------------------------MAIN----------------------------------------------*/
+
+.destination__title{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    height: 20vh;
+    margin-bottom: 3%;
+    background-color: whitesmoke;
+    }
+
+.destination__article{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 2%;
+    border: 1px solid black;
+    }
+
+.destination__article-right{
+    width: 50%;
+    object-fit: cover;
+    }
+
+.destination__article-right-img{
+    
+    }
+
+.destination__article-left{
+    font-size: 2rem;
+    width: 50%;
+    padding: 1% 1%;
+    margin: 0 2%;
+}

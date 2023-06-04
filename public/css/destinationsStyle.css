@@ -1,0 +1,99 @@
+/*---------------------------------------------------HEADER-----------------------------------------*/
+
+/*-----------HEADER NAV----------*/
+
+#menu__logo{
+  color: #da5101;
+  text-shadow: white 1px 0 10px;
+}
+
+.menu__item{
+
+  background-image: linear-gradient(to right,#da5101,#da5101 50%,white 50%);
+  }
+
+.menu__item:before{ 
+  background: #da5101;
+  }
+
+/*-----HEADER IMG----------*/
+
+#header-banner{ 
+  background-image: url(../img/destinations.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:80vh;
+}
+
+/*--------HEADER TEXT/FORM------*/
+
+.header__form{
+  bottom: 40%;
+  }
+
+#btn{
+  background-color:#db6927;
+  }
+  
+#btn:hover{
+  background-color: #e67c04;
+  }
+
+/*-----------------------------------------------------MAIN----------------------------------------------*/
+
+.destination__title{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    height: 20vh;
+    margin-bottom: 3%;
+    background-color: whitesmoke;
+    }
+
+.destination__articles{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+
+.destination__article{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    margin: 2% 5%;
+    border-radius: 5%;
+    }
+
+.destination__article-back{
+    position: relative;
+    width:100%;
+    height: 100%;
+    border-radius: 5%;
+    opacity: 0.7;
+    }
+
+.destination__article-back:hover{
+    position: relative;
+    width:100%;
+    height: 100%;
+    border-radius: 5%;
+    opacity: 1;
+    }
+    
+
+.destination__article-front{
+    position:absolute;
+    padding: 7% 10%;
+    margin: 3% 3.5%;
+    text-align:center;
+    background: whitesmoke;
+    border-radius: 50%;
+    }
+
+.frontHover{
+    transform: scale(0.5);
+    transition-duration: 300ms;
+  }

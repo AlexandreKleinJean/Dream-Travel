@@ -1,0 +1,70 @@
+<%- include('partials/header') %>
+<head>
+    <link rel="stylesheet" href="/css/adminStyle.css">
+</head>
+<h1 class="page-title">Modify Team</h1>
+<h2 class="page-title2">Encore du travail sur la BDD</h2>
+  <div class="admin__forms">
+    <form class="admin__form" method="post" action="/admin/addhotel">
+                                <div class="admin__form-input">
+                                    <div class="admin__form-element">
+                                        <label class ="admin__form-label" for="name">Hotel name</label>
+                                        <input id="name" type="name" name="name" placeholder="Sunshine">
+                                    </div>
+                                    <div class="admin__form-element">
+                                        <label class ="admin__form-label" for="city">City</label>
+                                        <input id="city" type="text" name="city" placeholder="Los Angeles">
+                                    </div>
+                                    <div class="admin__form-element">
+                                        <label class ="admin__form-label" for="country">Country</label>
+                                        <input id="country" type="text" name="country" placeholder="USA">
+                                    </div>
+                                    <div class="admin__form-element">
+                                        <label class ="admin__form-label" for="review">Review</label>
+                                        <input id="review" type="number" name="review" placeholder="8">
+                                    </div>
+                                    <div class="admin__form-element">
+                                        <label class ="admin__form-label" for="Hotelprice">$/night</label>
+                                        <input id="Hotelprice" type="number" name="price" placeholder="30">
+                                    </div>
+                                    <div class="admin__form-element" id="adminBtnHotel">
+                                        <button class="admin__form-btn" type="submit">Add hotel</button>
+                                    </div>
+                                </div>
+    </form>
+
+    <form class="admin__form" method="post" action="/admin/addflight">
+                                <div class="admin__form-input">
+                                    <div class="admin__form-element">
+                                        <label class ="admin__form-label" for="dest">Flight destination</label>
+                                        <input id="dest" type="text" name="destination" placeholder="China">
+                                    </div>
+                                    <div class="admin__form-element">
+                                        <label class ="admin__form-label" for="company">Company</label>
+                                        <input id="company" type="text" name="company" placeholder="China Airlines">
+                                    </div>
+                                    <div class="admin__form-element">
+                                        <label class ="admin__form-label" for="duration">Duration (h)</label>
+                                        <input id="duration" type="number" name="duration" placeholder="12">
+                                    </div>
+                                    <div class="admin__form-element">
+                                        <label class ="admin__form-label" for="day_id">Day order (monday = 1, ..)</label>
+                                        <input id="day_id" type="number" name="day_id" placeholder="3">
+                                    </div>
+                                    <div class="admin__form-element">
+                                        <label class ="admin__form-label" for="day">Day</label>
+                                        <input id="day" type="text" name="day" placeholder="Wednesday">
+                                    </div>
+                                    <div class="admin__form-element">
+                                        <label class ="admin__form-label" for="time">Time (h)</label>
+                                        <input id="time" type="number" name="time" placeholder="5">
+                                    </div>
+                                    <div class="admin__form-element">
+                                        <label class ="admin__form-label" for="flightPrice">Price ($)</label>
+                                        <input id="flightPrice" type="number" name="price" placeholder="950">
+                                    </div>
+                                    <div class="admin__form-element" id="adminBtnFlight">
+                                        <button class="admin__form-btn" type="submit">Add flight</button>
+                                    </div>
+                                </div>
+    </form>

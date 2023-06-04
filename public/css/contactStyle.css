@@ -1,0 +1,88 @@
+/*----------------------------------HEADER---------------------------*/
+
+/*-----------HEADER NAV----------*/
+
+#menu__logo{
+  color: rgb(168, 79, 38);
+  text-shadow: white 1px 0 10px;
+}
+
+.menu__item{
+
+  background-image: linear-gradient(to right,rgb(168, 79, 38),rgb(168, 79, 38) 50%,whitesmoke 50%);
+  }
+
+.menu__item:before{ 
+  background: rgb(168, 79, 38);
+  } 
+
+/*-----HEADER IMG----------*/
+
+#header-banner{ 
+    background-image: url(../img/contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:80vh;
+  }
+
+  /*--------HEADER TEXT/FORM------*/
+
+.menu__text-title{
+  color:whitesmoke;
+  text-shadow: black 1px 0 10px;
+  }
+
+.header__form{
+  bottom: 40%;
+  }
+
+#btn{
+  background-color:rgb(168, 79, 38);
+  }
+  
+#btn:hover{
+  background-color: rgb(185, 94, 52);
+  }
+
+/*---------------------------MAIN-----------------------*/
+
+.page-title{
+    text-align: center;
+    font-size: 3rem;
+    padding: 2% 2%;
+    background-color: whitesmoke;
+    border-bottom:1px solid black;
+  }
+
+.contact__form{
+    display : felx;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color : whitesmoke;
+    margin:5% 25%;
+    padding: 3% 0;
+    border: 1px solid black;
+    border-radius: 3%;
+  }
+
+.contact__form-input{
+  margin: 3% auto;
+}
+
+.contact__form-label{
+  margin : 2% 2%;
+}
+
+.contact__form-message{
+  display:flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+.submitBtn{
+  padding: 1% 2%;
+}

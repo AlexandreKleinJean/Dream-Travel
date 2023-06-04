@@ -1,0 +1,27 @@
+/*-------------------------------HEADER IMG--------------------------*/
+
+#header-banner{
+    background-image: url(../img/frog.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    color: white;
+  }
+
+
+@media (max-width : 1000px) {
+    #header-banner {
+        width: 100vw;
+        background-size: contain;
+    }
+}  
+
+/*-------------------------------HEADER TEXT TITLE / FORM--------------------------*/
+
+.menu__text-title{
+    top: 40%;
+  }
+
+.header__form{
+    
+    }

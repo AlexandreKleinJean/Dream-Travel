@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session test</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/generalStyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav id="navigation">
+        <div id="menu__logo">
+          <a href="/">
+            <p id="menu__logo-1">Dream travel</p>
+          </a>
+        </div>   
+        <div id="menu__items">
+              <a class="menu__item" href="/flightsDestinations">Destination</a>
+              <a class="menu__item" href="/flightCompanies">Flight Companies</a>
+              <a class="menu__item" href="/hotels">Hotels</a>
+              <a class="menu__item" href="/contact">Contact</a>
+        </div>
+      </nav>
+      <section id="header-banner">
+        <div id="menu__text">
+          <h1 class="menu__text-title">Enjoy your life</h1> 
+        </div>
+        <form class="header__form" action="/destinations" method="post">
+          <label for="destination">I would love to go to</label>
+          <select name="destination" id="destination">
+            <option class="selectPlaceholder" value="">&#127758;</option>
+            <option value="Thailand">Thailand</option>
+            <option value="Costa Rica">Costa Rica</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="Philippines">Philippines</option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Guatemala">Guatemala</option>
+          </select>
+          <label for="budget">my flight budget max is</label>
+          <select name="budget" id="budget">
+            <option class="selectPlaceholder" value="">&#128181;</option>
+            <option value="800">$800</option>
+            <option value="1000">$1000</option>
+            <option value="1200">$1200</option>
+            <option value="1400">$1400</option>
+            <option value="1600">$1600</option>
+            <option value="1800">$1800</option>
+            <option value="2000">$2000</option>
+            <option value="2200">$2200</option>
+          </select>
+          <button id="btn" type="submit">Find me some flights &#128591;</button>
+        </form>
+      </section>
+    </header>

@@ -1,0 +1,102 @@
+/*---------------------------------------------------HEADER-----------------------------------------*/
+
+/*-----------HEADER NAV----------*/
+
+#menu__logo{
+    color: #da5101;
+    text-shadow: white 1px 0 10px;
+  }
+  
+  .menu__item{
+  
+    background-image: linear-gradient(to right,#da5101,#da5101 50%,white 50%);
+    }
+  
+  .menu__item:before{ 
+    background: #da5101;
+    }
+  
+  /*-----HEADER IMG----------*/
+  
+  #header-banner{ 
+    background-image: url(../img/destinations.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:80vh;
+  }
+  
+  /*--------HEADER TEXT/FORM------*/
+  
+  .header__form{
+    bottom: 40%;
+    }
+  
+  #btn{
+    background-color:#db6927;
+    }
+    
+  #btn:hover{
+    background-color: #e67c04;
+    }
+  
+  /*-----------------------------------------------------MAIN----------------------------------------------*/
+  
+  .searchResult__title{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      height: 20vh;
+      margin-bottom: 3%;
+      background-color: whitesmoke;
+      }
+  
+.searchResult__article{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2% 2%;
+      margin: 2% 25%;
+      background-color: rgb(204, 202, 202);
+      border-radius: 2%;
+      }
+      
+.searchResult__article:hover{
+      display:flex;
+      justify-content: center;
+      margin: 0% 24.7%;
+      background-color: rgb(207, 205, 205);
+      }
+      
+#searchResult__article-destination{
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 0.4%;
+    }
+
+#searchResult__article-company{
+    font-style:italic;
+    }
+
+.searchResult__article-element{
+  padding: 0 2%;
+    }
+
+#searchResult__article-day{
+    padding-right:0.4%;
+    }
+
+#searchResult__article-time{
+    padding-left:0.2%;
+    }
+
+.searchResult__btn{
+    background-color: #db6927;
+    padding:1% 2%;
+    border-radius: 5%;
+    }
+
+.searchResult__btn:hover{
+    background-color:#e67c04;
+    padding:1% 2%;
+    }

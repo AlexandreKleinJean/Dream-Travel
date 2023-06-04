@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/css/hotelsStyle.css">
+
+<h1 class="hotel__title">Hotels</h1>
+
+<% for(let hotel of allHotels) { %>
+
+    <a class="hotel__article" href="/hotels/<%= hotel.id %>">
+        <h1 id="hotel__article-name" class="hotel__article-element"><%= hotel.name %></h1>
+        <h2 class="hotel__article-element"><%= hotel.city %></h2>
+        <h2 class="hotel__article-element"><%= hotel.country %></h2>
+        <h2 class="hotel__article-element"><%= hotel.review %></h2>
+        <h2 class="hotel__article-element"><%= hotel.price %></h2>
+    </a>
+    <% } %>
+
+<%- include('partials/footer') %>

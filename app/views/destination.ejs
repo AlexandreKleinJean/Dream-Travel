@@ -1,0 +1,15 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/css/destinationStyle.css">
+
+<h1 class="destination__title"><%= oneFlight.destination %></h1>
+
+    <article class="destination__article">
+        <div class="destination__article-left">
+            <p><%= oneFlight.destination %> is unbelievable !</p>
+        </div>
+        <div class="destination__article-right">
+            <img class="destination__article-right-img" src="/img/<%= oneFlight.destination %>.png" alt="<%= oneFlight.destination %>">
+        </div>
+    </article>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/css/contactStyle.css">
+
+<form  class="contact__form">
+    <div>
+        <label class="contact__form-label" for="familyName">Family Name</label>
+        <input class="contact__form-input" type="text" id="familyName" name="familyName">
+    </div>
+    <div>
+        <label class="contact__form-label" for="firstName">First Name</label>
+        <input class="contact__form-input" type="text" id="firstName" name="firstName">
+    </div>
+    <div>
+        <label class="contact__form-label" for="email">e-mail&nbsp;:</label>
+        <input class="contact__form-input" type="email" id="email" name="email">
+    </div>
+    <div>
+        <label class="contact__form-label" for="message">Message :</label>
+        <textarea class="contact__form-message" id="message" name="message"></textarea>
+    </div>
+    <div>
+        <button class="submitBtn">Send</button>
+    </div>
+</form>
+
+<%- include('partials/footer') %>

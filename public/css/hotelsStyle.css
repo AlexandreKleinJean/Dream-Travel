@@ -1,0 +1,77 @@
+/*---------------------------------------------------HEADER-----------------------------------------*/
+
+/*-----------HEADER NAV----------*/
+
+#menu__logo{
+    color: whitesmoke;
+  }
+
+.menu__item{
+
+    background-image: linear-gradient(to right,#3dabeb,#3dabeb 50%,white 50%);
+    }
+
+.menu__item:before{ 
+    background: #3dabeb;
+    }
+
+/*-----HEADER IMG----------*/
+
+#header-banner{ 
+    background-image: url(../img/hotels.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:80vh;
+    color: white;
+  }
+
+/*--------HEADER TEXT/FORM------*/
+
+.menu__text-title{
+    bottom: 40%;
+    text-shadow: black 1px 0 10px;
+}
+
+
+.header__form{
+    bottom: 40%;
+    }
+
+#btn{
+    background-color:#1c96dd;;
+    }
+    
+#btn:hover{
+    background-color: #3dabeb;
+    }
+
+/*-----------------------------------------------------MAIN----------------------------------------------*/
+
+.hotel__title{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    height: 20vh;
+    margin-bottom: 3%;
+    background-color: whitesmoke;
+    }
+
+.hotel__article{
+    display:flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2% 2%;
+      margin: 2% 25%;
+      background-color: rgb(204, 202, 202);
+      border-radius: 2%;
+    }
+.hotel__article-element{
+    padding: 0 2%;
+    } 
+
+#hotel__article-name{
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 0.4%;
+    }

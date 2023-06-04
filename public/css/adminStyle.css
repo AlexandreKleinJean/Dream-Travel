@@ -1,0 +1,104 @@
+/*-------------------------------HEADER NAV--------------------------*/
+
+#navigation{
+  position:relative;
+  left: 0;
+  right:0;
+}
+
+#menu__logo{
+  margin-left:8%;
+  font-weight: bold;
+  color: #7a7a7a;
+}
+  
+.menu__item:before{ 
+  background: #7a7a7a;
+  }
+
+.menu__item{
+    background-image: linear-gradient(to right,#7a7a7a,#7a7a7a 50%,black 50%);
+        }
+    
+.menu__item:before{ 
+    background: #7a7a7a;
+    }
+
+.menu__text-title{
+  display:none
+  }
+
+.header__form{
+  display : none
+}  
+  
+  /*---------------------------MODIFY TEAM-----------------------*/
+
+.page-title{
+    text-align: center;
+    font-size: 3rem;
+    padding: 2% 2%;
+    background-color: whitesmoke;
+    border-top: 1px solid black;
+    border-bottom:1px solid black;
+  }
+
+.page-title2{
+  text-align: center;
+  font-size: 2rem;
+  padding: 2% 2%;
+  background-color: rgb(194, 10, 10);
+  border-bottom:1px solid black;
+}
+
+.admin__forms{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+}
+
+.admin__form{
+    display: flex;
+    justify-content: center;
+    background-color : whitesmoke;
+    padding: 2% 0;
+    margin:5% 5%;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 3%;
+  }
+
+.admin__form-element{
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 5%;
+  }
+
+.admin__form-input{
+  width:60%;
+}
+
+.admin__form-label{
+  white-space: nowrap;
+  font-size: 1rem;
+  margin : 2% 2%;
+}
+
+.admin__form-btn{
+  color: black;
+  margin-top: 4%;
+  padding: 2% 3%;
+  border: 1px solid black;
+  text-decoration: none;
+  border-radius: 10%;
+}
+
+#adminBtnHotel,#adminBtnFlight{
+  display: flex;
+  justify-content: center;
+}
+
+.admin__form-btn:hover{
+  background-color: white;
+}

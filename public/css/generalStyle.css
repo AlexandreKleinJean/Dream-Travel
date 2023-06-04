@@ -1,0 +1,210 @@
+/*-------------------------------HEADER NAV--------------------------*/
+
+#navigation{
+    position:absolute;
+    left: 8%;
+    right: 5%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  
+#menu__logo{
+    font-size:1.5rem;
+    font-weight: bold;
+    color: #26860d;
+    padding: 1% 1%;
+    width: 40%;
+    text-align: center;
+  }
+
+.menu__item{
+font-size:1.8rem;
+margin:0 4%;
+background-image: linear-gradient(
+    to right,
+    #26a706,
+    #26860d 50%,
+    white 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+    }
+
+.menu__item:before{ 
+    content: '';
+  background: #26860d;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu__item:hover{
+    background-position: 0;
+    }
+
+.menu__item:hover::before{
+    width:100%;
+    }
+  
+#menu__logo-1 { 
+    padding: 5% 1%;
+    font-size: 230%;
+    white-space: nowrap;
+    text-transform:uppercase;
+  }
+  
+#menu__items{
+    padding: 0 2%;
+    width: 120%;
+    font-size: 150%;
+  }
+
+@media (max-width : 1500px) {
+    
+    #menu__logo-1 { 
+        font-size: 3.3rem;
+      }
+
+    .menu__item{
+        margin: 0 3%;
+        font-size: 1.7rem;
+      }
+    }
+
+@media (max-width : 1400px) {
+
+    #menu__logo-1 { 
+        font-size: 3.1rem;
+      }
+
+    .menu__item{
+        margin: 0 3%;
+        font-size: 1.6rem;
+        }
+    }
+
+@media (max-width : 1300px) {
+
+    #menu__logo-1 { 
+        font-size: 2.9rem;
+      }
+
+    .menu__item{
+        font-size: 1.5rem;
+        }
+    }  
+
+@media (max-width : 1200px) {
+  
+    #menu__logo-1{
+        font-size: 2.7rem;
+    }
+    
+    .menu__item{
+        margin: 0 2%;
+    }
+}
+  
+  @media (max-width : 1100px) {
+    #menu__logo-1{
+        font-size: 2.5rem;
+    }
+    
+    .menu__item{
+        font-size: 1.4rem;
+    }
+  }
+
+/*-------------------------------------HEADER TEXT/FORM------------------------*/
+
+.menu__text-title{
+  position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 3rem;
+    padding: 10% auto;
+    text-align: center;
+    text-shadow: white 1px 0 10px;
+  }
+
+.header__form{
+    bottom: 40%;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+    font-size: 1rem;
+    padding: 1% 4%;
+    padding-left: 5%;
+    color:black;
+    text-align: center;
+    background-color: rgba(245, 248, 243, 0.8);
+    border-radius: 3%;
+  }
+
+#destination, #budget{
+    cursor: pointer;
+    outline: none;
+    padding: 1% 1%;
+    border: 1px solid #111;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    margin:1% 2%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: whitesmoke;
+  }
+
+.selectPlaceholder{
+  text-align: center;
+}
+
+  #btn{
+    margin:0 2%;
+    padding: 2% 2%;
+    border: none;
+    border-radius: 10%;
+    background-color:#26860d;
+  }
+
+  #btn:hover{
+    background-color: #26a706;
+  }
+
+/*-----------------------------------FOOTER------------------------*/
+
+.footer{
+ bottom:0%;
+ position: relative;
+ background-color: rgb(46, 117, 52);
+ height: 10vh;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.settings{
+  position: absolute;
+  top: 40%;
+  right: 2%;
+  width:2%;
+  border-radius: 30%;
+ }
