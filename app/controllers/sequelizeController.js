@@ -6,6 +6,10 @@ const sequelizeController = {
 
 //-----------------------------General----------------------------//
 
+blabla(req, res) {
+  res.render("blabla")
+},
+
   homePage(req, res) {
     res.locals.pageId = "/"
     res.render("home")

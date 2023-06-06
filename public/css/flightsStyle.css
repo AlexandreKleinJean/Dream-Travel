@@ -52,20 +52,24 @@
       }
   
 .searchResult__article{
+      color:whitesmoke;
+      text-shadow: black 1px 0 10px;;
       display:flex;
       justify-content: center;
       align-items: center;
       padding: 2% 2%;
       margin: 2% 25%;
-      background-color: rgb(204, 202, 202);
-      border-radius: 2%;
+      background-color:#e67c04;
+      border-radius: 1%;
       }
       
 .searchResult__article:hover{
       display:flex;
       justify-content: center;
-      margin: 0% 24.7%;
-      background-color: rgb(207, 205, 205);
+      padding: 2% 2%;
+      margin: 2% 27%;
+      transition: 500ms;
+      background-color: #f39b36;
       }
       
 #searchResult__article-destination{

@@ -2,6 +2,8 @@ const { Router } = require('express');
 const sequelizeController = require('./controllers/sequelizeController')
 const router = Router();
 
+
+router.get("/blabla", sequelizeController.blabla)
 //-----------------------------General----------------------------//
 router.get("/", sequelizeController.homePage)
 router.get("/contact", sequelizeController.contact)

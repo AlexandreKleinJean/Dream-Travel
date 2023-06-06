@@ -3,11 +3,15 @@
 
 <h1 class="companies__title">Flight Companies</h1>
 
-<% for(let result of results) { %>
+<div class="companies__articles">
 
-    <a class="companies__article" href="/destination/<%= result.id %>">
-        <h1><%= result.company %></h1>
-    </a>
-    <% } %>
+    <% for(let result of results) { %>
+
+        <a class="companies__article" href="/destination/<%= result.id %>">
+            <h1><%= result.company %></h1>
+        </a>
+        <% } %>
+
+</div>
 
 <%- include('partials/footer') %>

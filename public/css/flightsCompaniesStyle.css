@@ -47,19 +47,36 @@
 /*-----------------------------------------------------MAIN----------------------------------------------*/
 
 .companies__title{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    height: 20vh;
-    margin-bottom: 3%;
-    background-color: whitesmoke;
-    }
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  height: 20vh;
+  margin-bottom: 3%;
+  background-color: whitesmoke;
+  }
 
-.companies__article__article{
-    display:flex;
-    justify-content: center;
-    padding: 1% 2%;
-    margin: 2% 40%;
-    background-color: rgba(55, 172, 1, 0.5);
+.companies__articles{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.companies__article{
+  font-size :1rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  border: 1px solid black;
+  padding: 2% 2%;
+  margin: 2% 5%;
+  }
+
+.companies__article:hover{
+  font-size :2rem;
+  padding: 1% 1%;
+  transition:500ms;
+  background-color: rgb(201, 195, 195);
     }
