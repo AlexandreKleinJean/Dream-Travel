@@ -60,7 +60,8 @@
 
 .admin__form{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-color : whitesmoke;
     padding: 2% 0;
     margin:5% 5%;
@@ -69,10 +70,21 @@
     border-radius: 3%;
   }
 
+.admin__form-title{
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2% 0;
+  margin-bottom: 4%;
+}
+
 .admin__form-element{
   display: flex;
-  justify-content: space-between;
-  padding: 2% 5%;
+    flex-direction: column;
+    align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+  padding: 2% 2%;
   }
 
 .admin__form-input{
@@ -80,9 +92,8 @@
 }
 
 .admin__form-label{
-  white-space: nowrap;
   font-size: 1rem;
-  margin : 2% 2%;
+  margin : 2% 0;
 }
 
 .admin__form-btn{

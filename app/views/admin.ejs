@@ -2,10 +2,10 @@
 <head>
     <link rel="stylesheet" href="/css/adminStyle.css">
 </head>
-<h1 class="page-title">Modify Team</h1>
-<h2 class="page-title2">Encore du travail sur la BDD</h2>
-  <div class="admin__forms">
-    <form class="admin__form" method="post" action="/admin/addhotel">
+<h1 class="page-title">Add elements</h1>
+    <div class="admin__forms">
+        <form class="admin__form" method="post" action="/admin/addhotel">
+            <h2 class="admin__form-title">Add hotel</h1>
                                 <div class="admin__form-input">
                                     <div class="admin__form-element">
                                         <label class ="admin__form-label" for="name">Hotel name</label>
@@ -31,9 +31,10 @@
                                         <button class="admin__form-btn" type="submit">Add hotel</button>
                                     </div>
                                 </div>
-    </form>
+        </form>
 
-    <form class="admin__form" method="post" action="/admin/addflight">
+        <form class="admin__form" method="post" action="/admin/addflight">
+            <h2 class="admin__form-title">Add flight</h1>
                                 <div class="admin__form-input">
                                     <div class="admin__form-element">
                                         <label class ="admin__form-label" for="dest">Flight destination</label>
@@ -67,4 +68,7 @@
                                         <button class="admin__form-btn" type="submit">Add flight</button>
                                     </div>
                                 </div>
-    </form>
+        </form>
+    </div>
+
+<%- include('partials/footer') %>
