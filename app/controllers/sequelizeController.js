@@ -104,7 +104,7 @@ const sequelizeController = {
         res.render('admin');
       },
 
-//-----------------------------Admin operations----------------------------//
+//---------------------------Admin operations----------------------------//
 
       login(req, res) {
         res.render('login');

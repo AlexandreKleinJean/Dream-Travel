@@ -28,3 +28,5 @@ Hotels.init(
     })
 
 module.exports = Hotels;
+
+/*--good--*/

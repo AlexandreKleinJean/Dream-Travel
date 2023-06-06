@@ -1,5 +1,4 @@
 const { Router } = require('express');
-/*const mainController = require('./controllers/mainController')*/
 const sequelizeController = require('./controllers/sequelizeController')
 const router = Router();
 

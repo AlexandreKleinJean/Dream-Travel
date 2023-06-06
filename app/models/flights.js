@@ -33,3 +33,5 @@ Flights.init(
     })
 
 module.exports = Flights;
+
+/*--good--*/

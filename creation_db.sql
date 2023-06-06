@@ -80,6 +80,6 @@ INSERT INTO "flights" ("id","destination", "company", "duration", "day_id", "day
 (42,'Ecuador', 'American Airlines',12, 5, 'Friday', 15, 1280),
 (43,'Ecuador', 'American Airlines',16, 6, 'Saturday', 9, 1130);
 
-
+/*------------------------------------------EVITER DUPLICATA DE KEY*/
 SELECT setval('hotels_id_seq', (SELECT MAX(id) from "hotels"));
 SELECT setval('flights_id_seq', (SELECT MAX(id) from "flights"));
