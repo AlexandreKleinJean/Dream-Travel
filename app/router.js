@@ -1,27 +1,26 @@
 const { Router } = require('express');
-const mainController = require('./controllers/mainController')
+/*const mainController = require('./controllers/mainController')*/
 const sequelizeController = require('./controllers/sequelizeController')
 const router = Router();
 
-router.get("/", mainController.accueil)
+//-----------------------------General----------------------------//
+router.get("/", sequelizeController.homePage)
+router.get("/contact", sequelizeController.contact)
 
-router.get("/flightsDestinations", mainController.flightsDestinationsList)
-router.get("/destination/:id", mainController.clickedDestination)
+//------------------------Flights functions-----------------------//
+router.get("/destinations", sequelizeController.destinationsList)
+router.get("/destination/:id", sequelizeController.oneDestination)
+router.get("/flightCompanies", sequelizeController.companiesList)
+router.post("/destinations", sequelizeController.budgetDestinations)
 
-router.get("/flights", mainController.flights)
-router.post("/destinations", mainController.budgetDestinationsList)
-
-router.get("/flightCompanies", mainController.flightsCompaniesList)
-
-router.get("/contact", mainController.contact)
-
-router.get("/login", mainController.login)
-router.post("/login/admin", mainController.admin)
-
-//------------------------SEQUELIZE----------------------//
+//------------------------Hotels functions------------------------//
 router.get("/hotels", sequelizeController.hotelsList)
 router.post("/admin/addhotel", sequelizeController.addHotel)
-router.post("/admin/addflight", sequelizeController.addFlight)
-//------------------------SEQUELIZE----------------------//
 
+//------------------------Admin operations------------------------//
+router.get("/login", sequelizeController.login)
+router.post("/login/admin", sequelizeController.admin)
+router.post("/admin/addflight", sequelizeController.addFlight)
+
+//----------------------------------------------------------------//
 module.exports = router;

@@ -1,11 +1,10 @@
 const dataMapper=require('../../data/dataMapper');
-
+/*
 const mainController = {
 
     async accueil(req, res) {
       res.locals.pageId = "/"
-        res.render("home")
-    },
+      res.render("home")
 
     async flights(req, res) {
       try {
@@ -15,7 +14,7 @@ const mainController = {
         console.error(error);
         res.status(500).send(`An error occured with the database :\n${error.message}`);
       }
-},
+    },
 
     async destinationsList(req, res) {
             try {
@@ -60,7 +59,7 @@ const mainController = {
       }
     },
 
-    async flightsCompaniesList(req, res) {
+    /*async flightsCompaniesList(req, res) {
       try {
         const allFlights = await dataMapper.showCompanies();
         res.render('flightsCompanies', {results:allFlights});
@@ -90,4 +89,4 @@ const mainController = {
 
 }
 
-module.exports = mainController;
+module.exports = mainController;*/

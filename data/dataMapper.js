@@ -2,7 +2,7 @@ const client = require('./database');
 
 const dataMapper = {
 
-    async showFlights() {
+    /*async showFlights() {
 
         const query = "SELECT * FROM flights ORDER BY flights.day";
         const result = await client.query(query);
@@ -16,12 +16,12 @@ const dataMapper = {
         return result.rows;
     },
 
-    async showDestinations(){
+    /*async showDestinations(){
 
         const query = `SELECT DISTINCT flights.destination FROM flights`;
         const result = await client.query(query);
         return result.rows;
-    },
+    },*
 
     async showDestination(chosenDestination) {
 
@@ -32,15 +32,6 @@ const dataMapper = {
 
     async budgetDestination(userCriterias) {
         const query = `SELECT * FROM flights WHERE flights.destination='${userCriterias.destination}' AND flights.price<=${userCriterias.budget}`;
-        const result = await client.query(query);
-        return result.rows;
-    },
-
-    /*    ESSAI SEQUELIZE !!!
-    
-    async showHotels(){
-
-        const query = "SELECT * FROM hotels";
         const result = await client.query(query);
         return result.rows;
     },*/

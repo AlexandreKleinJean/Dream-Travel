@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS "flights" (
   "day_id" INT,
   "day" TEXT,
   "time" INT,
-  "price" REAL NOT NULL
+  "price" INTEGER
 );
 
 INSERT INTO "flights" ("id","destination", "company", "duration", "day_id", "day", "time", "price") VALUES
@@ -79,3 +79,7 @@ INSERT INTO "flights" ("id","destination", "company", "duration", "day_id", "day
 (41,'Ecuador', 'American Airlines',16, 5, 'Friday', 9, 1040),
 (42,'Ecuador', 'American Airlines',12, 5, 'Friday', 15, 1280),
 (43,'Ecuador', 'American Airlines',16, 6, 'Saturday', 9, 1130);
+
+
+SELECT setval('hotels_id_seq', (SELECT MAX(id) from "hotels"));
+SELECT setval('flights_id_seq', (SELECT MAX(id) from "flights"));
