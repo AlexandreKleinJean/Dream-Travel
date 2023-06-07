@@ -52,6 +52,7 @@
     }
 
 .destination__articles{
+  width:100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -59,47 +60,45 @@
   }
 
 .destination__article{
-    display:flex;
+    position:relative;
     justify-content: center;
     align-items: center;
-    width: 35%;
     margin: 2% 5%;
-    border-radius: 5%;
+    width: 40%;
+    height: 10%;
+    border: 1px black solid;
     }
+    
+.destination__article-back{
 
-/*-------------------A REVOIR--------------------*/
-
-.destination__article-back:hover{
-  filter: grayscale(1) blur(3px);
-  transform: scale(1.2);
-  transition: all 0.4s ease-in;
-}
+    }
 
 .destination__article-front{
-  
-
-  -webkit-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  transform: scale(0.7);
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  text-transform: uppercase;
+  padding: 2% 2%;
+  font-size: 1.5rem;
     }
 
-.destination__article-front:hover{
-  box-shadow: 0 0 5px #fff;
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  }
 
 /*-------------------A REVOIR--------------------*/
 
+.destination__article {
+  position: relative;
+}
 
+.destination__article::before {
+  background: #ff9800;
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .5s ease-in-out;
+  z-index: -1;
+}
+  .destination__article:hover::before {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
 
 
 

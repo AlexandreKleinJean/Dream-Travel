@@ -8,11 +8,8 @@ Hotels.init(
         name: {
             type: DataTypes.TEXT,
         },
-        city: {
-            type: DataTypes.TEXT,
-        },
-        country: {
-            type: DataTypes.TEXT,
+        destination_id: {
+            type: DataTypes.INTEGER,
         },
         review: {
             type: DataTypes.INTEGER,

@@ -1,14 +1,14 @@
 <%- include('partials/header') %>
 <link rel="stylesheet" href="/css/destinationStyle.css">
 
-<h1 class="destination__title"><%= destination %></h1>
+<h1 class="destination__title"><%= clickedDestination.dataValues.country %></h1>
 
     <article class="destination__article">
         <div class="destination__article-left">
-            <p><%= destination %> is unbelievable !</p>
+            <p><%= clickedDestination.dataValues.country %> is unbelievable !</p>
         </div>
         <div class="destination__article-right">
-            <img class="destination__article-right-img" src="/img/<%= destination %>.png" alt="<%= destination %>">
+            <img class="destination__article-right-img" src="/img/<%= clickedDestination.dataValues.country %>.png" alt="<%= clickedDestination.dataValues.country %>">
         </div>
     </article>
 

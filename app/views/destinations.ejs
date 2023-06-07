@@ -6,11 +6,11 @@
 
 <div class="destination__articles">
 
-<% for(let result of results) { %>
+<% for(let oneDestination of results) { %>
 
-    <a class="destination__article" href="/destination/<%= result.destination %>">
-        <img class="destination__article-back" src="/img/<%= result.destination %>.png" alt="<%= result.destination %>">
-        <div class="destination__article-front"><%= result.destination %></div>
+    <a class="destination__article" href="/destination/<%= oneDestination.dataValues.id %>">
+        <img class="destination__article-back" src="/img/<%= oneDestination.dataValues.country %>.png" alt="<%= oneDestination.dataValues.country %>">
+        <div class="destination__article-front"><%= oneDestination.dataValues.country %></div>
     </a>
     <% } %>
 

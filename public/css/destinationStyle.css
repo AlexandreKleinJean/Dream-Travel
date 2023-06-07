@@ -29,6 +29,12 @@
     color: white;
   }
 
+/*--------HEADER TEXT/FORM------*/
+
+.header__form{
+   bottom: 40%;
+  }
+
 /*-----------------------------------------------------MAIN----------------------------------------------*/
 
 .destination__title{
@@ -46,13 +52,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0 2%;
+    margin: 2% 2%;
     border: 1px solid black;
     }
 
 .destination__article-right{
     width: 50%;
-    object-fit: cover;
     }
 
 .destination__article-right-img{

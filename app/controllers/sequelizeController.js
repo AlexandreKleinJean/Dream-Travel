@@ -1,5 +1,5 @@
-const Hotels = require('../models/hotels')
-const Flights = require('../models/flights')
+const Sequelize = require("sequelize")
+const { Destinations, Flights, Hotels } = require('../models');
 const { Op } = require("sequelize");
 
 const sequelizeController = {
@@ -23,12 +23,10 @@ blabla(req, res) {
 
   async destinationsList(req, res) {
     try {
-      const allFlights = await Flights.findAll({ 
-        order:  ['destination'],
-        //COMMENT EVITER DUPLICATA ????????
-        distinct: true
+      const allDestinations = await Destinations.findAll({ 
       });
-      res.render('destinations', {results:allFlights});
+      console.log(allDestinations.dataValues)
+      res.render('destinations', {results:allDestinations});
     } catch (error) {
       console.error(error);
       res.status(500).send(`An error occured with the database :\n${error.message}`);
@@ -37,13 +35,11 @@ blabla(req, res) {
 
   async oneDestination(req, res) {
     try {
-    const clickedDestination = req.params.id
-    const wishedDestination = await Flights.findOne({
-      attributes: ['destination'],
-      where: {destination: clickedDestination}
+    const destinationId = req.params.id
+    const clickedDestination = await Destinations.findOne({
+      where: {id: destinationId}
     })
-    //Objet bizarre à CHECKER !
-    res.render('oneDestination', {destination: wishedDestination.dataValues.destination});
+    res.render('oneDestination', {clickedDestination});
     } catch (error) {
     console.error(error);
     res.status(500).send(`An error occured with the database :\n${error.message}`);
@@ -53,9 +49,7 @@ blabla(req, res) {
   async companiesList(req, res) {
     try {
       const allFlights = await Flights.findAll({
-        attributes: ['company'],
-        //COMMENT EVITER DUPLICATA ????????
-        distinct: true,
+        attributes: [Sequelize.fn('DISTINCT', Sequelize.col('company')), 'company'],
       });
       res.render('flightsCompanies', {results:allFlights});
     } catch (error) {
@@ -64,7 +58,19 @@ blabla(req, res) {
     }
   },
 
+  async flightsList(req, res) {
+    try {
+      const allFlights = await Flights.findAll();
+      res.render('flights', {results:allFlights});
+    } catch (error) {
+      console.error(error);
+      res.status(500).send(`An error occured with the database :\n${error.message}`);
+    }
+  },
+
   async budgetDestinations(req, res) {
+    const query = req.query
+    console.log(query)
     const userCriterias = req.body
     try {
       const searchResults = await Flights.findAll({
@@ -74,7 +80,7 @@ blabla(req, res) {
         },
       });
       console.log(searchResults)
-      res.render('budgetFlights', {results:searchResults});
+      res.render('flights', {results:searchResults, userCriterias});
     } catch (error) {
       console.error(error);
       res.status(500).send(`An error occured with the database :\n${error.message}`);

@@ -12,6 +12,7 @@ router.get("/contact", sequelizeController.contact)
 router.get("/destinations", sequelizeController.destinationsList)
 router.get("/destination/:id", sequelizeController.oneDestination)
 router.get("/flightCompanies", sequelizeController.companiesList)
+router.get("/flights", sequelizeController.flightsList)
 router.post("/destinations", sequelizeController.budgetDestinations)
 
 //------------------------Hotels functions------------------------//
