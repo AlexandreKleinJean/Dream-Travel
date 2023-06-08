@@ -1,0 +1,87 @@
+/*---------------------------------------------------HEADER-----------------------------------------*/
+
+/*-----------HEADER NAV----------*/
+
+#menu__logo{
+    color: white;
+  }
+  
+  .menu__item{
+  
+    background-image: linear-gradient(to right,#c0bcb9,#c0bcb9 50%,white 50%);
+    }
+  
+  .menu__item:before{ 
+    background: #c0bcb9;
+    }
+  
+/*-----HEADER IMG----------*/
+  
+  #header-banner{ 
+    background-image: url(../img/login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+  }
+
+/*-------------------------------------HEADER TEXT/FORM------------------------*/
+
+  .menu__text-title{
+    display:none
+    }
+  
+  .header__form{
+    display : none
+  } 
+  
+/*-----------------------------------------------------MAIN----------------------------------------------*/
+
+
+.container{
+  position: absolute;
+  width: 20vw;
+  left: 40%;
+  bottom:15%;
+} 
+
+  .login__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 1% 4%;
+    text-align: center;
+    background-color: rgba(245, 248, 243, 0.5);
+    border-radius: 3%;
+  }
+
+  .login__form:hover{
+    background-color: rgba(226, 124, 7, 0.7);
+  }
+
+  .login__form-label{
+    margin: 7% 0;
+  }
+ 
+  .login__form-input{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    padding: 5% 5%;
+  }
+
+  .login__form-btn{
+    font-size: 1.5rem;
+    color: whitesmoke;
+    text-align: center;
+    padding: 1% 3%;
+    margin: 7% 35%;
+    background-color: rgba(245, 248, 243, 0.7);
+    text-shadow:black 1px 0 10px;
+    border-radius: 10%;
+    }
+
+  .login__form-btn:hover{
+    background-color:rgba(226, 124, 7, 0.7);
+  }
+ 

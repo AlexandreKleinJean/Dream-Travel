@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/css/authentificationStyle.css">
+
+<form action="/register" method="POST">
+    <div class="login__form">
+      <label class="login__form-label" for="firstname">Firstname</label>
+      <input class="login__form-input" type="name" id="firstname" name="firstname" placeholder="Patrick">
+
+      <label class="login__form-label" for="lastname">Lasstname</label>
+      <input class="login__form-input" type="name" id="lastname" name="lastname" placeholder="Bigboa">
+
+      <label class="login__form-label" for="email">Email</label>
+      <input class="login__form-input" type="email" id="email" name="email" placeholder="email@domain.com">
+
+      <label class="login__form-label" for="password">Mot de passe</label>
+      <input class="login__form-input" type="password" id="password" name="password" placeholder="*********">
+    </div>
+    <input class="login__form-btn" type="submit" value="Register">
+  </form>
+
+<%- include('partials/footer') %>

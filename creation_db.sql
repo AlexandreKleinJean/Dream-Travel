@@ -1,6 +1,21 @@
 DROP TABLE IF EXISTS "flights";
 DROP TABLE IF EXISTS "hotels";
 DROP TABLE IF EXISTS "destinations";
+DROP TABLE IF EXISTS "users";
+
+-- Users
+
+CREATE TABLE IF NOT EXISTS "users" (
+  "id" SERIAL PRIMARY KEY,
+  "firstname" TEXT,
+  "lastname" TEXT,
+  "email" TEXT,
+  "password" TEXT
+);
+
+INSERT INTO "users" ("id", "firstname", "lastname", "email", "password") VALUES
+(1, 'Bambi', 'Bigcat', 'bambi@bigcat.com', '$2b$10$7vwYGrz2TGeyG4X8YnD9BOag9I.YKGUTJELs64qGmcK/syHu2BzTG'),
+(2, 'Macaron', 'Smallcat', 'macaron@smallcat.com', '$2b$10$7vwYGrz2TGeyG4X8YnD9BOag9I.YKGUTJELs64qGmcK/syHu2BzTG');
 
 -- Destinations
 
@@ -97,6 +112,7 @@ INSERT INTO "flights" ("id","destination_id", "company", "duration", "day_id", "
 (43, 4, 'American Airlines',16, 6, 'Saturday', 9, 1130);
 
 /*------------------------------------------EVITER DUPLICATA DE KEY*/
+SELECT setval('users_id_seq', (SELECT MAX(id) from "users"));
 SELECT setval('destinations_id_seq', (SELECT MAX(id) from "destinations"));
 SELECT setval('hotels_id_seq', (SELECT MAX(id) from "hotels"));
 SELECT setval('flights_id_seq', (SELECT MAX(id) from "flights"));

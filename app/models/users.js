@@ -1,27 +1,26 @@
 const { Model, DataTypes } = require('sequelize');
 const getConnexion = require('../../data/sequelizeConnexion');
 
-class Hotels extends Model {}
+class Users extends Model {}
 
-Hotels.init(
+Users.init(
     {
-        name: {
+        firstname: {
             type: DataTypes.TEXT,
         },
-        destination_id: {
+        lastname: {
+            type: DataTypes.TEXT,
+        },
+        email: {
             type: DataTypes.INTEGER,
         },
-        review: {
+        password: {
             type: DataTypes.INTEGER,
         },
-        price: {
-            type: DataTypes.INTEGER,
-        },
-
     },
     {
         sequelize: getConnexion(),
-        tableName:'hotels',
+        tableName:'users',
     })
 
-module.exports = Hotels;
+module.exports = Users;

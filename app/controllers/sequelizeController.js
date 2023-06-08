@@ -114,6 +114,12 @@ blabla(req, res) {
         res.render('admin');
       },
 
+//---------------------------------Login---------------------------------//
+      connection(req, res) {
+        res.render('connection');
+      },
+
+
 //---------------------------Admin operations----------------------------//
 
       login(req, res) {

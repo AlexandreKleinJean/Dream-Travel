@@ -11,13 +11,17 @@ router.get("/contact", sequelizeController.contact)
 //------------------------Flights functions-----------------------//
 router.get("/destinations", sequelizeController.destinationsList)
 router.get("/destination/:id", sequelizeController.oneDestination)
-router.get("/flightCompanies", sequelizeController.companiesList)
+/*router.get("/flightCompanies", sequelizeController.companiesList)*/
 router.get("/flights", sequelizeController.flightsList)
 router.post("/destinations", sequelizeController.budgetDestinations)
 
 //------------------------Hotels functions------------------------//
 router.get("/hotels", sequelizeController.hotelsList)
 router.post("/admin/addhotel", sequelizeController.addHotel)
+
+//------------------------------Login-----------------------------//
+router.get("/connection", sequelizeController.connection)
+
 
 //------------------------Admin operations------------------------//
 router.get("/login", sequelizeController.login)
