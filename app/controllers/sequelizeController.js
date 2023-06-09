@@ -25,7 +25,6 @@ blabla(req, res) {
     try {
       const allDestinations = await Destinations.findAll({ 
       });
-      console.log(allDestinations.dataValues)
       res.render('destinations', {results:allDestinations});
     } catch (error) {
       console.error(error);
@@ -79,7 +78,6 @@ blabla(req, res) {
           price:{[Op.lte]: userCriterias.budget}
         },
       });
-      console.log(searchResults)
       res.render('flights', {results:searchResults, userCriterias});
     } catch (error) {
       console.error(error);
@@ -94,8 +92,10 @@ blabla(req, res) {
       async hotelsList(req, res) {
         try {
           const allHotels = await Hotels.findAll({
-            order:  ['country']
+            include:['destinations'],
+            /*order:  ['country']*/
           });
+          console.log(allHotels[0])
           res.render('hotels', {allHotels});
         } catch (error) {
           console.error(error);

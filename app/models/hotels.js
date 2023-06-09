@@ -17,7 +17,9 @@ Hotels.init(
         price: {
             type: DataTypes.INTEGER,
         },
-
+        description: {
+            type: DataTypes.TEXT,
+        },
     },
     {
         sequelize: getConnexion(),

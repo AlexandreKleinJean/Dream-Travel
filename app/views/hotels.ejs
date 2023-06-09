@@ -7,10 +7,15 @@
 
     <a class="hotel__article" href="/hotels/<%= hotel.id %>">
         <h1 id="hotel__article-name" class="hotel__article-element"><%= hotel.name %></h1>
-        <h2 class="hotel__article-element"><%= hotel.city %></h2>
-        <h2 class="hotel__article-element"><%= hotel.country %></h2>
-        <h2 class="hotel__article-element"><%= hotel.review %></h2>
-        <h2 class="hotel__article-element"><%= hotel.price %></h2>
+        <div class="hotel__article-location">
+            <h2 class="hotel__article-element"><%= hotel.destinations.city %>,</h2>
+            <h2 id="hotel__article-country" class="hotel__article-element"><%= hotel.destinations.country %></h2>
+        </div>
+        <h2 id="hotel__article-presentation" class="hotel__article-element"><%= hotel.description %></h2>
+        <div class="hotel__article-rate">
+            <h2 id="hotel__article-price" class="hotel__article-element">$ <%= hotel.price %></h2>
+            <h2 class="hotel__article-element"><%= hotel.review %> &#11088;</h2>
+        </div>
     </a>
     <% } %>
 

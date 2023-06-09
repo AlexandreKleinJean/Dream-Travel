@@ -7,9 +7,9 @@ Destinations.hasMany(Flights, {
     as: 'flightsDestinations',
 });
 
-Destinations.hasMany(Hotels, {
+Hotels.belongsTo(Destinations, {
     foreignKey: 'destination_id',
-    as: 'HotelsDestinations',
+    as: 'destinations',
 });
 
 module.exports = { Destinations, Flights, Hotels };

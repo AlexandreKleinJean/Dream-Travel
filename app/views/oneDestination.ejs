@@ -1,11 +1,12 @@
 <%- include('partials/header') %>
-<link rel="stylesheet" href="/css/destinationStyle.css">
+<link rel="stylesheet" href="/css/oneDestinationStyle.css">
 
 <h1 class="destination__title"><%= clickedDestination.dataValues.country %></h1>
 
     <article class="destination__article">
         <div class="destination__article-left">
-            <p><%= clickedDestination.dataValues.country %> is unbelievable !</p>
+            <p class="destination__article-left-title"><%= clickedDestination.dataValues.country %></p>
+            <p class="destination__article-left-description"><%= clickedDestination.dataValues.description %></p>
         </div>
         <div class="destination__article-right">
             <img class="destination__article-right-img" src="/img/<%= clickedDestination.dataValues.country %>.png" alt="<%= clickedDestination.dataValues.country %>">

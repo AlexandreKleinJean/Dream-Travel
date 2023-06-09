@@ -22,16 +22,17 @@ INSERT INTO "users" ("id", "firstname", "lastname", "email", "password") VALUES
 CREATE TABLE IF NOT EXISTS "destinations" (
   "id" SERIAL PRIMARY KEY,
   "city" TEXT,
-  "country" TEXT
+  "country" TEXT,
+  "description" TEXT
 );
 
-INSERT INTO "destinations" ("id", "city", "country") VALUES
-(1,'San Jose','Costa Rica'),
-(2,'Manille','Philippines'),
-(3,'Ciudad Guatemala','Guatemala'),
-(4,'Quito','Ecuador'),
-(5,'Bangkok','Thailand'),
-(6,'Bali','Indonesia');
+INSERT INTO "destinations" ("id", "city", "country", "description") VALUES
+(1,'San Jose','Costa Rica', 'Known for its incredible biodiversity and commitment to conservation, Costa Rica is a nature lovers paradise in Central America. It boasts lush rainforests, active volcanoes, and pristine beaches on both the Pacific and Caribbean coasts. Visitors can enjoy thrilling outdoor activities such as ziplining, surfing, and wildlife spotting, while also experiencing the pura vida lifestyle and warm hospitality of the Costa Rican people.'),
+(2,'Manille','Philippines', 'The Philippines is an archipelago of over 7,000 islands, offering breathtaking natural beauty and a rich cultural heritage. With pristine beaches, crystal-clear waters, and vibrant coral reefs, it is a paradise for beach lovers and divers. The country is also home to bustling cities like Manila, where visitors can explore historical sites, sample diverse cuisine, and experience the warm and hospitable Filipino culture.'),
+(3,'Ciudad Guatemala','Guatemala', 'Located in Central America, is a captivating country known for its rich Mayan heritage, stunning landscapes, and vibrant culture. The country is home to ancient ruins such as Tikal, where visitors can immerse themselves in the fascinating history of the Mayan civilization. Guatemala natural beauty is evident in its breathtaking volcanic peaks, lush rainforests, and picturesque lakes, including Lake Atitlán, surrounded by charming indigenous villages. The colonial city of Antigua is a UNESCO World Heritage site, offering cobblestone streets, colorful buildings, and impressive churches. With its warm and welcoming people, Guatemala invites travelers to explore its diverse landscapes and experience its vibrant traditions.'),
+(4,'Quito','Ecuador', 'Nestled in the heart of South America, Ecuador is a country of incredible biodiversity and stunning landscapes. From the towering peaks of the Andes to the lush Amazon rainforest and the pristine Galapagos Islands, Ecuador offers a wide range of natural wonders. Visitors can explore colonial cities like Quito, hike through volcanoes, discover indigenous markets, and experience the unique culture of this diverse country.'),
+(5,'Bangkok','Thailand', 'Known for its vibrant culture, stunning beaches, and bustling cities, Thailand is a captivating country in Southeast Asia. From the bustling streets of Bangkok to the idyllic islands of Phuket and Krabi, Thailand offers a diverse range of experiences. Visitors can explore ancient temples, indulge in delicious street food, and immerse themselves in the warm hospitality of the Thai people.'),
+(6,'Bali','Indonesia', 'With its sprawling archipelago of more than 17,000 islands, Indonesia is a diverse and enchanting country in Southeast Asia. From the famous island of Bali with its stunning beaches and vibrant cultural scene, to the ancient temples of Borobudur and Prambanan in Java, and the lush rainforests of Borneo, Indonesia offers a wealth of natural and cultural attractions. Visitors can immerse themselves in the vibrant traditions, sample diverse cuisines, and explore unique landscapes, making Indonesia a truly captivating destination.');
 
 -- Hotels
 
@@ -40,18 +41,19 @@ CREATE TABLE IF NOT EXISTS "hotels" (
   "name" TEXT,
   "destination_id" INTEGER NULL,
   "review" REAL,
-  "price" REAL NOT NULL
+  "price" REAL NOT NULL,
+  "description" TEXT
 );
 
-INSERT INTO "hotels" ("id", "name", "destination_id", "review", "price") VALUES
-(1,'Pura Vida', 1, 9, 30),
-(2,'Good view', 2, 8, 40),
-(3,'Amigos', 3, 6, 15),
-(4,'Buenas', 4, 7, 45),
-(5,'Same Same', 5, 10, 60),
-(6,'Mai Pen Rai', 5, 5, 54),
-(7,'Vida Loca', 1, 9, 29),
-(8,'Good food', 6, 8, 75);
+INSERT INTO "hotels" ("id", "name", "destination_id", "review", "price", "description") VALUES
+(1,'Pura Vida', 1, 9, 30, 'Indulge in pure luxury at our exquisite hotel, where personalized service, opulent accommodations, and a tranquil spa sanctuary await, ensuring an unforgettable stay.'),
+(2,'Good view', 2, 8, 40, 'Immerse yourself in paradise at our beachfront oasis, where pristine white sands, turquoise waters, and world-class amenities create the perfect setting for a blissful and rejuvenating vacation.'),
+(3,'Amigos', 3, 6, 15, 'Experience the epitome of urban sophistication at our stylish hotel, offering sleek design, contemporary comforts, and a prime location in the heart of the city, catering to discerning travelers seeking an unforgettable urban escape.'),
+(4,'Buenas', 4, 7, 45, 'Escape to the tranquility of the mountains at our charming lodge, nestled amidst breathtaking natural beauty, where cozy accommodations, warm hospitality, and outdoor adventures await, providing an idyllic getaway for nature enthusiasts.'),
+(5,'Same Same', 5, 10, 60, 'Step back in time and embrace the allure of yesteryears at our elegant manor, where historic charm, lavish accommodations, and impeccable service combine to create an enchanting stay in a bygone era.'),
+(6,'Mai Pen Rai', 5, 5, 54, 'Create lifelong memories at our family-friendly resort, where endless entertainment options, spacious accommodations, and a myriad of activities for all ages ensure a delightful vacation experience for the whole family.'),
+(7,'Vida Loca', 1, 9, 29, 'Embrace sustainable luxury at our eco-conscious retreat, where eco-friendly practices, organic cuisine, and breathtaking surroundings harmonize to offer a guilt-free and rejuvenating escape into nature.'),
+(8,'Good food', 6, 8, 75, 'Experience the perfect blend of business and leisure at our sophisticated hotel, offering state-of-the-art facilities, seamless connectivity, and elegant accommodations, catering to the needs of modern business travelers seeking comfort and productivity.');
 
 -- Flights
 
