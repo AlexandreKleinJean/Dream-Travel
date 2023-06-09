@@ -11,10 +11,13 @@
             <h2 class="hotel__article-element"><%= hotel.destinations.city %>,</h2>
             <h2 id="hotel__article-country" class="hotel__article-element"><%= hotel.destinations.country %></h2>
         </div>
+        <div class="hotel__article-image">
+            <img src="/img/<%= hotel.name %>.png" alt="<%= hotel.name %>">
+        </div>
         <h2 id="hotel__article-presentation" class="hotel__article-element"><%= hotel.description %></h2>
         <div class="hotel__article-rate">
+            <h2 id="hotel__article-review" class="hotel__article-element">Review : <%= hotel.review %> &#11088; / 10</h2>
             <h2 id="hotel__article-price" class="hotel__article-element">$ <%= hotel.price %></h2>
-            <h2 class="hotel__article-element"><%= hotel.review %> &#11088;</h2>
         </div>
     </a>
     <% } %>

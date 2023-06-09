@@ -63,9 +63,13 @@
     align-items: center;
     flex-direction: column;
     padding: 2% 2%;
-    margin: 2% 10%;
-    background-color: rgb(204, 202, 202);
+    margin: 4% 10%;
+    background-color: rgba(61,171,235, 0.6);
     border-radius: 2%;
+    }
+
+.hotel__article:hover{
+    background-color: rgba(61,171,235, 0.5);
     }
 
 #hotel__article-name{
@@ -79,6 +83,7 @@
 }
 
 #hotel__article-presentation{
+    margin: 2% 0;
     font-size: 1.3rem;
 }
 
@@ -91,16 +96,38 @@
     flex-direction: row;
     }
 
+.hotel__article-image{
+    margin: 2% 5%;
+    box-sizing: border-box;
+    }
+
+.hotel__article-image img{
+    block-size: auto;
+    border-radius: 5%;
+    }
+
 .hotel__article-location, .hotel__article-rate{
     white-space: nowrap;
     }
 
 .hotel__article-element{
-    padding: 2% 2%;
+    padding: 0 2%;
     font-size: 1.5rem;
     text-align: center;
     } 
 
 #hotel__article-price{
-    margin-right: 100%;
+    background-color: whitesmoke;
+    border: 1px black solid;
+    font-size: 2.3rem;
+    margin: 1% 20%;
+    margin-top: 5%;
+    padding: 5% 5%;
+    border-radius: 30%;
+    } 
+
+#hotel__article-review{
+    font-size: 2rem;
+    margin: 1% 20%;
+    margin-top: 5%;
     }
