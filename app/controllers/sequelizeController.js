@@ -93,7 +93,7 @@ blabla(req, res) {
         try {
           const allHotels = await Hotels.findAll({
             include:['destinations'],
-            /*order:  ['country']*/
+            order:  ['destination_id']
           });
           console.log(allHotels[0])
           res.render('hotels', {allHotels});

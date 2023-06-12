@@ -60,45 +60,43 @@
   }
 
 .destination__article{
-    position:relative;
-    justify-content: center;
-    align-items: center;
-    margin: 2% 5%;
-    width: 40%;
-    height: 10%;
-    border: 1px black solid;
-    }
-    
-.destination__article-back{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2% 5%;
+  width: 35%;
+  height: 10%;
+  border: 0.5px solid whitesmoke;
+  border-radius: 5%;
+  overflow: hidden;
+  }
 
+.destination__article-img{
+  border-radius: 5%;
+  box-sizing: border-box;
+  width: 100%;
+  transition : 500ms;
     }
 
-.destination__article-front{
-  padding: 2% 2%;
+.destination__article-img:hover{
+  transform: scale(1.2);
+    }
+
+.destination__article-text{
+  position: absolute;
+  font-weight: bold;
   font-size: 1.5rem;
+  color: white;
+  text-shadow: black 1px 0 10px;;
+  text-align: center;
+  bottom: 20%;
     }
 
 
 /*-------------------A REVOIR--------------------*/
 
-.destination__article {
-  position: relative;
-}
 
-.destination__article::before {
-  background: #ff9800;
-  content: "";
-  inset: 0;
-  position: absolute;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform .5s ease-in-out;
-  z-index: -1;
-}
-  .destination__article:hover::before {
-    transform: scaleX(1);
-    transform-origin: right;
-  }
 
 
 

@@ -47,6 +47,14 @@
 
 /*-----------------------------------------------------MAIN----------------------------------------------*/
 
+.hotel__articles{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+
 .hotel__title{
     display:flex;
     justify-content: center;
@@ -61,10 +69,10 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    width: 35%;
     padding: 2% 2%;
-    margin: 4% 10%;
-    background-color: rgba(61,171,235, 0.6);
+    margin: 4% 5%;
     border-radius: 2%;
     }
 
@@ -97,13 +105,13 @@
     }
 
 .hotel__article-image{
-    margin: 2% 5%;
-    box-sizing: border-box;
+    width:500px;
+    height: 250px;
     }
 
 .hotel__article-image img{
-    block-size: auto;
-    border-radius: 5%;
+    width:100%;
+    height:auto
     }
 
 .hotel__article-location, .hotel__article-rate{
@@ -119,15 +127,15 @@
 #hotel__article-price{
     background-color: whitesmoke;
     border: 1px black solid;
-    font-size: 2.3rem;
-    margin: 1% 20%;
+    font-size: 1.5rem;
+    margin: 1% 5%;
     margin-top: 5%;
     padding: 5% 5%;
     border-radius: 30%;
     } 
 
 #hotel__article-review{
-    font-size: 2rem;
-    margin: 1% 20%;
+    font-size: 1.3rem;
+    margin: 1% 5%;
     margin-top: 5%;
     }

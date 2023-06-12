@@ -9,8 +9,8 @@
 <% for(let oneDestination of results) { %>
 
     <a class="destination__article" href="/destination/<%= oneDestination.dataValues.id %>">
-        <img class="destination__article-back" src="/img/<%= oneDestination.dataValues.country %>.png" alt="<%= oneDestination.dataValues.country %>">
-        <div class="destination__article-front"><%= oneDestination.dataValues.country %></div>
+        <img class="destination__article-img" src="/img/<%= oneDestination.dataValues.country %>.png" alt="<%= oneDestination.dataValues.country %>">
+        <div class="destination__article-text"><%= oneDestination.dataValues.country %></div>
     </a>
     <% } %>
 
