@@ -7,16 +7,18 @@
 <% for(let hotel of allHotels) { %>
 
     <a class="hotel__article" href="/hotels/<%= hotel.id %>">
-        <h1 id="hotel__article-name" class="hotel__article-element"><%= hotel.name %></h1>
-        <div class="hotel__article-location">
-            <h2 class="hotel__article-element"><%= hotel.destinations.city %>,</h2>
-            <h2 id="hotel__article-country" class="hotel__article-element"><%= hotel.destinations.country %></h2>
-        </div>
         <img class="hotel__article-image" src="/img/<%= hotel.image %>.png" alt="<%= hotel.name %>">
-        <h2 id="hotel__article-presentation" class="hotel__article-element"><%= hotel.description %></h2>
-        <div class="hotel__article-rate">
-            <h2 id="hotel__article-review" class="hotel__article-element">Review : <%= hotel.review %> &#11088; / 10</h2>
-            <h2 id="hotel__article-price" class="hotel__article-element">$ <%= hotel.price %></h2>
+        <div class="hotel__article-front">
+            <div class="visible">   
+                <div class="hotel__article-frontVisible">
+                    <h1 id="hotel__article-name"><%= hotel.name %></h1>
+                    <h2 id="hotel__article-city"><%= hotel.destinations.city %></h2>
+                </div>
+                    <h2 id="hotel__article-price">$ <%= hotel.price %></h2>
+            </div>
+            <div class="hidden">
+                <p id="hotel__article-read">Read more</p>
+            </div>
         </div>
     </a>
     <% } %>
