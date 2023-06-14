@@ -1,15 +1,15 @@
 <%- include('partials/header') %>
 <link rel="stylesheet" href="/css/oneDestinationStyle.css">
 
-<h1 class="destination__title"><%= clickedDestination.dataValues.country %></h1>
+<h1 class="destination__title"><%= destination.dataValues.country %></h1>
 
     <article class="destination__article">
         <div class="destination__article-left">
-            <p class="destination__article-left-title"><%= clickedDestination.dataValues.country %></p>
-            <p class="destination__article-left-description"><%= clickedDestination.dataValues.description %></p>
+            <p class="destination__article-left-title"><%= destination.dataValues.country %></p>
+            <p class="destination__article-left-description"><%= destination.dataValues.description %></p>
         </div>
         <div class="destination__article-right">
-            <img class="destination__article-right-img" src="/img/<%= clickedDestination.dataValues.country %>.png" alt="<%= clickedDestination.dataValues.country %>">
+            <img class="destination__article-right-img" src="/img/<%= destination.dataValues.country %>.png" alt="<%= destination.dataValues.country %>">
         </div>
     </article>
 

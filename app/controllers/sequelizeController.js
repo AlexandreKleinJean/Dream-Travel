@@ -35,25 +35,11 @@ blabla(req, res) {
   async oneDestination(req, res) {
     try {
     const destinationId = req.params.id
-    const clickedDestination = await Destinations.findOne({
-      where: {id: destinationId}
-    })
-    res.render('oneDestination', {clickedDestination});
+    const clickedDestination = await Destinations.findByPk(destinationId)
+    res.render('oneDestination', {destination:clickedDestination});
     } catch (error) {
     console.error(error);
     res.status(500).send(`An error occured with the database :\n${error.message}`);
-    }
-  },
-
-  async companiesList(req, res) {
-    try {
-      const allFlights = await Flights.findAll({
-        attributes: [Sequelize.fn('DISTINCT', Sequelize.col('company')), 'company'],
-      });
-      res.render('flightsCompanies', {results:allFlights});
-    } catch (error) {
-      console.error(error);
-      res.status(500).send(`An error occured with the database :\n${error.message}`);
     }
   },
 
@@ -100,6 +86,19 @@ blabla(req, res) {
         } catch (error) {
           console.error(error);
           res.status(500).send(`An error occured with the database :\n${error.message}`);
+        }
+      },
+
+      async oneHotel(req, res) {
+        try {
+        const hotelId = req.params.id
+        const clickedHotel = await Hotels.findByPk(hotelId,
+          {include:'destinations'})
+          console.log(clickedHotel.destinations)
+        res.render('oneHotel', {hotel:clickedHotel});
+        } catch (error) {
+        console.error(error);
+        res.status(500).send(`An error occured with the database :\n${error.message}`);
         }
       },
 

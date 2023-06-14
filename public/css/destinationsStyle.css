@@ -20,18 +20,21 @@
 
 #header-banner{ 
   background-image: url(../img/destinations.png);
+  background-position:30% 30%;
   background-repeat: no-repeat;
   background-size: cover;
-  height:80vh;
+  height:60vh;
 }
 
 /*--------HEADER TEXT/FORM------*/
 
 .header__form{
-  bottom: 40%;
-  }
+  bottom:50%;
+}
 
 #btn{
+  color:whitesmoke;
+  font-weight: bolder;
   background-color:#db6927;
   }
   
@@ -46,9 +49,11 @@
     justify-content: center;
     align-items: center;
     font-size: 3rem;
-    height: 20vh;
+    height: 10vh;
     margin-bottom: 3%;
-    background-color: whitesmoke;
+    color: white;
+    text-shadow: black 1px 0 10px;
+    background-color: #e67c04;
     }
 
 .destination__articles{
@@ -86,11 +91,11 @@
 .destination__article-text{
   position: absolute;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: white;
-  text-shadow: black 1px 0 10px;;
+  text-shadow: black 2px 0 10px;;
   text-align: center;
-  bottom: 20%;
+  bottom: 45%;
     }
 
 

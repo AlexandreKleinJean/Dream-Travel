@@ -3,7 +3,8 @@
 /*-----------HEADER NAV----------*/
 
 #menu__logo{
-    color: whitesmoke;
+    color: #1c96dd;
+    text-shadow: white 1px 0 10px;
   }
 
 .menu__item{
@@ -21,7 +22,7 @@
     background-image: url(../img/hotels.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height:80vh;
+    height:60vh;
     color: white;
   }
 
@@ -29,15 +30,18 @@
 
 .menu__text-title{
     bottom: 40%;
-    text-shadow: black 1px 0 10px;
+    color:black;
+    text-shadow: white 1px 0 10px;
 }
 
 
 .header__form{
-    bottom: 40%;
+    bottom: 50%;
     }
 
 #btn{
+    color:whitesmoke;
+    font-weight: bolder;
     background-color:#1c96dd;;
     }
     
@@ -46,6 +50,18 @@
     }
 
 /*-----------------------------------------------------MAIN----------------------------------------------*/
+
+.hotel__title{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    height: 10vh;
+    margin-bottom: 3%;
+    color: white;
+    text-shadow: black 1px 0 10px;
+    background-color: #3dabeb;
+    }
 
 .hotel__articles {
     display: flex;

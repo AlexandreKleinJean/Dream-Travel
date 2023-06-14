@@ -17,11 +17,11 @@ router.post("/destinations", sequelizeController.budgetDestinations)
 
 //------------------------Hotels functions------------------------//
 router.get("/hotels", sequelizeController.hotelsList)
+router.get("/hotels/:id", sequelizeController.oneHotel)
 router.post("/admin/addhotel", sequelizeController.addHotel)
 
 //------------------------------Login-----------------------------//
 router.get("/connection", sequelizeController.connection)
-
 
 //------------------------Admin operations------------------------//
 router.get("/login", sequelizeController.login)

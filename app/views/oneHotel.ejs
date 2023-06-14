@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/css/oneHotelStyle.css">
+
+<h1 class="hotel__title"><%= hotel.dataValues.name %></h1>
+<h2 class="hotel__location"><%= hotel.destinations.dataValues.city %>, <%= hotel.destinations.dataValues.country %></h2>
+    <article class="destination__article">
+        <img class="destination__article-right-img" src="/img/<%= hotel.image %>.png" alt="<%= hotel.name %>">
+        <div class="hotel__article__description">
+            <p><%= hotel.dataValues.description %></p>
+        </div>
+        <div class="hotel__article__rate">
+            <p id="hotel__article__rate-price">$ <%= hotel.price %></p>
+            <p id="hotel__article__rate-review">$ <%= hotel.review %></p>
+        </div>
+    </article>
+
+<%- include('partials/footer') %>
