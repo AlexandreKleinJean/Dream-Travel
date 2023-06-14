@@ -11,7 +11,15 @@ const session = require("express-session");
 app.set("view engine", "ejs")
 app.set("views","./app/views")
 
-app.use(express.static("./public"));
+//POUR LIRE LES FICHIERS JS EN PLUS DU CSS ET IMG//
+const path = require("path");
+app.use(express.static(path.join(__dirname, "public"), {
+    setHeaders: (res, filePath) => {
+      if (filePath.endsWith(".js")) {
+        res.setHeader("Content-Type", "application/javascript");
+      }
+    },
+  }));
 
 app.use(express.urlencoded({extended: true}));
 

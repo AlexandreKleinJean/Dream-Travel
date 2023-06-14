@@ -11,6 +11,9 @@ Destinations.init(
         country: {
             type: DataTypes.TEXT,
         },
+        continent: {
+            type: DataTypes.TEXT,
+        },
         description: {
             type: DataTypes.TEXT,
         },

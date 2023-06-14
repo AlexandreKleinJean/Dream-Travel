@@ -1,28 +1,34 @@
 <%- include('partials/header') %>
 <link rel="stylesheet" href="/css/hotelsStyle.css">
 
+//--On passe l'objet 'allHotels' dans le fichier 'hotelsList.js' afin qu'il puisse l'utiliser--//
+<script> const allHotels = JSON.parse('<%- JSON.stringify(allHotels) %>'); </script>
+<script src="js/hotelsList.js" defer></script>
+//--------------------------------------------------------------------------------------------//
+
 <h1 class="hotel__title">Hotels</h1>
 
 <section class="hotel__articles">
-<% for(let hotel of allHotels) { %>
-
-    <a class="hotel__article" href="/hotels/<%= hotel.id %>">
-        <img class="hotel__article-image" src="/img/<%= hotel.image %>.png" alt="<%= hotel.name %>">
-        <div class="hotel__article-front">
-            <div class="visible">   
+      <% for(let i = 0; i<6; i++) { %>
+        <% if (i < allHotels.length) { %>
+          <a class="hotel__article" href="/hotels/<%= allHotels[i].id %>">
+            <img class="hotel__article-image" src="/img/<%= allHotels[i].image %>.png" alt="<%= allHotels[i].name %>">
+            <div class="hotel__article-front">
+              <div class="visible">   
                 <div class="hotel__article-frontVisible">
-                    <h1 id="hotel__article-name"><%= hotel.name %></h1>
-                    <h2 id="hotel__article-city"><%= hotel.destinations.city %></h2>
+                  <h1 id="hotel__article-name"><%= allHotels[i].name %></h1>
+                  <h2 id="hotel__article-city"><%= allHotels[i].destinations.city %></h2>
                 </div>
-                    <h2 id="hotel__article-price">$ <%= hotel.price %></h2>
-            </div>
-            <div class="hidden">
+                <h2 id="hotel__article-price">$ <%= allHotels[i].price %></h2>
+              </div>
+              <div class="hidden">
                 <p id="hotel__article-read">Read more</p>
+              </div>
             </div>
-        </div>
-    </a>
-    <% } %>
-
-</section>
+          </a>
+        <% } %>
+      <% } %>
+      <button class="load-more-button">Voir plus</button>
+  </section>
 
 <%- include('partials/footer') %>

@@ -81,7 +81,6 @@ blabla(req, res) {
             include:['destinations'],
             /*order:  ['destination_id']*/
           });
-          console.log(allHotels)
           res.render('hotels', {allHotels});
         } catch (error) {
           console.error(error);

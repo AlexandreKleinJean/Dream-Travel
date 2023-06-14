@@ -4,7 +4,12 @@ const Hotels = require('./hotels');
 
 Destinations.hasMany(Flights, {
     foreignKey: 'destination_id',
-    as: 'flightsDestinations',
+    as: 'flights',
+});
+
+Destinations.hasMany(Hotels, {
+    foreignKey: 'destination_id',
+    as: 'hotels',
 });
 
 Hotels.belongsTo(Destinations, {
