@@ -93,7 +93,6 @@ blabla(req, res) {
         const hotelId = req.params.id
         const clickedHotel = await Hotels.findByPk(hotelId,
           {include:'destinations'})
-          console.log(clickedHotel.destinations)
         res.render('oneHotel', {hotel:clickedHotel});
         } catch (error) {
         console.error(error);

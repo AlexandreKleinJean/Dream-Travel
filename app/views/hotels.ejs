@@ -1,10 +1,10 @@
 <%- include('partials/header') %>
 <link rel="stylesheet" href="/css/hotelsStyle.css">
 
-//--On passe l'objet 'allHotels' dans le fichier 'hotelsList.js' afin qu'il puisse l'utiliser--//
+<!--On passe l'objet 'allHotels' dans le fichier 'hotelsList.js' afin qu'il puisse l'utiliser-->
 <script> const allHotels = JSON.parse('<%- JSON.stringify(allHotels) %>'); </script>
 <script src="js/hotelsList.js" defer></script>
-//--------------------------------------------------------------------------------------------//
+<!--------------------------------------------------------------------------------------------->
 
 <h1 class="hotel__title">Hotels</h1>
 
@@ -22,13 +22,16 @@
                 <h2 id="hotel__article-price">$ <%= allHotels[i].price %></h2>
               </div>
               <div class="hidden">
-                <p id="hotel__article-read">Read more</p>
+                <p id="hotel__article-read">Discover</p>
               </div>
             </div>
           </a>
         <% } %>
       <% } %>
-      <button class="load-more-button">Voir plus</button>
   </section>
+<section class="load-more">
+  <button class="load-more-button">See more</button>
+</section>
+  
 
 <%- include('partials/footer') %>

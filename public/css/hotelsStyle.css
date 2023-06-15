@@ -146,3 +146,27 @@
   }
 
 /*------------------------------SEE MORE HOTELS------------------------*/
+
+.load-more{
+  display:flex;
+  justify-content: center;
+  margin:2% 0 5% 0;
+}
+
+.load-more-button{
+  border:none;
+  color: #1c96dd;
+  font-size: 1.5rem;
+  background-color: white;
+}
+
+.load-more-button::after {
+  content: "\2193";
+  display: block;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.load-more-button:hover::after {
+  opacity: 1;
+}

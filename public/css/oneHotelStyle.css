@@ -1,0 +1,85 @@
+/*---------------------------------------------------HEADER-----------------------------------------*/
+
+/*-----------HEADER NAV----------*/
+
+#menu__logo{
+    font-size:1.5rem;
+    font-weight: bold;
+    color: #26860d;
+    padding: 1% 1%;
+    width: 40%;
+    text-align: center;
+    text-shadow: white 1px 0 10px;
+  }
+  
+  .menu__item{
+    color:black;
+    text-shadow: whitesmoke 1px 0 20px;
+  }
+  
+
+/*-----HEADER IMG----------*/
+
+#header-banner{ 
+    background-image: url(../img/destination.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:80vh;
+    color: white;
+  }
+
+/*--------HEADER TEXT/FORM------*/
+
+.header__form{
+   bottom: 40%;
+  }
+
+/*-----------------------------------------------------MAIN----------------------------------------------*/
+
+.hotel__top{
+    display:block;
+    text-align: center;
+    }
+
+.hotel__top-title{
+    font-size: 3rem;
+    }
+
+.hotel__top-city, .hotel__top-country{
+    display: inline-block;
+    vertical-align:bottom;
+    }
+
+.hotel__top-city{
+    font-size: 1.5rem;
+    margin-bottom: 0.2%;
+    margin-right: 0.5%;
+    }
+
+.hotel__top-country{
+    font-size: 2rem;
+    }
+
+.hotel__article{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2% 2%;
+    border: 1px solid black;
+    }
+
+.hotel__article-right-img{
+    width: 50%;
+    }
+
+.hotel__article-rate{
+    font-size: 2rem;
+    width: 50%;
+    padding: 1% 1%;
+    margin: 0 2%;
+}
+
+.hotel__article__description{
+    font-size: 0.8rem;
+}
