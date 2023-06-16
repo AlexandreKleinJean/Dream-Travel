@@ -79,7 +79,6 @@ blabla(req, res) {
         try {
           const allHotels = await Hotels.findAll({
             include:['destinations'],
-            /*order:  ['destination_id']*/
           });
           res.render('hotels', {allHotels});
         } catch (error) {
@@ -88,11 +87,26 @@ blabla(req, res) {
         }
       },
 
+      async hotelsByDestination(req, res) {
+        try {
+          const destinationId = req.params.id;
+          const hotelsByDestination = await Hotels.findAll({
+            where: { 'destinations_id': destinationId },
+            include: ['destinations']
+          });
+          console.log(hotelsByDestination);
+          res.render('hotels', {allHotels:hotelsByDestination});
+        } catch (error) {
+          console.error(error);
+          res.status(500).send(`An error occurred with the database:\n${error.message}`);
+        }
+      },      
+
       async oneHotel(req, res) {
         try {
         const hotelId = req.params.id
         const clickedHotel = await Hotels.findByPk(hotelId,
-          {include:'destinations'})
+          {include:['destinations', 'cities']})
         res.render('oneHotel', {hotel:clickedHotel});
         } catch (error) {
         console.error(error);

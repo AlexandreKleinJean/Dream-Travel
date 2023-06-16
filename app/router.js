@@ -18,6 +18,7 @@ router.post("/destinations", sequelizeController.budgetDestinations)
 //------------------------Hotels functions------------------------//
 router.get("/hotels", sequelizeController.hotelsList)
 router.get("/hotels/:id", sequelizeController.oneHotel)
+router.get("/destination/:id/hotels", sequelizeController.hotelsByDestination)
 router.post("/admin/addhotel", sequelizeController.addHotel)
 
 //------------------------------Login-----------------------------//

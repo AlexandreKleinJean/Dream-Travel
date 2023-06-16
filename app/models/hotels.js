@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const getConnexion = require('../../data/sequelizeConnexion');
+const getConnexion = require('../../connection/sequelizeConnexion');
 
 class Hotels extends Model {}
 
@@ -8,7 +8,10 @@ Hotels.init(
         name: {
             type: DataTypes.TEXT,
         },
-        destination_id: {
+        destinations_id: {
+            type: DataTypes.INTEGER,
+        },
+        cities_id: {
             type: DataTypes.INTEGER,
         },
         review: {

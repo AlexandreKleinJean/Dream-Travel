@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const getConnexion = require('../../data/sequelizeConnexion');
+const getConnexion = require('../../connection/sequelizeConnexion');
 
 class Flights extends Model {}
 

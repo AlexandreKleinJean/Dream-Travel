@@ -33,7 +33,7 @@ function loadMoreHotels () {
 
       const hotelCity = document.createElement('h2');
       hotelCity.id = 'hotel__article-city';
-      hotelCity.textContent = hotel.destinations.city;
+      hotelCity.textContent = hotel.destinations.country;
 
       const hotelPrice = document.createElement('h2');
       hotelPrice.id = 'hotel__article-price';

@@ -11,6 +11,7 @@
         <div class="destination__article-right">
             <img class="destination__article-right-img" src="/img/<%= destination.dataValues.country %>.png" alt="<%= destination.dataValues.country %>">
         </div>
+        <a href="/destination/<%= destination.dataValues.id %>/hotels">See hotels in <%= destination.dataValues.country %></a>
     </article>
 
 <%- include('partials/footer') %>
