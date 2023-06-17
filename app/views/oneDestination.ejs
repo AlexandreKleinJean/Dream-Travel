@@ -5,13 +5,12 @@
 
     <article class="destination__article">
         <div class="destination__article-left">
-            <p class="destination__article-left-title"><%= destination.dataValues.country %></p>
             <p class="destination__article-left-description"><%= destination.dataValues.description %></p>
+            <a class = "destination__article-left-btn" href="/destination/<%= destination.dataValues.id %>/hotels">See hotels in <%= destination.dataValues.country %></a>
         </div>
         <div class="destination__article-right">
             <img class="destination__article-right-img" src="/img/<%= destination.dataValues.country %>.png" alt="<%= destination.dataValues.country %>">
         </div>
-        <a href="/destination/<%= destination.dataValues.id %>/hotels">See hotels in <%= destination.dataValues.country %></a>
     </article>
 
 <%- include('partials/footer') %>

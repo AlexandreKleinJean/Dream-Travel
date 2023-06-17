@@ -7,17 +7,17 @@ const app = express()
 
 const session = require("express-session");
 
-
 app.set("view engine", "ejs")
 app.set("views","./app/views")
 
-//POUR LIRE LES FICHIERS JS EN PLUS DU CSS ET IMG//
 const path = require("path");
 app.use(express.static(path.join(__dirname, "public"), {
     setHeaders: (res, filePath) => {
+      //POUR LIRE LES FICHIERS JS EN PLUS DU CSS ET IMG DANS STATIC//
       if (filePath.endsWith(".js")) {
         res.setHeader("Content-Type", "application/javascript");
       }
+      //----------------------------------------------//
     },
   }));
 

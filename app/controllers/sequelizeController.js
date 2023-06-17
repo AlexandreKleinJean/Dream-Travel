@@ -6,10 +6,6 @@ const sequelizeController = {
 
 //-----------------------------General----------------------------//
 
-blabla(req, res) {
-  res.render("blabla")
-},
-
   homePage(req, res) {
     res.locals.pageId = "/"
     res.render("home")
@@ -70,17 +66,16 @@ blabla(req, res) {
       res.status(500).send(`An error occured with the database :\n${error.message}`);
     }
   },
-  
-  
 
 //-----------------------------Hotels functions----------------------------//
 
       async hotelsList(req, res) {
         try {
+          const url = req.url
           const allHotels = await Hotels.findAll({
             include:['destinations'],
           });
-          res.render('hotels', {allHotels});
+          res.render('hotels', {allHotels, url});
         } catch (error) {
           console.error(error);
           res.status(500).send(`An error occured with the database :\n${error.message}`);
@@ -89,13 +84,13 @@ blabla(req, res) {
 
       async hotelsByDestination(req, res) {
         try {
+          const url = req.url
           const destinationId = req.params.id;
           const hotelsByDestination = await Hotels.findAll({
             where: { 'destinations_id': destinationId },
-            include: ['destinations']
+            include: ['destinations', 'cities']
           });
-          console.log(hotelsByDestination);
-          res.render('hotels', {allHotels:hotelsByDestination});
+          res.render('hotels', {allHotels:hotelsByDestination, url});
         } catch (error) {
           console.error(error);
           res.status(500).send(`An error occurred with the database:\n${error.message}`);
@@ -126,15 +121,14 @@ blabla(req, res) {
       },
 
 //---------------------------------Login---------------------------------//
-      connection(req, res) {
-        res.render('connection');
-      },
-
-
-//---------------------------Admin operations----------------------------//
-
       login(req, res) {
         res.render('login');
+      },
+
+//---------------------------Admin operations----------------------------//
+/*
+      adminLogin(req, res) {
+        res.render('adminLogin');
       },
 
       admin(req, res) {
@@ -158,7 +152,7 @@ blabla(req, res) {
         })
         res.render('home');
       }
-
+*/
 //-------------------------------------------------------------------------//
 }
 module.exports = sequelizeController;

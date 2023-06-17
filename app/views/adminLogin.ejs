@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/css/loginStyle.css">
+<h1 class="page-title">Login</h1>
+    <form class="contact__form" method="post" action="/login/admin">
+        <div class="contact__form-input">
+            <label class ="contact__form-label" for="last_name">Your last name</label>
+            <input id="last_name" type="text" name="user" placeholder="John">
+        </div>
+            <button class="submitBtn" type="submit">Send</button>
+    </form>
+    <a href="/" class="notAdminBtn">
+        <div class="notAdmin">
+            <p>I am not an admin</p>
+        </div>
+    </a>
+<%- include('partials/footer') %>

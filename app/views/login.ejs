@@ -1,16 +1,20 @@
 <%- include('partials/header') %>
-<link rel="stylesheet" href="/css/loginStyle.css">
-<h1 class="page-title">Login</h1>
-    <form class="contact__form" method="post" action="/login/admin">
-        <div class="contact__form-input">
-            <label class ="contact__form-label" for="last_name">Your last name</label>
-            <input id="last_name" type="text" name="user" placeholder="John">
+<link rel="stylesheet" href="/css/authentificationStyle.css">
+
+<div class="container">
+    <form class="login" action="/connect" method="POST">
+        <div class="login__form">
+            <label class="login__form-label" for="email">Email</label>
+            <input class="login__form-input" type="email" id="email" name="email" placeholder="email@domain.com">
+
+            <label class="login__form-label" for="password">Mot de passe</label>
+            <input class="login__form-input" type="password" id="password" name="password" placeholder="*********">
+
+            <input class="login__form-btn" type="submit" value="Login">
+
+            <a class="login__form-input" href="/registration">No account ?</a>
         </div>
-            <button class="submitBtn" type="submit">Send</button>
     </form>
-    <a href="/" class="notAdminBtn">
-        <div class="notAdmin">
-            <p>I am not an admin</p>
-        </div>
-    </a>
+</div>
+
 <%- include('partials/footer') %>

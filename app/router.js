@@ -2,8 +2,6 @@ const { Router } = require('express');
 const sequelizeController = require('./controllers/sequelizeController')
 const router = Router();
 
-
-router.get("/blabla", sequelizeController.blabla)
 //-----------------------------General----------------------------//
 router.get("/", sequelizeController.homePage)
 router.get("/contact", sequelizeController.contact)
@@ -19,15 +17,16 @@ router.post("/destinations", sequelizeController.budgetDestinations)
 router.get("/hotels", sequelizeController.hotelsList)
 router.get("/hotels/:id", sequelizeController.oneHotel)
 router.get("/destination/:id/hotels", sequelizeController.hotelsByDestination)
-router.post("/admin/addhotel", sequelizeController.addHotel)
 
 //------------------------------Login-----------------------------//
-router.get("/connection", sequelizeController.connection)
+router.get("/login", sequelizeController.login)
 
 //------------------------Admin operations------------------------//
-router.get("/login", sequelizeController.login)
+/*
+router.get("/admin/login", sequelizeController.adminLogin)
 router.post("/login/admin", sequelizeController.admin)
 router.post("/admin/addflight", sequelizeController.addFlight)
-
+router.post("/admin/addhotel", sequelizeController.addHotel)
+*/
 //----------------------------------------------------------------//
 module.exports = router;

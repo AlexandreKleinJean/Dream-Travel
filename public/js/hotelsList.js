@@ -75,6 +75,6 @@ function loadMoreHotels () {
 
 // Écouter l'événement de clic sur le bouton "Voir plus"
 loadMoreButton.addEventListener('click', function() {
-  console.log("bouton marche");
-  loadMoreHotels();
+  console.log("LOAD HOTELS WORKS !");
+  loadMoreHotels(); 
 });

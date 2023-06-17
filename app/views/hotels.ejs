@@ -4,6 +4,7 @@
 <!--On passe l'objet 'allHotels' dans le fichier 'hotelsList.js' afin qu'il puisse l'utiliser-->
 <script> const allHotels = JSON.parse('<%- JSON.stringify(allHotels) %>'); </script>
 <script src="js/hotelsList.js" defer></script>
+<!--<script src="js/hotelsByDestination.js" defer></script> ????????? -->
 <!--------------------------------------------------------------------------------------------->
 
 <h1 class="hotel__title">Hotels</h1>
@@ -17,7 +18,11 @@
               <div class="visible">   
                 <div class="hotel__article-frontVisible">
                   <h1 id="hotel__article-name"><%= allHotels[i].name %></h1>
-                  <h2 id="hotel__article-city"><%= allHotels[i].destinations.country %></h2>
+                  <% if (url=="/hotels"){ %>
+                    <h2 id="hotel__article-country"><%= allHotels[i].destinations.country %></h2>
+                  <% } else { %>
+                    <h2 id="hotel__article-city"><%= allHotels[i].cities.name %></h2>
+                  <% } %>
                 </div>
                 <h2 id="hotel__article-price">$ <%= allHotels[i].price %></h2>
               </div>

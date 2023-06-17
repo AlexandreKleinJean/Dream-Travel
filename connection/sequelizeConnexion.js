@@ -9,7 +9,6 @@ function getConnexion() {
         },
     });
 
-
 	/*-------Vérifier connection sequelize-------------------
     try {
          await sequelize.authenticate();
