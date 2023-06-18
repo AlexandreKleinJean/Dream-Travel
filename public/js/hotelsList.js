@@ -15,7 +15,7 @@ function loadMoreHotels () {
 
       const hotelImage = document.createElement('img');
       hotelImage.classList.add('hotel__article-image');
-      hotelImage.src = `/img/${hotel.image}.png`;
+      hotelImage.src = `/img/${hotel.image_general}.png`;
       hotelImage.alt = hotel.name;
 
       const hotelFront = document.createElement('div');

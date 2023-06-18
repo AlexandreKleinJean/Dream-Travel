@@ -20,8 +20,14 @@ Hotels.init(
         price: {
             type: DataTypes.INTEGER,
         },
-        image: {
-            type: DataTypes.INTEGER,
+        image_general: {
+            type: DataTypes.TEXT,
+        },
+        image_restaurant: {
+            type: DataTypes.TEXT,
+        },
+        image_pool: {
+            type: DataTypes.TEXT,
         },
         description: {
             type: DataTypes.TEXT,

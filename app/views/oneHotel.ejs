@@ -1,23 +1,41 @@
 <%- include('partials/header') %>
 <link rel="stylesheet" href="/css/oneHotelStyle.css">
     
-    <article class="hotel__article"></article>
-
-        <div class="hotel__top">
-            <h1 class="hotel__top-title"><%= hotel.dataValues.name %></h1>
-            <div class="hotel__top-location">
-                <h2 class="hotel__top-city"><%= hotel.cities.dataValues.name %>, </h2>
-                <h2 class="hotel__top-country"><%= hotel.destinations.dataValues.country %></h2>
+    <article class="hotel__article">
+        <div class="sliderAndNav">
+            <div class="slider">
+            <div id="imgG">
+                <div id="imgR">
+                <div id="imgP">
+                    <div class="images">
+                        <img src="/img/<%= hotel.image_general %>.png" alt="<%= hotel.image_general %>">
+                        <img src="/img/<%= hotel.image_restaurant %>.png" alt="<%= hotel.image_restaurant %>">
+                        <img src="/img/<%= hotel.image_pool %>.png" alt="<%= hotel.image_pool %>">
+                    </div>
+                </div> 
+                </div> 
+            </div> 
+            </div> 
+            <div class="nav">
+                <a href="#imgG"></a>
+                <a href="#imgR"></a>
+                <a href="#imgP"></a>
             </div>
-        </div>
-        <img class="hotel__article-img" src="/img/<%= hotel.image %>.png" alt="<%= hotel.name %>">
-        <div class="hotel__article-description">
-            <p><%= hotel.dataValues.description %></p>
-        </div>
-        <div class="hotel__article__rate">
-            <p id="hotel__article__rate-price">$ <%= hotel.price %></p>
-            <p id="hotel__article__rate-review">$ <%= hotel.review %></p>
-        </div>
+        </div>  
+        <div class="hotel__text">
+            <h1 class="hotel__text-title"><%= hotel.dataValues.name %></h1>
+            <div class="hotel__text-location">
+                <h2 class="hotel__text-city"><%= hotel.cities.dataValues.name %>, </h2>
+                <h2 class="hotel__text-country"><%= hotel.destinations.dataValues.country %></h2>
+            </div>
+            <div class="hotel__article-description">
+                <p><%= hotel.dataValues.description %></p>
+            </div>
+            <div class="hotel__article__rate">
+                <p id="hotel__article__rate-price">$ <%= hotel.price %></p>
+                <p id="hotel__article__rate-review">$ <%= hotel.review %></p>
+            </div>
+        </div> 
 
     </article>
 
