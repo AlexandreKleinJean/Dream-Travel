@@ -21,17 +21,18 @@
 /*-----HEADER IMG----------*/
 
 #header-banner{ 
-    background-image: url(../img/destination.png);
+    background-image: url(../img/oneHotel.png);
+    background-position:60% 60%;
     background-repeat: no-repeat;
     background-size: cover;
-    height:80vh;
+    height:60vh;
     color: white;
   }
 
 /*--------HEADER TEXT/FORM------*/
 
 .header__form{
-   bottom: 40%;
+   bottom: 50%;
   }
 
 /*-----------------------------------------------------MAIN----------------------------------------------*/

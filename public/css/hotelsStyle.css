@@ -3,12 +3,10 @@
 /*-----------HEADER NAV----------*/
 
 #menu__logo{
-    color: #1c96dd;
-    text-shadow: white 1px 0 10px;
+    color: whitesmoke;
   }
 
 .menu__item{
-
     background-image: linear-gradient(to right,#3dabeb,#3dabeb 50%,white 50%);
     }
 
@@ -23,15 +21,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     height:60vh;
-    color: white;
   }
 
 /*--------HEADER TEXT/FORM------*/
 
 .menu__text-title{
     bottom: 40%;
-    color:black;
-    text-shadow: white 1px 0 10px;
+    color:#3dabeb;
+    text-shadow: #1c96dd 1px 0 10px;
 }
 
 

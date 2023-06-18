@@ -6,16 +6,20 @@
 #menu__logo{
     font-size:1.5rem;
     font-weight: bold;
-    color: #26860d;
+    color: #0d4186;
     padding: 1% 1%;
     width: 40%;
     text-align: center;
     text-shadow: white 1px 0 10px;
   }
-  
+
   .menu__item{
-    color:black;
-    text-shadow: whitesmoke 1px 0 20px;
+
+    background-image: linear-gradient(to right,#236ccc,#236ccc 50%,#0d4186 50%);
+    }
+  
+.menu__item:before{ 
+  background: #236ccc;
   }
   
 
@@ -23,29 +27,42 @@
 
 #header-banner{ 
     background-image: url(../img/destination.png);
+    background-position:30% 30%;
     background-repeat: no-repeat;
     background-size: cover;
-    height:80vh;
+    height:60vh;
     color: white;
   }
 
 /*--------HEADER TEXT/FORM------*/
 
 .header__form{
-   bottom: 40%;
+   bottom: 50%;
+  }
+
+#btn{
+  color:whitesmoke;
+  font-weight: bolder;
+  background-color:#0d4186 ;
+  }
+    
+#btn:hover{
+  background-color: #236ccc
   }
 
 /*-----------------------------------------------------MAIN----------------------------------------------*/
 
 .destination__title{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    height: 20vh;
-    margin-bottom: 3%;
-    background-color: whitesmoke;
-    }
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  height: 10vh;
+  margin-bottom: 3%;
+  color: white;
+  text-shadow: black 1px 0 10px;
+  background-color: #236ccc;
+  }
 
 .destination__article{
     display: flex;
@@ -83,10 +100,10 @@
     font-size: 1rem;
     padding: 3% 3%;
     margin: 0 25%;
-    background-color:#26860d;
+    background-color:#0d4186;
     border-radius: 5%;
 }
 
 .destination__article-left-btn:hover{
-  background-color:#26a706;
+  background-color:#236ccc;
 }

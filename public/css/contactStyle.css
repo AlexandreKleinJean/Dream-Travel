@@ -21,7 +21,7 @@
     background-image: url(../img/contact.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height:80vh;
+    height:60vh;
   }
 
   /*--------HEADER TEXT/FORM------*/
@@ -32,7 +32,7 @@
   }
 
 .header__form{
-  bottom: 40%;
+  bottom: 50%;
   }
 
 #btn{
