@@ -31,10 +31,15 @@
             <div class="hotel__article-description">
                 <p><%= hotel.dataValues.description %></p>
             </div>
-            <div class="hotel__article__rate">
-                <p id="hotel__article__rate-price">$ <%= hotel.price %></p>
-                <p id="hotel__article__rate-review">$ <%= hotel.review %></p>
+            <div class="hotel__article-booking">
+                <a id="hotel__article-booking-rooms" href="/hotels/rooms/<%= hotel.id %>">Available rooms</a>
+                <a id="hotel__article-booking-favorite" href="/hotels/favorites">&#10084; Add to favorites</a>
             </div>
+            <div class="hotel__article-rate">
+                <p id="hotel__article__rate-price">$ <%= hotel.price %></p>
+                <p id="hotel__article__rate-review"><%= hotel.review %> &#9733; / 10</p>
+            </div>
+            
         </div> 
 
     </article>

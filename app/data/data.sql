@@ -225,16 +225,6 @@ INSERT INTO "hotels" ("id", "name", "destinations_id", "cities_id", "review", "p
 (107, 'Quaint Guesthouse', 3, 31, 5, 120, 'g4', 'r3', 'p10', 'Enjoy a cozy stay in our quaint guesthouse.'),
 (108, 'Ski-in Ski-out Chalet', 6, 61, 9, 200, 'g14', 'r6', 'p2', 'Experience the ultimate ski-in ski-out vacation in our chalet.');
 
--- hotel_images
-
-CREATE TABLE IF NOT EXISTS "hotel_images" (
-  "id" SERIAL PRIMARY KEY,
-  "general" TEXT,
-  "restaurant" TEXT,
-  "pool" TEXT,
-  "hotels_id" INTEGER NULL
-);
-
 
 
 -- Flights
