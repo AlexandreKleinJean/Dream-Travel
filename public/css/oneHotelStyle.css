@@ -54,7 +54,7 @@
     display:flex;
     justify-content: center;
     text-align: center;
-    margin: 5% 10%;
+    margin: 10% 10%;
     }
 
 /*---------------------SLIDER---------------------*/
@@ -86,7 +86,7 @@
   .nav {  /*   navigation  */
     position: absolute;
     width: 100%;
-    bottom: 5%;
+    bottom: 10%;
     text-align: center;
   }
   .nav a { /*   boutons de navigation (carrés)  */
@@ -134,7 +134,7 @@
 
 .hotel__text-city, .hotel__text-country{
     display: inline-block;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
     }
 
 .hotel__text-city{
@@ -147,7 +147,7 @@
     }
 
 .hotel__article-description{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 10%;
 }
 
@@ -157,6 +157,41 @@
   justify-content: space-evenly;
   font-size: 1.3rem;
   margin-bottom: 9%;
+}
+
+#hotel__article-booking-rooms, #hotel__article-booking-favorite{
+  padding: 2% 4%;
+  background-color: #eaeaea;
+  position: relative;
+  transition: 300ms;
+}
+
+#hotel__article-booking-rooms:hover, #hotel__article-booking-favorite:hover{
+  color:transparent;
+  }
+
+#hotel__article-booking-rooms::after, #hotel__article-booking-favorite::after{
+  position: absolute;
+  left: 50%;
+  color: #a632db;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: 300ms;
+  }
+
+#hotel__article-booking-rooms::after{
+  content: '\1F6CF';
+  top: 35%;
+  }
+  
+#hotel__article-booking-favorite::after {
+  content: '\2665';
+  top: 50%;
+  }
+
+#hotel__article-booking-rooms:hover::after, #hotel__article-booking-favorite:hover::after{
+  transform: translate(-50%, -50%);
+  opacity: 1;
 }
 
 .hotel__article-rate{

@@ -231,7 +231,7 @@ INSERT INTO "hotels" ("id", "name", "destinations_id", "cities_id", "review", "p
 
 CREATE TABLE IF NOT EXISTS "flights" (
   "id" SERIAL PRIMARY KEY,
-  "destination_id" INTEGER NULL,
+  "destinations_id" INTEGER NULL,
   "company" TEXT,
   "duration" INT,
   "day_id" INT,
@@ -240,7 +240,7 @@ CREATE TABLE IF NOT EXISTS "flights" (
   "price" INTEGER
 );
 
-INSERT INTO "flights" ("id","destination_id", "company", "duration", "day_id", "day", "time", "price") VALUES
+INSERT INTO "flights" ("id","destinations_id", "company", "duration", "day_id", "day", "time", "price") VALUES
 (1, 1, 'Luftansa', 12, 1, 'Monday', 8, 870),
 (2, 1, 'Luftansa', 12, 1,'Monday', 12, 900),
 (3, 1, 'Luftansa', 10, 1, 'Monday', 17, 1080),

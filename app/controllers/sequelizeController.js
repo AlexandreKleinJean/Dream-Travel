@@ -54,13 +54,20 @@ const sequelizeController = {
     console.log(query)
     const userCriterias = req.body
     try {
-      const searchResults = await Flights.findAll({
+      const availableFlights = await Flights.findAll({
+        include:{
+          model: Destinations,
+          as: 'destinations',
+          where: {country: userCriterias.destination,
+          }
+        },
         where: {
-          destination: userCriterias.destination,
-          price:{[Op.lte]: userCriterias.budget}
+          price:{
+            [Op.lte]: userCriterias.budget
+          }
         },
       });
-      res.render('flights', {results:searchResults, userCriterias});
+      res.render('flights', {availableFlights, noDestination: userCriterias.destination});
     } catch (error) {
       console.error(error);
       res.status(500).send(`An error occured with the database :\n${error.message}`);

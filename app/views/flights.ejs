@@ -1,20 +1,28 @@
 <%- include('partials/header') %>
 <link rel="stylesheet" href="/css/flightsStyle.css">
 
-
-<h1 class="searchResult__title">All flights</h1>
+<% if (availableFlights.length > 0) { %>
     
-    <% for(let flight of results) { %>
+    <h1 class="searchResult__title">We have some flights for <%= availableFlights[0].destinations.country %> according to your budget &#x1F603; &#x2708;</h1>
 
-    <a href="/flights/book" class="searchResult__article" href="/destination/<%= flight.destination %>">
-        <h2 id="searchResult__article-destination" class="searchResult__article-element"><%= flight.destination %></h2>
-        <h2 id="searchResult__article-company" class="searchResult__article-element"><%= flight.company %></h2>
-        <h2 class="searchResult__article-element">Duration : <%= flight.duration %> h</h2>
-        <h2 id="searchResult__article-day" class="searchResult__article-element">Date : <%= flight.day %></h2>
-        <h2 id="searchResult__article-time" class="searchResult__article-element"> <%= flight.time %>:00</h2>
-        <h2 class="searchResult__article-element">$ <%= flight.price %></h2>
-    </a>
+    <section class="searchResult__articles">
 
-    <% } %>
+        <% for(let flight of availableFlights) { %>
+    
+            <a class="searchResult__article" href="/destination/<%= flight.id %>">
+                <h2 id="searchResult__article-day" class="searchResult__article-element">Date : <%= flight.day %></h2>
+                <h2 id="searchResult__article-time" class="searchResult__article-element"> <%= flight.time %>:00</h2>
+                <h2 id="searchResult__article-company" class="searchResult__article-element"><%= flight.company %></h2>
+                <h2 class="searchResult__article-element">Duration : <%= flight.duration %> h</h2>
+                <h2 class="searchResult__article-element">$ <%= flight.price %></h2>
+            </a>
+    
+        <% } %>
+    
+    </section>
 
-<%- include('partials/footer') %>
+    <% } else { %>
+
+    <h1 class="searchResult__title">Sorry, we have no flights for <%= noDestination %> according to your budget &#x1F61E;</h1>
+
+<% } %>

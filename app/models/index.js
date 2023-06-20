@@ -10,7 +10,12 @@ Cities.belongsTo(Destinations, {
 
 Destinations.hasMany(Flights, {
     foreignKey: 'destinations_id',
-    as: 'flights',
+    as: 'destinations',
+});
+
+Flights.belongsTo(Destinations, {
+    foreignKey: 'destinations_id',
+    as: 'destinations',
 });
 
 Destinations.hasMany(Hotels, {

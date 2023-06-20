@@ -5,7 +5,7 @@ class Flights extends Model {}
 
 Flights.init(
     {
-        destination_id: {
+        destinations_id: {
             type: DataTypes.INTEGER,
         },
         company: {
