@@ -11,10 +11,6 @@ const sequelizeController = {
     res.render("home")
   },
 
-  contact(req, res) {
-    res.render('contact');
-  },
-
 //-----------------------------Flights functions----------------------------//
 
   async destinationsList(req, res) {
@@ -126,6 +122,16 @@ const sequelizeController = {
         })
         res.render('admin');
       },
+
+//-----------------------------Contact-----------------------------------//
+contact(req, res) {
+  res.render('contact');
+},
+
+contactSubmit(req, res) {
+  const firstName = req.body.firstName
+  res.render('submit',{firstName});
+},
 
 //---------------------------------Login---------------------------------//
       login(req, res) {

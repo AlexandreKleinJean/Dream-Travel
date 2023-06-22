@@ -4,7 +4,6 @@ const router = Router();
 
 //-----------------------------General----------------------------//
 router.get("/", sequelizeController.homePage)
-router.get("/contact", sequelizeController.contact)
 
 //------------------------Flights functions-----------------------//
 router.get("/destinations", sequelizeController.destinationsList)
@@ -17,6 +16,10 @@ router.post("/destinations", sequelizeController.budgetDestinations)
 router.get("/hotels", sequelizeController.hotelsList)
 router.get("/hotels/:id", sequelizeController.oneHotel)
 router.get("/destination/:id/hotels", sequelizeController.hotelsByDestination)
+
+//----------------------------Contact------------------------------//
+router.get("/contact", sequelizeController.contact)
+router.post("/contact/submit", sequelizeController.contactSubmit)
 
 //------------------------------Login-----------------------------//
 router.get("/login", sequelizeController.login)

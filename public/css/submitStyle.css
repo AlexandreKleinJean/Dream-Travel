@@ -1,0 +1,71 @@
+/*----------------------------------HEADER---------------------------*/
+
+/*-----------HEADER NAV----------*/
+
+#menu__logo{
+    color: rgb(168, 79, 38);
+    text-shadow: white 1px 0 10px;
+    }
+  
+.menu__item{
+    background-image: linear-gradient(to right,rgb(168, 79, 38),rgb(168, 79, 38) 50%,whitesmoke 50%);
+    }
+  
+.menu__item:before{ 
+    background: rgb(168, 79, 38);
+    } 
+  
+/*-----HEADER IMG----------*/
+  
+#header-banner{ 
+    background-image: url(../img/contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:60vh;
+    }
+  
+/*--------HEADER TEXT/FORM------*/
+  
+.menu__text-title{
+    color:whitesmoke;
+    text-shadow: black 1px 0 10px;
+    }
+  
+.header__form{
+    bottom: 50%;
+    }
+  
+#btn{
+    color:whitesmoke;
+    font-weight: bolder;
+    background-color:rgb(168, 79, 38);
+    }
+    
+#btn:hover{
+    background-color: rgb(185, 94, 52);
+    }
+  
+/*---------------------------MAIN-----------------------*/
+
+.thanks{
+    display: flex;
+    flex-direction: column;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin: 3% auto; 
+    line-height: 150%;
+    }
+
+#home{
+    padding: 1% 1%;
+    color: white;
+    background-color: rgb(185, 94, 52);
+    border-radius: 5%;
+    margin: 4% auto 2% auto; 
+    }
+
+#home:hover{
+    background-color: rgb(168, 79, 38);
+    }
