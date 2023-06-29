@@ -9,8 +9,9 @@ router.get("/", sequelizeController.homePage)
 router.get("/destinations", sequelizeController.destinationsList)
 router.get("/destination/:id", sequelizeController.oneDestination)
 /*router.get("/flightCompanies", sequelizeController.companiesList)*/
-router.get("/flights", sequelizeController.flightsList)
-router.post("/destinations", sequelizeController.budgetDestinations)
+/*router.get("/flights", sequelizeController.flightsList)*/
+router.post("/flights", sequelizeController.budgetFlights)
+router.get("/flights/:id", sequelizeController.selectedFlight)
 
 //------------------------Hotels functions------------------------//
 router.get("/hotels", sequelizeController.hotelsList)

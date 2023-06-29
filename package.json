@@ -8,7 +8,8 @@
   },
   "scripts": {
       "start": "node index.js",
-      "dev": "nodemon index.js"
+      "dev": "nodemon index.js",
+      "psql": "psql -U travel -d travel -f app/data/data.sql"
   },
   "repository": {
       "type": "git",

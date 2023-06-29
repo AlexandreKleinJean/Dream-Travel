@@ -47,9 +47,9 @@
   background-color: rgb(167, 161, 161);
   }
   
-/*-----------------------------------------------------MAIN----------------------------------------------*/
+/*-----------------------------------------------------MAIN------------------------------------------------*/
   
-.searchResult__title{
+.searchResult__title, .flight__title{
   display:flex;
   justify-content: center;
   align-items: center;
@@ -59,11 +59,11 @@
   }
   
 
-.searchResult__articles{
+.searchResult__articles, .flight__articles{
   margin: 5% 5%;
     }
 
-.searchResult__article{
+.searchResult__article, .flight__article{
     display:flex;
     justify-content: center;
     justify-content: space-evenly;
@@ -78,33 +78,54 @@
 .searchResult__article:hover{
   background-color: rgb(182, 178, 178);
   }
-      
-.searchResult__article-element{
-  }
 
-#searchResult__article-destination{
+#searchResult__article-destination, #flight__article-destination{
   font-weight: bold;
   font-size: 1.5rem;
   padding-bottom: 0.4%;
   }
 
-#searchResult__article-company{
+#searchResult__article-company, #flight__article-company{
   font-style:italic;
   }
 
-#searchResult__article-day{ 
-  }
-
-#searchResult__article-time{
-  }
-
-.searchResult__btn{
+.searchResult__btn, .flight__btn{
   background-color: #db6927;
   padding:1% 2%;
   border-radius: 5%;
   }
 
-.searchResult__btn:hover{
+.searchResult__btn:hover, .flight__btn:hover{
   background-color:#e67c04;
   padding:1% 2%;
   }
+
+.flight__book{
+display:flex
+  }
+
+#flight__book-btn{
+  margin: 2% auto;
+  padding: 1.5% 2%;
+  background-color: rgb(218, 212, 212);
+  }
+
+#flight__book-btn:hover{
+  margin: 2% auto;
+  padding: 1.5% 2%;
+  background-color: rgb(231, 222, 222);
+  }
+
+/*-----------------------------------------------------NOTIFICATION------------------------------------------------*/
+
+.notification{
+  display:none
+}
+
+.notification-visible{
+  display: block;
+  text-align: center;
+  padding: 1% 3%;
+  margin: 0 auto;
+  background-color: rgb(243, 106, 106);
+}

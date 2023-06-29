@@ -35,7 +35,7 @@ const sequelizeController = {
     }
   },
 
-  async flightsList(req, res) {
+  /*async flightsList(req, res) {
     try {
       const allFlights = await Flights.findAll();
       res.render('flights', {results:allFlights});
@@ -43,9 +43,9 @@ const sequelizeController = {
       console.error(error);
       res.status(500).send(`An error occured with the database :\n${error.message}`);
     }
-  },
+  },*/
 
-  async budgetDestinations(req, res) {
+  async budgetFlights(req, res) {
     const query = req.query
     console.log(query)
     const userCriterias = req.body
@@ -64,6 +64,22 @@ const sequelizeController = {
         },
       });
       res.render('flights', {availableFlights, noDestination: userCriterias.destination});
+    } catch (error) {
+      console.error(error);
+      res.status(500).send(`An error occured with the database :\n${error.message}`);
+    }
+  },
+
+  async selectedFlight(req, res) {
+    const flightId = req.params.id
+    try {
+      const flight = await Flights.findByPk(flightId, {
+        include:{
+          model: Destinations,
+          as: 'destinations'
+          }
+        })
+      res.render('flight', {flight});
     } catch (error) {
       console.error(error);
       res.status(500).send(`An error occured with the database :\n${error.message}`);
