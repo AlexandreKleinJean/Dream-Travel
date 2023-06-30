@@ -48,7 +48,7 @@
   }
   
 /*-----------------------------------------------------MAIN------------------------------------------------*/
-  
+
 .searchResult__title, .flight__title{
   display:flex;
   justify-content: center;
@@ -101,18 +101,20 @@
   }
 
 .flight__book{
-display:flex
+  display:flex;
+  justify-content: space-evenly;
   }
 
-#flight__book-btn{
-  margin: 2% auto;
-  padding: 1.5% 2%;
+#flight__book-btn, #flight__back-btn{
+  font-size:1.3rem;
+  text-align: center;
+  padding: 2% 0;
+  margin: 3% 1%;
+  width: 15%;
   background-color: rgb(218, 212, 212);
   }
 
-#flight__book-btn:hover{
-  margin: 2% auto;
-  padding: 1.5% 2%;
+#flight__book-btn:hover, #flight__back-btn:hover{
   background-color: rgb(231, 222, 222);
   }
 
@@ -123,9 +125,33 @@ display:flex
 }
 
 .notification-visible{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
   display: block;
   text-align: center;
-  padding: 1% 3%;
-  margin: 0 auto;
+  text-align: center;
+  padding: 1% 0;
   background-color: rgb(243, 106, 106);
 }
+
+.notification-close {
+  position: absolute;
+  top: 25%;
+  right: 3%;
+  padding: 0 1%;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.notification-close:hover {
+  color:white;
+}
+
+
+
+
+
+
+

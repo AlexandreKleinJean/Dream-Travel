@@ -1,79 +1,83 @@
-/*-------------------------------HEADER NAV--------------------------*/
+/*---------------------------------------------------HEADER-----------------------------------------*/
 
-#navigation{
-  position:relative;
-  left: 0;
-  right:0;
-}
+/*-----------HEADER NAV----------*/
 
 #menu__logo{
-  margin-left:8%;
-  font-weight: bold;
-  color: #7a7a7a;
-}
-  
-.menu__item:before{ 
-  background: #7a7a7a;
+    color: white;
   }
-
-.menu__item{
-    background-image: linear-gradient(to right,#7a7a7a,#7a7a7a 50%,black 50%);
-        }
-    
-.menu__item:before{ 
-    background: #7a7a7a;
+  
+  .menu__item{
+  
+    background-image: linear-gradient(to right,#c0bcb9,#c0bcb9 50%,white 50%);
     }
-
-.menu__text-title{
-  display:none
-  }
-
-.header__form{
-  display : none
-}
   
-  /*---------------------------REGISTER FORM-----------------------*/
-
-.page-title{
-    text-align: center;
-    font-size: 3rem;
-    padding: 2% 2%;
-    background-color: whitesmoke;
-    border-top: 1px solid black;
-    border-bottom:1px solid black;
+  .menu__item:before{ 
+    background: #c0bcb9;
+    }
+  
+/*-----HEADER IMG----------*/
+  
+  #header-banner{ 
+    background-image: url(../img/login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
   }
 
-.contact__form{
-    display : felx;
+/*-------------------------------------HEADER TEXT/FORM------------------------*/
+
+  .menu__text-title{
+    display:none
+    }
+  
+  .header__form{
+    display : none
+  } 
+  
+/*-----------------------------------------------------MAIN----------------------------------------------*/
+
+
+.container{
+  position: absolute;
+  width: 20vw;
+  left: 40%;
+  bottom:15%;
+} 
+
+  .login__form{
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 1% 4%;
     text-align: center;
-    background-color : whitesmoke;
-    margin:5% 25%;
-    padding: 3% 0;
-    border: 1px solid black;
+    background-color: rgba(245, 248, 243, 0.5);
     border-radius: 3%;
   }
 
-.contact__form-input{
-  margin: 3% auto;
-}
+  .login__form-label{
+    margin: 7% 0;
+  }
+ 
+  .login__form-input{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    padding: 5% 5%;
+  }
 
-.contact__form-label{
-  margin : 2% 2%;
-}
+  .login__form-btn{
+    font-size: 1.5rem;
+    color: whitesmoke;
+    text-align: center;
+    padding: 1% 3%;
+    margin: 7% 35%;
+    background-color: rgba(245, 248, 243, 0.7);
+    text-shadow:black 1px 0 10px;
+    border-radius: 10%;
+    }
 
-.notAdminBtn{
-  padding: 1% 2%;
-}
-
-.notAdmin{
-  align-items: center;
-  background-color : whitesmoke;
-  margin:5% 25%;
-  padding: 3% 0;
-  border: 1px solid black;
-  border-radius: 3%;  
-  display: flex;
-  justify-content: center;
-}
+  .login__form-btn:hover{
+    background-color:rgba(226, 124, 7, 0.7);
+  }
+ 

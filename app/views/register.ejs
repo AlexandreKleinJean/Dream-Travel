@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/css/registerStyle.css">
+
+<div class="container">
+    <form class="register" action="/register" method="POST">
+        <div class="register__form">
+            <label class="register__form-label" for="surname">Surname</label>
+            <input class="register__form-input" type="surname" id="surname" name="surname" placeholder="John">
+
+            <label class="register__form-label" for="lastname">Lastname</label>
+            <input class="register__form-input" type="lastname" id="lastname" name="lastname" placeholder="Smith">
+
+            <label class="register__form-label" for="email">Email</label>
+            <input class="register__form-input" type="email" id="email" name="email" placeholder="email@domain.com">
+
+            <label class="register__form-label" for="password">Mot de passe</label>
+            <input class="register__form-input" type="password" id="password" name="password" placeholder="*********">
+
+            <label class="register__form-label" for="confirmPassword">Mot de passe</label>
+            <input class="register__form-input" type="confirmPassword" id="confirmPassword" name="confirmPassword" placeholder="*********">
+
+            <input class="register__form-btn" type="submit" value="register">
+        </div>
+    </form>
+</div>
+
+<%- include('partials/footer') %>

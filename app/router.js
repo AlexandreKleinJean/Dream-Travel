@@ -22,8 +22,9 @@ router.get("/destination/:id/hotels", sequelizeController.hotelsByDestination)
 router.get("/contact", sequelizeController.contact)
 router.post("/contact/submit", sequelizeController.contactSubmit)
 
-//------------------------------Login-----------------------------//
+//------------------------------Login/register-----------------------------//
 router.get("/login", sequelizeController.login)
+router.get("/register", sequelizeController.register)
 
 //------------------------Admin operations------------------------//
 /*

@@ -1,6 +1,13 @@
 const notification = document.querySelector(".notification")
-const btn = document.getElementById("flight__book-btn")
+const BookBtn = document.getElementById("flight__book-btn")
+const closingBtn = document.querySelector(".notification-close")
 
-btn.addEventListener("click", () => {
-notification.classList.add("notification-visible")
+BookBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    notification.classList.add("notification-visible")
+})
+
+closingBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    notification.classList.remove("notification-visible")
 })

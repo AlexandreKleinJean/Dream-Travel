@@ -149,9 +149,13 @@ contactSubmit(req, res) {
   res.render('submit',{firstName});
 },
 
-//---------------------------------Login---------------------------------//
+//---------------------------------Login/register---------------------------------//
       login(req, res) {
         res.render('login');
+      },
+
+      register(req, res) {
+        res.render('register');
       },
 
 //---------------------------Admin operations----------------------------//
