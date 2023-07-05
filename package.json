@@ -4,42 +4,40 @@
   "description": "Travel agency for tropical destinations",
   "main": "index.js",
   "directories": {
-      "doc": "docs"
+    "doc": "docs"
   },
   "scripts": {
-      "start": "node index.js",
-      "dev": "nodemon index.js",
-      "psql": "psql -U travel -d travel -f app/data/data.sql"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "psql": "psql -U travel -d travel -f app/data/data.sql"
   },
   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/DreamTravel"
+    "type": "git",
+    "url": "git+https://github.com/DreamTravel"
   },
   "keywords": [
-      "ejs",
-      "express",
-      "sequelize",
-      "mld",
-      "mcd"
+    "ejs",
+    "express",
+    "sequelize",
+    "mld",
+    "mcd"
   ],
   "author": "Alexandre Klein",
   "license": "ISC",
   "bugs": {
-      "url": "https://github.com/DreamTravel/issues"
+    "url": "https://github.com/DreamTravel/issues"
   },
   "homepage": "https://github.com/DreamTravel#readme",
   "dependencies": {
-      "dotenv": "^16.1.4",
-      "ejs": "^3.1.9",
-      "email-validator": "^2.0.4",
-      "express": "^4.18.2",
-      "express-session": "^1.17.3",
-      "pg": "^8.11.0",
-      "sequelize": "^6.32.0"
+    "dotenv": "^16.1.4",
+    "ejs": "^3.1.9",
+    "email-validator": "^2.0.4",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "pg": "^8.11.0",
+    "sequelize": "^6.32.0"
   },
   "devDependencies": {
-      "nodemon": "^2.0.22"
+    "nodemon": "^1.14.9"
   }
 }
-
-
