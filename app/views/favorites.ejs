@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/css/favoritesStyle.css">
+
+<h1 class="favorites__title">Favorites</h1>
+
+<div class="favorites">
+
+<% for(let hotel of favoritesSelection) { %>
+
+    <a class="hotel__article" href="/hotels/<%= hotel.id %>">   
+        <img class="hotel__article-image" src="/img/<%= hotel.image_general %>.png" alt="<%= hotel.name %>">
+        <h1 id="hotel__article-name"><%= hotel.name %></h1>
+        <div class="hotel__article-location">
+            <h2 id="hotel__article-country"><%= hotel.destinations.country %>,</h2>
+            <h2 id="hotel__article-city"><%= hotel.cities.name %></h2>
+        </div>
+    </a>
+
+<% } %>
+
+</div>
+
+<%- include('partials/footer') %>

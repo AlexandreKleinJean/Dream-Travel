@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, "public"), {
 app.use(express.urlencoded({extended: true}));
 
 app.use(session({
-    secret: '@@@3987398CDIUEHIUH3D98D3UOIHD3O',
+    secret: `${process.env.PORT}`,
     resave: false,
     saveUninitialized: true,
 }))

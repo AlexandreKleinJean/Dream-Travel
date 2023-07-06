@@ -1,30 +1,34 @@
 const { Router } = require('express');
-const sequelizeController = require('./controllers/sequelizeController')
+const generalController = require('./controllers/generalController');
+const flightController = require('./controllers/flightController')
+const hotelController = require('./controllers/hotelController');
+const authController = require('./controllers/authController');
+
 const router = Router();
 
 //-----------------------------General----------------------------//
-router.get("/", sequelizeController.homePage)
+router.get("/", generalController.homePage)
+router.get("/contact", generalController.contact)
+router.post("/contact/submit", generalController.contactSubmit)
+router.get("/hotels/favorites", generalController.favorites)
+router.get("/hotels/favorites/:id", generalController.addToFavorites)
 
 //------------------------Flights functions-----------------------//
-router.get("/destinations", sequelizeController.destinationsList)
-router.get("/destination/:id", sequelizeController.oneDestination)
-/*router.get("/flightCompanies", sequelizeController.companiesList)*/
-/*router.get("/flights", sequelizeController.flightsList)*/
-router.post("/flights", sequelizeController.budgetFlights)
-router.get("/flights/:id", sequelizeController.selectedFlight)
+router.get("/destinations", flightController.destinationsList)
+router.get("/destination/:id", flightController.oneDestination)
+/*router.get("/flightCompanies", flightController.companiesList)*/
+/*router.get("/flights", flightController.flightsList)*/
+router.post("/flights", flightController.budgetFlights)
+router.get("/flights/:id", flightController.selectedFlight)
 
 //------------------------Hotels functions------------------------//
-router.get("/hotels", sequelizeController.hotelsList)
-router.get("/hotels/:id", sequelizeController.oneHotel)
-router.get("/destination/:id/hotels", sequelizeController.hotelsByDestination)
-
-//----------------------------Contact------------------------------//
-router.get("/contact", sequelizeController.contact)
-router.post("/contact/submit", sequelizeController.contactSubmit)
+router.get("/hotels", hotelController.hotelsList)
+router.get("/hotels/:id", hotelController.oneHotel)
+router.get("/destination/:id/hotels", hotelController.hotelsByDestination)
 
 //------------------------------Login/register-----------------------------//
-router.get("/login", sequelizeController.login)
-router.get("/register", sequelizeController.register)
+router.get("/login", authController.login)
+router.get("/register", authController.register)
 
 //------------------------Admin operations------------------------//
 /*

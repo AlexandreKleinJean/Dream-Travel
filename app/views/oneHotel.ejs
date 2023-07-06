@@ -23,17 +23,17 @@
             </div>
         </div>  
         <div class="hotel__text">
-            <h1 class="hotel__text-title"><%= hotel.dataValues.name %></h1>
+            <h1 class="hotel__text-title"><%= hotel.name %></h1>
             <div class="hotel__text-location">
-                <h2 class="hotel__text-city"><%= hotel.cities.dataValues.name %>, </h2>
-                <h2 class="hotel__text-country"><%= hotel.destinations.dataValues.country %></h2>
+                <h2 class="hotel__text-city"><%= hotel.cities.name %>, </h2>
+                <h2 class="hotel__text-country"><%= hotel.destinations.country %></h2>
             </div>
             <div class="hotel__article-description">
-                <p><%= hotel.dataValues.description %></p>
+                <p><%= hotel.description %></p>
             </div>
             <div class="hotel__article-booking">
                 <a id="hotel__article-booking-rooms" href="/hotels/rooms/<%= hotel.id %>">Available rooms</a>
-                <a id="hotel__article-booking-favorite" href="/hotels/favorites">Add to favorites</a>
+                <a id="hotel__article-booking-favorite" href="/hotels/favorites/<%= hotel.id %>">Add to favorites</a>
             </div>
             <div class="hotel__article-rate">
                 <p id="hotel__article__rate-price">$ <%= hotel.price %></p>
