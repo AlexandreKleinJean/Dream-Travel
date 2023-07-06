@@ -19,9 +19,23 @@
 /*-------------------------------HEADER TEXT TITLE / FORM--------------------------*/
 
 .menu__text-title{
-    top: 40%;
+    top: 45%;
   }
 
 .header__form{
-    
-    }
+  bottom: 20%;
+  }
+
+  #btn{
+  background-color:#26860d;
+  }
+
+  #btn:hover{
+  background-color: #26a706;
+  }
+
+/*-----------------------------------------FOOTER-----------------------------------*/
+
+.footer{
+  display:none;
+  }

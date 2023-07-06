@@ -16,7 +16,6 @@ router.get("/hotels/favorites/:id", generalController.addToFavorites)
 //------------------------Flights functions-----------------------//
 router.get("/destinations", flightController.destinationsList)
 router.get("/destination/:id", flightController.oneDestination)
-/*router.get("/flightCompanies", flightController.companiesList)*/
 /*router.get("/flights", flightController.flightsList)*/
 router.post("/flights", flightController.budgetFlights)
 router.get("/flights/:id", flightController.selectedFlight)

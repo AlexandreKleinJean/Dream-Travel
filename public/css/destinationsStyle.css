@@ -28,13 +28,8 @@
 
 /*--------HEADER TEXT/FORM------*/
 
-.header__form{
-  bottom:50%;
-}
-
 #btn{
   color:whitesmoke;
-  font-weight: bolder;
   background-color:#db6927;
   }
   
@@ -99,7 +94,11 @@
     }
 
 
-/*-------------------A REVOIR--------------------*/
+/*-----------------------------------FOOTER------------------------*/
+
+.footer{
+  background-color: #e67c04;
+}
 
 
 

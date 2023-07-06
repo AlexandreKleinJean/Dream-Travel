@@ -26,40 +26,27 @@ async destinationsList(req, res) {
     }
   },
 
-  /*async flightsList(req, res) {
-    try {
-      const allFlights = await Flights.findAll();
-      res.render('flights', {results:allFlights});
-    } catch (error) {
-      console.error(error);
-      res.status(500).send(`An error occured with the database :\n${error.message}`);
-    }
-  },*/
-
   async budgetFlights(req, res) {
-    const query = req.query
-    console.log(query)
-    const userCriterias = req.body
-    try {
-      const availableFlights = await Flights.findAll({
-        include:{
-          model: Destinations,
-          as: 'destinations',
-          where: {country: userCriterias.destination,
-          }
+  const userCriterias = req.body;
+  try {
+    const availableFlights = await Flights.findAll({
+      include: {
+        model: Destinations,
+        as: 'destinations',
+        where: { country: userCriterias.destination },
+      },
+      where: {
+        price: {
+          [Op.lte]: userCriterias.budget,
         },
-        where: {
-          price:{
-            [Op.lte]: userCriterias.budget
-          }
-        },
-      });
-      res.render('flights', {availableFlights, noDestination: userCriterias.destination});
-    } catch (error) {
-      console.error(error);
-      res.status(500).send(`An error occured with the database :\n${error.message}`);
-    }
-  },
+      },
+    });
+    res.render('flights', { availableFlights, noDestination: userCriterias.destination });
+  } catch (error) {
+    console.error(error);
+    res.status(500).send(`An error occurred with the database:\n${error.message}`);
+  }
+},
 
   async selectedFlight(req, res) {
     const flightId = req.params.id

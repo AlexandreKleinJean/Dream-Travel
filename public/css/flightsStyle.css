@@ -28,10 +28,6 @@
   
 /*--------HEADER TEXT/FORM------*/
   
-.header__form{
-  bottom:50%;
-}
-  
 .menu__text-title{
   color:whitesmoke;
   text-shadow: black 1px 0 10px;
@@ -39,7 +35,6 @@
   
 #btn{
   color:whitesmoke;
-  font-weight: bolder;
   background-color:rgb(129, 126, 126);
   }
     
@@ -149,8 +144,20 @@
   color:white;
 }
 
+/*-----------------------------------FOOTER------------------------*/
 
+.footer{
+  background-color: rgb(218, 212, 212);
+}
 
+#menu__logo-2 { 
+ color: black;
+text-shadow: none;
+}
+
+.settings{
+  border: 1px black solid;
+ }
 
 
 

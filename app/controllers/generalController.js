@@ -38,11 +38,11 @@ const generalController = {
 
     if(sameHotel){
         console.log("Hotel already added in favorites !")
-        res.redirect("/hotels/favorites")
+        return;
       }
       else{
       req.session.favorites.push(selectedHotel);
-      res.render("favorites", {favoritesSelection:req.session.favorites})
+      res.redirect("/hotels")
     }
   },
 

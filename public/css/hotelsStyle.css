@@ -27,18 +27,12 @@
 
 .menu__text-title{
     bottom: 40%;
-    color:#3dabeb;
-    text-shadow: #1c96dd 1px 0 10px;
+    color:whitesmoke;
+    text-shadow: none;
 }
-
-
-.header__form{
-    bottom: 50%;
-    }
 
 #btn{
     color:whitesmoke;
-    font-weight: bolder;
     background-color:#1c96dd;;
     }
     
