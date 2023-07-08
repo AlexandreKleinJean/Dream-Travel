@@ -43,11 +43,11 @@
 #btn{
   color:whitesmoke;
   font-weight: bolder;
-  background-color:#0d4186 ;
+  background-color:#236ccc;
   }
     
 #btn:hover{
-  background-color: #236ccc
+  background-color: #0d4186
   }
 
 /*-----------------------------------------------------MAIN----------------------------------------------*/
@@ -100,10 +100,16 @@
     font-size: 1rem;
     padding: 3% 3%;
     margin: 0 25%;
-    background-color:#0d4186;
+    background-color:#236ccc;
     border-radius: 5%;
 }
 
 .destination__article-left-btn:hover{
-  background-color:#236ccc;
+  background-color:#0d4186;
+}
+
+/*-----------------------------------FOOTER------------------------*/
+
+.footer{
+  background-color: #236ccc;
 }

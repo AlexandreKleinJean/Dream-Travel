@@ -154,3 +154,9 @@
 .load-more-button:hover::after {
   opacity: 1;
 }
+
+/*-----------------------------------FOOTER------------------------*/
+
+.footer{
+  background-color: #3dabeb;
+}

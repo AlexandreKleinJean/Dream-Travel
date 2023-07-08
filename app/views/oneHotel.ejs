@@ -1,5 +1,7 @@
 <%- include('partials/header') %>
 <link rel="stylesheet" href="/css/oneHotelStyle.css">
+
+<h1 class="hotel__title">Discover your hotel</h1>
     
     <article class="hotel__article">
         <div class="sliderAndNav">
@@ -33,7 +35,7 @@
             </div>
             <div class="hotel__article-booking">
                 <a id="hotel__article-booking-rooms" href="/hotels/rooms/<%= hotel.id %>">Available rooms</a>
-                <a id="hotel__article-booking-favorite" href="/hotels/favorites/<%= hotel.id %>">Add to favorites</a>
+                <a id="hotel__article-booking-favorite" href="/favorites/add/<%= hotel.id %>">Add to favorites</a>
             </div>
             <div class="hotel__article-rate">
                 <p id="hotel__article__rate-price">$ <%= hotel.price %></p>

@@ -2,6 +2,7 @@ const { Router } = require('express');
 const generalController = require('./controllers/generalController');
 const flightController = require('./controllers/flightController')
 const hotelController = require('./controllers/hotelController');
+const favoritesController = require('./controllers/favoritesController');
 const authController = require('./controllers/authController');
 
 const router = Router();
@@ -10,8 +11,6 @@ const router = Router();
 router.get("/", generalController.homePage)
 router.get("/contact", generalController.contact)
 router.post("/contact/submit", generalController.contactSubmit)
-router.get("/hotels/favorites", generalController.favorites)
-router.get("/hotels/favorites/:id", generalController.addToFavorites)
 
 //------------------------Flights functions-----------------------//
 router.get("/destinations", flightController.destinationsList)
@@ -24,6 +23,12 @@ router.get("/flights/:id", flightController.selectedFlight)
 router.get("/hotels", hotelController.hotelsList)
 router.get("/hotels/:id", hotelController.oneHotel)
 router.get("/destination/:id/hotels", hotelController.hotelsByDestination)
+
+//------------------------------Favorites-----------------------------//
+router.get("/favorites", favoritesController.favorites)
+router.get("/favorites/add/:id", favoritesController.addToFavorites)
+router.get("/favorites/remove/:id", favoritesController.removeFromFavorites)
+
 
 //------------------------------Login/register-----------------------------//
 router.get("/login", authController.login)

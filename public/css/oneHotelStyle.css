@@ -50,11 +50,23 @@
 
 /*-----------------------------------------------------MAIN----------------------------------------------*/
 
+.hotel__title{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  height: 10vh;
+  margin-bottom: 3%;
+  color: white;
+  text-shadow: black 1px 0 10px;
+  background-color: #8b20bd;
+  }
+
 .hotel__article{
     display:flex;
     justify-content: center;
     text-align: center;
-    margin: 10% 10%;
+    margin: 5% 10%;
     }
 
 /*---------------------SLIDER---------------------*/
@@ -215,3 +227,8 @@
   margin: 0 2%;
 }
 
+/*-----------------------------------FOOTER------------------------*/
+
+.footer{
+  background-color: #8b20bd;
+}

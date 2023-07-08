@@ -3,16 +3,16 @@
 /*-----------HEADER NAV----------*/
 
 #menu__logo{
-  color: rgb(168, 79, 38);
+  color: rgb(68, 66, 65);
   text-shadow: white 1px 0 10px;
 }
 
 .menu__item{
-  background-image: linear-gradient(to right,rgb(168, 79, 38),rgb(168, 79, 38) 50%,whitesmoke 50%);
+  background-image: linear-gradient(to right,rgb(221, 217, 216),rgb(221, 217, 216) 50%,rgb(68, 66, 65) 50%);
   }
 
 .menu__item:before{ 
-  background: rgb(168, 79, 38);
+  background: rgb(221, 217, 216);
   } 
 
 /*-----HEADER IMG----------*/
@@ -33,11 +33,11 @@
 
 #btn{
   color:whitesmoke;
-  background-color:rgb(168, 79, 38);
+  background-color:rgb(99, 98, 97);
   }
   
 #btn:hover{
-  background-color: rgb(185, 94, 52);
+  background-color: rgb(141, 138, 137);
   }
 
 /*---------------------------MAIN-----------------------*/
@@ -51,7 +51,7 @@
     margin-bottom: 3%;
     color: white;
     text-shadow: black 1px 0 10px;
-    background-color: rgb(185, 94, 52);
+    background-color: rgb(99, 98, 97);
     }
 
 .contact-form {
@@ -87,7 +87,7 @@
 .submit-btn {
   padding: 1% 2%;
   font-size: 1rem;
-  background-color: rgb(168, 79, 38);
+  background-color: rgb(99, 98, 97);
   color: white;
   padding:10% 15%;
   border: none;
@@ -96,11 +96,11 @@
 }
 
 .submit-btn:hover {
-  background-color: rgb(185, 94, 52);
+  background-color: rgb(141, 138, 137);
 }
 
 /*-----------------------------------FOOTER------------------------*/
 
 .footer{
-  background-color: rgb(185, 94, 52);
+  background-color: rgb(99, 98, 97);
 }

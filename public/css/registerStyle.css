@@ -95,3 +95,9 @@
 .register__form-btn:hover {
   background-color: rgba(226, 124, 7, 0.7);
 }
+
+/*-----------------------------------------FOOTER-----------------------------------*/
+
+.footer{
+  display:none;
+  }
