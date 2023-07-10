@@ -163,17 +163,19 @@ background-image: linear-gradient(
     font-size: 1.3rem;
     padding: 1.5% 6%;
     padding-left: 5%;
+    border-radius: 0.5rem;
     color:black;
     text-align: center;
     background-color: rgba(245, 248, 243, 0.8);
   }
 
   
-#destination, #budget{
+#destination{
     cursor: pointer;
     outline: none;
+    text-align: center;
     padding: 1% 1%;
-    border-radius: 10%;
+    border-radius: 1rem;
     overflow: hidden;
     background-color: transparent;
     border: none;
@@ -183,6 +185,15 @@ background-image: linear-gradient(
     appearance: none;
     background-image: linear-gradient(to bottom, #f9f9f9, #e3e3e3);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  #budget {
+    margin: 1% 2%;
+    height: 0.3rem;
+    width: 6rem;
+    -webkit-appearance: none;
+    appearance: none;
+    background: whitesmoke;
+    border-radius: 1rem;
   }
 
 .selectPlaceholder{
@@ -195,7 +206,7 @@ background-image: linear-gradient(
     margin-left:5%;
     padding: 2% 2%;
     border: none;
-    border-radius: 10%;
+    border-radius: 1rem;
     background-color:#26860d;
   }
 

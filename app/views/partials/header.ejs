@@ -7,7 +7,8 @@
     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/generalStyle.css">
-    <script src="/js/disabledBtn.js" defer></script>
+    <script src="/js/budgetForm.js" defer></script>
+    <script src="/js/disabledFormBtn.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   </head>
@@ -43,17 +44,8 @@
             <option value="Guatemala">Guatemala</option>
           </select>
           <label for="budget">my flight budget max is</label>
-          <select name="budget" id="budget">
-            <option class="selectPlaceholder" value="">&#128181;</option>
-            <option value="800">$800</option>
-            <option value="1000">$1000</option>
-            <option value="1200">$1200</option>
-            <option value="1400">$1400</option>
-            <option value="1600">$1600</option>
-            <option value="1800">$1800</option>
-            <option value="2000">$2000</option>
-            <option value="2200">$2200</option>
-          </select>
+          <input type="range" id="budget" min="1000" max="2200" step="200" value="1000">
+          <span id="budget-value">$1000</span>
           <button id="btn" type="submit">Flights &#128591;</button>
         </form>
       </section>

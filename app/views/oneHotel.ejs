@@ -1,6 +1,8 @@
 <%- include('partials/header') %>
 <link rel="stylesheet" href="/css/oneHotelStyle.css">
 
+<script src="/js/hotelNotification.js" defer></script>
+
 <h1 class="hotel__title">Discover your hotel</h1>
     
     <article class="hotel__article">
@@ -43,7 +45,13 @@
             </div>
             
         </div> 
+        <div class="notification">
+            <p class="notification-text"> This hotel is full. Try again later.</p>
+            <span class="notification-close">&times;</span>
+        </div>
 
     </article>
+
+    
 
 <%- include('partials/footer') %>

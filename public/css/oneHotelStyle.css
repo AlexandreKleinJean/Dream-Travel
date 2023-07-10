@@ -227,6 +227,37 @@
   margin: 0 2%;
 }
 
+/*-----------------------------------------------------NOTIFICATION------------------------------------------------*/
+
+.notification{
+  display:none
+}
+
+.notification-visible{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  display: block;
+  text-align: center;
+  text-align: center;
+  padding: 1% 0;
+  background-color: rgb(243, 106, 106);
+}
+
+.notification-close {
+  position: absolute;
+  top: 25%;
+  right: 3%;
+  padding: 0 1%;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.notification-close:hover {
+  color:white;
+}
+
 /*-----------------------------------FOOTER------------------------*/
 
 .footer{
