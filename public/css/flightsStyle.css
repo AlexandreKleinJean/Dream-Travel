@@ -44,13 +44,30 @@
   
 /*-----------------------------------------------------MAIN------------------------------------------------*/
 
-.searchResult__title, .flight__title{
+#title__noFlights{
+  margin: 5% auto 10% auto;
+  }
+
+.searchResult__title, .flight__title, .searchResult__departure-arrival{
   display:flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
   margin-top: 3% ;
-  color: black;
+  }
+
+.searchResult{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 3rem;
+  margin-bottom: 2%;
+  }
+
+.searchResult__departure{
+  }
+
+.searchResult__arrival{
   }
   
 

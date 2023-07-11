@@ -33,9 +33,19 @@
           <h1 class="menu__text-title">Enjoy your life</h1> 
         </div>
         <form class="header__form" action="/flights" method="post">
-          <label for="destination">I would love to go to</label>
+          <label for="departure">Departure</label>
+          <select name="departure" id="departure">
+            <option id="departurePlaceholder" value="">&#9992;</option>
+            <option value="Amsterdam">Amsterdam</option>
+            <option value="Frankfurt">Frankfurt</option>
+            <option value="London">London</option>
+            <option value="Luxembourg">Luxembourg</option>
+            <option value="Paris">Paris</option>
+            <option value="Zurich">Zurich</option>
+          </select>
+          <label for="destination">Arrival</label>
           <select name="destination" id="destination">
-            <option class="selectPlaceholder" value="">&#127758;</option>
+            <option id="destinationPlaceholder" value="">&#127758;</option>
             <option value="Thailand">Thailand</option>
             <option value="Costa Rica">Costa Rica</option>
             <option value="Ecuador">Ecuador</option>
@@ -43,8 +53,8 @@
             <option value="Indonesia">Indonesia</option>
             <option value="Guatemala">Guatemala</option>
           </select>
-          <label for="budget">my flight budget max is</label>
-          <input type="range" id="budget" min="1000" max="2200" step="200" value="1000">
+          <label for="budget">Budget max</label>
+          <input type="range" name="budget" id="budget" min="1000" max="2200" step="200" value="1000">
           <span id="budget-value">$1000</span>
           <button id="btn" type="submit">Flights &#128591;</button>
         </form>

@@ -28,11 +28,11 @@ async destinationsList(req, res) {
 
   async budgetFlights(req, res) {
     const userCriterias = {
-      budget: req.body.range,
+      departure: req.body.departure,
+      budget: req.body.budget,
       destination: req.body.destination
     };
-  console.log(userCriterias)
-  /*try {
+  try {
     const availableFlights = await Flights.findAll({
       include: {
         model: Destinations,
@@ -45,11 +45,11 @@ async destinationsList(req, res) {
         },
       },
     });
-    res.render('flights', { availableFlights, noDestination: userCriterias.destination });
+    res.render('flights', { availableFlights, noDestination: userCriterias.destination, departure: userCriterias.departure });
   } catch (error) {
     console.error(error);
     res.status(500).send(`An error occurred with the database:\n${error.message}`);
-  }*/
+  }
 },
 
   async selectedFlight(req, res) {

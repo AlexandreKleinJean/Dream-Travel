@@ -162,19 +162,18 @@ background-image: linear-gradient(
     right: 10%;
     font-size: 1.3rem;
     padding: 1.5% 6%;
-    padding-left: 5%;
+    padding-left: 6%;
     border-radius: 0.5rem;
     color:black;
     text-align: center;
     background-color: rgba(245, 248, 243, 0.8);
   }
 
-  
-#destination{
+#departure, #destination{
     cursor: pointer;
     outline: none;
     text-align: center;
-    padding: 1% 1%;
+    padding: 2% 1%;
     border-radius: 1rem;
     overflow: hidden;
     background-color: transparent;
@@ -186,19 +185,19 @@ background-image: linear-gradient(
     background-image: linear-gradient(to bottom, #f9f9f9, #e3e3e3);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-  #budget {
-    margin: 1% 2%;
-    height: 0.3rem;
-    width: 6rem;
-    -webkit-appearance: none;
-    appearance: none;
-    background: whitesmoke;
-    border-radius: 1rem;
-  }
+
+#budget {
+  margin: 1% 2%;
+  height: 0.3rem;
+  width: 6rem;
+  -webkit-appearance: none;
+  appearance: none;
+  background: whitesmoke;
+  border-radius: 1rem;
+}
 
 .selectPlaceholder{
   text-align: center;
-  font-size: 1.3rem;
 }
 
   #btn{
