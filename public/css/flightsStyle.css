@@ -46,9 +46,6 @@
 
 #title__noFlights{
   margin: 5% auto 10% auto;
-  }
-
-.searchResult__title, .flight__title, .searchResult__departure-arrival{
   display:flex;
   justify-content: center;
   align-items: center;
@@ -61,110 +58,48 @@
   justify-content: space-evenly;
   align-items: center;
   font-size: 3rem;
-  margin-bottom: 2%;
-  }
-
-.searchResult__departure{
-  }
-
-.searchResult__arrival{
+  margin-bottom: 4%;
   }
   
-
-.searchResult__articles, .flight__articles{
+.searchResult__articles{
   margin: 5% 5%;
     }
 
-.searchResult__article, .flight__article{
+.searchResult__article{
     display:flex;
     justify-content: center;
     justify-content: space-evenly;
     align-items: center;
     font-size: 1.5rem;
     padding: 2% 2%;
-    margin: 0.4% 0;
-    background-color:rgb(218, 212, 212);
-    border-radius: 1%;
+    margin: 2% 5%;
+    background-image:url(../img/flightClouds.png);
+    background-size: cover;
+    background-position: 50% 10%;
+    border:1px white solid;
+    border-radius: 1rem;
     }
       
 .searchResult__article:hover{
-  background-color: rgb(182, 178, 178);
+  border:1px black solid;
   }
 
-#searchResult__article-destination, #flight__article-destination{
+#searchResult__article-destination{
   font-weight: bold;
   font-size: 1.5rem;
   padding-bottom: 0.4%;
   }
 
-#searchResult__article-company, #flight__article-company{
+#searchResult__article-company{
   font-style:italic;
   }
-
-.searchResult__btn, .flight__btn{
-  background-color: #db6927;
-  padding:1% 2%;
-  border-radius: 5%;
-  }
-
-.searchResult__btn:hover, .flight__btn:hover{
-  background-color:#e67c04;
-  padding:1% 2%;
-  }
-
-.flight__book{
-  display:flex;
-  justify-content: space-evenly;
-  }
-
-#flight__book-btn, #flight__back-btn{
-  font-size:1.3rem;
-  text-align: center;
-  padding: 2% 0;
-  margin: 3% 1%;
-  width: 15%;
-  background-color: rgb(218, 212, 212);
-  }
-
-#flight__book-btn:hover, #flight__back-btn:hover{
-  background-color: rgb(231, 222, 222);
-  }
-
-/*-----------------------------------------------------NOTIFICATION------------------------------------------------*/
-
-.notification{
-  display:none
-}
-
-.notification-visible{
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
-  display: block;
-  text-align: center;
-  text-align: center;
-  padding: 1% 0;
-  background-color: rgb(243, 106, 106);
-}
-
-.notification-close {
-  position: absolute;
-  top: 25%;
-  right: 3%;
-  padding: 0 1%;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.notification-close:hover {
-  color:white;
-}
 
 /*-----------------------------------FOOTER------------------------*/
 
 .footer{
-  background-color: rgb(218, 212, 212);
+    background-image: url(../img/flights.png);
+    background-size: cover;
+    background-position: 50% 70%;
 }
 
 #menu__logo-2 { 

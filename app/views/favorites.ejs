@@ -17,9 +17,18 @@
                         <h2 id="hotel__article-country"><%= hotel.destinations.country %>,</h2>
                         <h2 id="hotel__article-city"><%= hotel.cities.name %></h2>
                     </div>
-                    <a class="hotel__delete-btn" href="/favorites/remove/<%= hotel.id %>">&times;</a>
                 </div>
+                <div class="hotel__article-footer">
+                    <h2 id="hotel__article-price">$ <%= hotel.price %></h2>
+                </div>
+                <a class="hotel__delete-btn" href="/favorites/remove/<%= hotel.id %>">&times;</a>
             </article>
+            
+            
+            
+            
+            
+                              
 
         <% } %>
 

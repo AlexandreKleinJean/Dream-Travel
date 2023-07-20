@@ -1,0 +1,160 @@
+/*---------------------------------------------------HEADER-----------------------------------------*/
+
+/*-----------HEADER NAV----------*/
+
+#menu__logo{
+    color: rgb(99, 97, 97);
+    text-shadow: white 1px 0 10px;
+  }
+  
+  .menu__item{
+  
+    background-image: linear-gradient(to right,rgb(167, 161, 161),rgb(167, 161, 161) 50%,whitesmoke 50%);
+    }
+  
+  .menu__item:before{ 
+    background: rgb(167, 161, 161);
+    }
+    
+  /*-----HEADER IMG----------*/
+    
+  #header-banner{ 
+    background-image: url(../img/flights.png);
+    background-position:30% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:60vh;
+  }
+    
+  /*--------HEADER TEXT/FORM------*/
+    
+  .menu__text-title{
+    color:whitesmoke;
+    text-shadow: black 1px 0 10px;
+    }
+    
+  #btn{
+    color:whitesmoke;
+    background-color:rgb(129, 126, 126);
+    }
+      
+  #btn:hover{
+    background-color: rgb(167, 161, 161);
+    }
+    
+  /*-----------------------------------------------------MAIN------------------------------------------------*/
+  
+  #title__noFlights{
+    margin: 5% auto 10% auto;
+    }
+  
+  .searchResult__title, .flight__title, .searchResult__departure-arrival{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3% ;
+    }
+  
+.searchResult{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 3rem;
+    margin-bottom: 4%;
+    }
+  
+.searchResult__articles{
+    margin: 5% 5%;
+    }
+  
+.searchResult__article{
+      display:flex;
+      justify-content: center;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 1.5rem;
+      padding: 2% 2%;
+      margin: 2% 5%;
+      background-image:url(../img/flightClouds.png);
+      background-size: cover;
+      background-position: 50% 10%;
+      border:1px white solid;
+      border-radius: 1rem;
+      }
+        
+.searchResult__article:hover{
+    border:1px black solid;
+    }
+
+  
+.flight__book{
+    display:flex;
+    justify-content: space-evenly;
+    }
+  
+#flight__book-btn, #flight__back-btn{
+    font-size:1.3rem;
+    text-align: center;
+    padding: 2% 0;
+    margin: 3% 1%;
+    width: 15%;
+    background-image:url(../img/flightClouds.png);
+    border:1px white solid;
+    border-radius: 1rem;
+    }
+
+#flight__book-btn{
+    background-position: 50% 10%;
+    }
+
+#flight__back-btn{
+    background-position: 50% 10%;
+    }
+  
+#flight__book-btn:hover, #flight__back-btn:hover{
+    border:1px black solid;
+    }
+  
+  /*-----------------------------------------------------NOTIFICATION------------------------------------------------*/
+  
+  .notification{
+    display:none
+  }
+  
+  .notification-visible{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    display: block;
+    text-align: center;
+    text-align: center;
+    padding: 1% 0;
+    background-color: rgb(243, 106, 106);
+  }
+  
+  .notification-close {
+    position: absolute;
+    top: 25%;
+    right: 3%;
+    padding: 0 1%;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .notification-close:hover {
+    color:white;
+  }
+  
+  /*-----------------------------------FOOTER------------------------*/
+  
+  .footer{
+    background-image: url(../img/flightClouds.png);
+  }
+  
+  #menu__logo-2 { 
+   color: black;
+  text-shadow: none;
+  }
+  
