@@ -20,8 +20,6 @@
   #header-banner{ 
     background-image: url(../img/register.png);
     background-position:30% 30%;
-    background-repeat: no-repeat;
-    background-size: cover;
     height:100vh;
   }
 

@@ -1,143 +1,213 @@
+/*-------------------------------HEADER IMG--------------------------*/
+
+#header-banner{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:60vh;
+}
+
+@media (max-width : 900px) {
+
+  .menu__text-title{
+    display:none;
+  }
+}  
+
 /*-------------------------------HEADER NAV--------------------------*/
 
 #navigation{
-    position:absolute;
-    left: 5%;
-    right: 5%;
-    display: flex;
-    text-align: center;
-    align-items: center;
-  }
-  
+  position:absolute;
+  left: 5%;
+  right: 5%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
 #menu__logo{
-    font-size:1.5rem;
-    font-weight: bold;
-    color: #26860d;
-    padding: 1% 1%;
-    width: 40%;
-    text-align: center;
-  }
+  font-size:1.5rem;
+  font-weight: bold;
+  color: #26860d;
+  padding: 1% 1%;
+  width: 40%;
+  text-align: center;
+}
+
+#menu__toggle{
+  display:none;
+}
 
 .menu__item{
 font-size:1.8rem;
 margin:0 4%;
 background-image: linear-gradient(
-    to right,
-    #26a706,
-    #26860d 50%,
-    white 50%
-  );
-  background-size: 200% 100%;
-  background-position: -100%;
-  display: inline-block;
-  padding: 5px 0;
-  position: relative;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
-    }
+  to right,
+  #26a706,
+  #26860d 50%,
+  white 50%
+);
+background-size: 200% 100%;
+background-position: -100%;
+display: inline-block;
+padding: 5px 0;
+position: relative;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+transition: all 0.3s ease-in-out;
+  }
 
 .menu__item:before{ 
-    content: '';
-  background: #26860d;
-  display: block;
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 3px;
-  transition: all 0.3s ease-in-out;
+  content: '';
+background: #26860d;
+display: block;
+position: absolute;
+bottom: -3px;
+left: 0;
+width: 0;
+height: 3px;
+transition: all 0.3s ease-in-out;
 }
 
 .menu__item:hover{
-    background-position: 0;
-    }
+  background-position: 0;
+  }
 
 .menu__item:hover::before{
-    width:100%;
-    }
+  width:100%;
+  }
 
 #login{
-  font-size:1.8rem;
-  padding: 1%;
-  margin: 0 2%;
-  border: white 1px solid;
-  border-radius: 54%;
-  }
+font-size:1.8rem;
+padding: 1%;
+margin: 0 2%;
+border: white 1px solid;
+border-radius: 54%;
+}
 
 #login:hover{
-  background-color:white;
-  }
+background-color:white;
+}
 
-  
+
 #menu__logo-1 { 
-    padding: 5% 1%;
-    font-size: 230%;
-    white-space: nowrap;
-    text-transform:uppercase;
-  }
-  
+  padding: 5% 1%;
+  font-size: 230%;
+  white-space: nowrap;
+  text-transform:uppercase;
+}
+
 #menu__items{
-    padding: 0 2%;
-    width: 120%;
-    font-size: 150%;
-  }
+  padding: 0 2%;
+  width: 120%;
+  font-size: 150%;
+}
 
 @media (max-width : 1500px) {
-    
-    #menu__logo-1 { 
-        font-size: 3.3rem;
-      }
-
-    .menu__item, #login{
-        margin: 0 3%;
-        font-size: 1.7rem;
-      }
+  
+  #menu__logo-1 { 
+      font-size: 3.3rem;
     }
+
+  .menu__item, #login{
+      margin: 0 3%;
+      font-size: 1.7rem;
+    }
+  }
 
 @media (max-width : 1400px) {
 
-    #menu__logo-1 { 
-        font-size: 3.1rem;
-      }
-
-    .menu__item, #login{
-        margin: 0 3%;
-        font-size: 1.6rem;
-        }
+  #menu__logo-1 { 
+      font-size: 3.1rem;
     }
+
+  .menu__item, #login{
+      margin: 0 3%;
+      font-size: 1.6rem;
+      }
+  }
 
 @media (max-width : 1300px) {
 
-    #menu__logo-1 { 
-        font-size: 2.9rem;
-      }
+  #menu__logo-1 { 
+      font-size: 2.9rem;
+    }
 
-    .menu__item, #login{
-        font-size: 1.5rem;
-        }
-    }  
+  .menu__item, #login{
+      font-size: 1.5rem;
+      }
+  }  
 
 @media (max-width : 1200px) {
-  
-    #menu__logo-1{
-        font-size: 2.7rem;
-    }
-    
-    .menu__item, #login{
-        margin: 0 2%;
-    }
-}
-  
-  @media (max-width : 1100px) {
-    #menu__logo-1{
-        font-size: 2.5rem;
-    }
-    
-    .menu__item, #login{
-        font-size: 1.4rem;
-    }
+
+  #menu__logo-1{
+      font-size: 2.7rem;
   }
+  
+  .menu__item, #login{
+      margin: 0 2%;
+  }
+}
+
+@media (max-width : 1100px) {
+  #menu__logo-1{
+      font-size: 2.5rem;
+  }
+  
+  .menu__item, #login{
+      font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  #menu__logo-1{
+    font-size: 2.2rem;
+  }
+
+  .menu__item, #login{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 900px) {
+
+  #menu__logo-1{
+    font-size: 4rem;
+  }
+
+  #menu__toggle {
+    position: relative;
+    display: block;
+    font-size: 3rem;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  
+  #menu__items {
+    display: none;
+    position: absolute;
+    right: 20%;
+    left:20%;
+    top:100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    background-color: rgba(193, 205, 153, 0.6);
+    border: 1px solid #ddd;
+    width: 60vw;
+    height:40vh;
+  }
+
+  .menu__item{
+    padding: 5% 5%;
+    font-size: 2rem;
+  }
+
+  #menu__login {
+    display: none;
+  }
+  
+}
 
 /*-------------------------------------HEADER TEXT/FORM------------------------*/
 
@@ -169,16 +239,20 @@ background-image: linear-gradient(
     background-color: rgba(245, 248, 243, 0.8);
   }
 
+.input{
+  margin: 2% 2%;
+}
+
 #departure, #destination{
     cursor: pointer;
     outline: none;
     text-align: center;
-    padding: 2% 1%;
+    justify-content: center;
+    padding: 5% 5%;
     border-radius: 1rem;
     overflow: hidden;
     background-color: transparent;
     border: none;
-    margin:1% 2%;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -187,7 +261,6 @@ background-image: linear-gradient(
   }
 
 #budget {
-  margin: 1% 2%;
   height: 0.3rem;
   width: 6rem;
   -webkit-appearance: none;
@@ -199,7 +272,6 @@ background-image: linear-gradient(
 
   #btn{
     font-size: 1.3rem;
-    margin-left:5%;
     padding: 2% 2%;
     border: none;
     border-radius: 1rem;
@@ -208,6 +280,18 @@ background-image: linear-gradient(
 
   #btn:hover{
     background-color: #26a706;
+  }
+
+
+  @media (max-width: 900px) {
+
+    .header__form{
+      display:none;
+    }
+
+    .input{
+      margin: 7% 2%;
+    }
   }
 
 /*-----------------------------------FOOTER------------------------*/

@@ -26,9 +26,6 @@
 #header-banner{ 
     background-image: url(../img/oneHotel.png);
     background-position:53% 53%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:60vh;
     color: white;
   }
 

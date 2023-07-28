@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/generalStyle.css">
+    <script src="/js/navSmallScreen.js" defer></script>
     <script src="/js/budgetForm.js" defer></script>
     <script src="/js/disabledFormBtn.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -26,37 +27,48 @@
               <a class="menu__item" href="/contact">Contact</a>
               <a class="menu__item" href="/favorites">Favorites</a>
         </div>
-        <a id="login" href="/login">&#128100</a>
+        <div id="menu__login">
+          <a id="login" href="/login">&#128100;</a> <!-- Logo de connexion -->
+        </div>
+        <div id="menu__toggle" href="#">&#9776;</a>
       </nav>
       <section id="header-banner">
         <div id="menu__text">
           <h1 class="menu__text-title">Enjoy your life</h1> 
         </div>
         <form class="header__form" action="/flights" method="post">
-          <label for="departure">Departure</label>
-          <select name="departure" id="departure">
-            <option value=""><span id="departurePlaceholder">&#9992;</span></option>
-            <option value="Amsterdam">Amsterdam</option>
-            <option value="Frankfurt">Frankfurt</option>
-            <option value="London">London</option>
-            <option value="Luxembourg">Luxembourg</option>
-            <option value="Paris">Paris</option>
-            <option value="Zurich">Zurich</option>
-          </select>
-          <label for="destination">Arrival</label>
-          <select name="destination" id="destination">
-            <option id="destinationPlaceholder" value="">&#127758;</option>
-            <option value="Thailand">Thailand</option>
-            <option value="Costa Rica">Costa Rica</option>
-            <option value="Ecuador">Ecuador</option>
-            <option value="Philippines">Philippines</option>
-            <option value="Indonesia">Indonesia</option>
-            <option value="Guatemala">Guatemala</option>
-          </select>
-          <label for="budget">Budget max</label>
-          <input type="range" name="budget" id="budget" min="1000" max="2200" step="200" value="1000">
-          <span id="budget-value">$1000</span>
-          <button id="btn" type="submit">Flights &#128591;</button>
+          <div class="input">
+            <label for="departure">Departure</label>
+            <select name="departure" id="departure">
+              <option value=""><span class="placeholder">&#9992;</span></option>
+              <option value="Amsterdam">Amsterdam</option>
+              <option value="Frankfurt">Frankfurt</option>
+              <option value="London">London</option>
+              <option value="Luxembourg">Luxembourg</option>
+              <option value="Paris">Paris</option>
+              <option value="Zurich">Zurich</option>
+            </select>
+          </div>
+          <div class="input">
+            <label for="destination">Arrival</label>
+            <select name="destination" id="destination">
+              <option value=""><span class="placeholder">&#127758;</span></option>
+              <option value="Thailand">Thailand</option>
+              <option value="Costa Rica">Costa Rica</option>
+              <option value="Ecuador">Ecuador</option>
+              <option value="Philippines">Philippines</option>
+              <option value="Indonesia">Indonesia</option>
+              <option value="Guatemala">Guatemala</option>
+            </select>
+          </div>
+          <div class="input">
+            <label for="budget">Budget max</label>
+            <input type="range" name="budget" id="budget" min="1000" max="2200" step="200" value="1000">
+            <span id="budget-value">$1000</span>
+          </div>
+          <div class="input">
+            <button id="btn" type="submit">Flights &#128591;</button>
+          </div>
         </form>
       </section>
     </header>

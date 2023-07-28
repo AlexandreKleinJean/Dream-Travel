@@ -19,8 +19,6 @@
   
   #header-banner{ 
     background-image: url(../img/login.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     height:100vh;
   }
 

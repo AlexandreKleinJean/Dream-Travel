@@ -28,9 +28,6 @@
 #header-banner{ 
     background-image: url(../img/destination.png);
     background-position:30% 30%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:60vh;
     color: white;
   }
 

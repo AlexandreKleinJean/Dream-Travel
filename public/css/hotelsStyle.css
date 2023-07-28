@@ -18,9 +18,6 @@
 
 #header-banner{ 
     background-image: url(../img/hotels.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:60vh;
   }
 
 /*--------HEADER TEXT/FORM------*/

@@ -21,9 +21,6 @@
 #header-banner{ 
   background-image: url(../img/destinations.png);
   background-position:30% 30%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height:60vh;
 }
 
 /*--------HEADER TEXT/FORM------*/
