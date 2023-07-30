@@ -8,12 +8,23 @@
 }
 
 .menu__item{
-  background-image: linear-gradient(to right,rgb(221, 217, 216),rgb(221, 217, 216) 50%,rgb(68, 66, 65) 50%);
+  background-image: linear-gradient(to right,rgb(221, 217, 216),rgb(221, 217, 216) 50%,white 50%);
   }
 
 .menu__item:before{ 
   background: rgb(221, 217, 216);
   } 
+
+@media (max-width: 900px) {
+  
+  #menu__toggle {
+    color: rgb(68, 66, 65);
+  }
+  #menu__items {
+    background-color:rgb(68, 66, 65, 0.4);
+    border: 1px solid #ddd;
+  }
+}
 
 /*-----HEADER IMG----------*/
 

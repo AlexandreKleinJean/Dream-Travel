@@ -37,36 +37,38 @@
           <h1 class="menu__text-title">Enjoy your life</h1> 
         </div>
         <form class="header__form" action="/flights" method="post">
-          <div class="input">
-            <label for="departure">Departure</label>
-            <select name="departure" id="departure">
-              <option value=""><span class="placeholder">&#9992;</span></option>
-              <option value="Amsterdam">Amsterdam</option>
-              <option value="Frankfurt">Frankfurt</option>
-              <option value="London">London</option>
-              <option value="Luxembourg">Luxembourg</option>
-              <option value="Paris">Paris</option>
-              <option value="Zurich">Zurich</option>
-            </select>
+          <div class="input-location">
+            <div class="input-departure">
+              <label class="label" for="departure">Departure</label>
+              <select name="departure" id="departure">
+                <option value=""><span class="placeholder">&#9992;</span></option>
+                <option value="Amsterdam">Amsterdam</option>
+                <option value="Frankfurt">Frankfurt</option>
+                <option value="London">London</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Paris">Paris</option>
+                <option value="Zurich">Zurich</option>
+              </select>
+            </div>
+            <div class="input-destination">
+              <label class="label" for="destination">Arrival</label>
+              <select name="destination" id="destination">
+                <option value=""><span class="placeholder">&#127758;</span></option>
+                <option value="Thailand">Thailand</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Guatemala">Guatemala</option>
+              </select>
+            </div>
           </div>
-          <div class="input">
-            <label for="destination">Arrival</label>
-            <select name="destination" id="destination">
-              <option value=""><span class="placeholder">&#127758;</span></option>
-              <option value="Thailand">Thailand</option>
-              <option value="Costa Rica">Costa Rica</option>
-              <option value="Ecuador">Ecuador</option>
-              <option value="Philippines">Philippines</option>
-              <option value="Indonesia">Indonesia</option>
-              <option value="Guatemala">Guatemala</option>
-            </select>
-          </div>
-          <div class="input">
+          <div class="input-budget">
             <label for="budget">Budget max</label>
-            <input type="range" name="budget" id="budget" min="1000" max="2200" step="200" value="1000">
+            <input type="range" name="budget" id="budget" min="1000" max="2200" step="50" value="1000">
             <span id="budget-value">$1000</span>
           </div>
-          <div class="input">
+          <div class="input-btn">
             <button id="btn" type="submit">Flights &#128591;</button>
           </div>
         </form>

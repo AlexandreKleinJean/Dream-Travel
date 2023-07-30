@@ -7,12 +7,25 @@
   }
 
 .menu__item{
-    background-image: linear-gradient(to right,#e36803,#e36803 50%,#ab5005 50%);
+    background-image: linear-gradient(to right,#e36803,#e36803 50%,white 50%);
     }
 
 .menu__item:before{ 
     background: #e36803;
     }
+
+@media (max-width: 900px) {
+    .destination__article{
+    width:90%;
+    }
+#menu__toggle {
+    color: #ab5005;
+    }
+#menu__items {
+    background-color:rgba(171, 80, 5, 0.4);
+    border: 1px solid #ddd;
+    }
+  }
 
 /*-----HEADER IMG----------*/
 
@@ -21,6 +34,12 @@
     background-position:30% 30%;
     height:40vh;
   }
+
+@media (max-width: 900px) {
+  #header-banner{ 
+    height:60vh;
+  }
+}
 
 /*--------HEADER TEXT/FORM------*/
 

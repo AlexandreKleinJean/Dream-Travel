@@ -1,42 +1,236 @@
-/*-------------------------------HEADER IMG--------------------------*/
+/*---------------------------------------------------HEADER-----------------------------------------*/
 
-#header-banner{
-    background-image: url(../img/frog.png);
-    background-position: 50% 50%;
-    height:100vh;
-    color: white;
+/*-----------HEADER NAV----------*/
+
+#menu__logo{
+  color: #26860d;
+}
+
+.menu__item{
+  background-image: linear-gradient(to right,#26a706,#26860d 50%, white 50%);
+}
+
+.menu__item:before{ 
+  background: #26860d;
   }
 
-/*-------------------------------HEADER TEXT TITLE / FORM--------------------------*/
+@media (max-width: 900px) {
+  
+  #menu__toggle {
+    color: #26860d;
+  }
+  #menu__items {
+    background-color:rgba(38, 167, 6, 0.4);
+    border: 1px solid #ddd;
+  }
+}
+
+/*---------------HEADER IMG----------------*/
+
+#header-banner{
+  background-image: url(../img/frog.png);
+  background-position: 50% 50%;
+  height:100vh;
+  color: white;
+}
+
+@media (max-width : 900px) {
+
+  #header-banner{
+    background-position: 55% 50%;
+  }
+}
+
+/*--------HEADER TEXT TITLE / FORM----------*/
 
 .menu__text-title{
     top: 45%;
   }
 
-.header__form{
-  bottom: 20%;
+  .header__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20%;
+    right: 10%;
+    left: 10%;
+    white-space: nowrap;
+    position: absolute;
+    right: 10%;
+    font-size: 1.6rem;
+    padding: 2% 0;
+    border-radius: 0.5rem;
+    color:black;
+    text-align: center;
+    background-color: rgba(245, 248, 243, 0.8);
   }
 
+  .input-location{
+    display:flex;
+    flex-direction: row;
+    margin-right: 7%;
+  }
+
+  .input-departure{
+    margin-left:0;
+    padding-left: 0;
+    margin: auto 10%;
+  }
+
+  .input-destination{
+  margin: auto 10%;
+  }
+
+  .input-budget{
+  margin-left: 10%;
+  }
+
+.input-btn{
+  margin: auto 5%;
+  }
+
+#departure, #destination{
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    justify-content: center;
+    padding: 5% 5%;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: transparent;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: linear-gradient(to bottom, #f9f9f9, #e3e3e3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+#budget {
+  height: 0.3rem;
+  width: 6rem;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  appearance: none;
+  background: whitesmoke;
+  border-radius: 1rem;
+}
+
   #btn{
-  background-color:#26860d;
+    font-size: 1.6rem;
+    padding: 10% 10%;
+    margin: 0 20%;
+    border: none;
+    border-radius: 1.4rem;
+    background-color:#26860d;
   }
 
   #btn:hover{
-  background-color: #26a706;
+    background-color: #26a706;
   }
 
-@media (max-width: 900px) {
+  @media (max-width: 1350px) {
+    .header__form {
+      font-size:1.3rem;
+    }
+    #btn{
+      font-size: 1.3rem;
+    }
+  }
 
-  .header__form{
-    bottom: 5%;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    left: 25%;
-    right:25%;
-
+@media (max-width: 1200px) {
+  .header__form {
+    font-size:1rem;
+  }
+  #btn{
+    font-size: 1rem;
   }
 }
+
+@media (max-width: 1050px) {
+  .header__form {
+    font-size:0.9rem;
+  }
+  #btn{
+    font-size: 0.9rem;
+    margin: 0 9%;
+  }
+}
+
+/* Styles pour les écrans de largeur inférieure à 900px */
+@media (max-width: 900px) {
+
+  @media (max-width: 900px) {
+  
+    #menu__toggle {
+      color: #26860d;
+    }
+    
+    #menu__items {
+      background-color: rgba(193, 205, 153, 0.5);
+      border: 1px solid #ddd;
+    }
+    
+  .header__form {
+    flex-direction: column;
+    align-items: center;
+    height: 40%;
+    left: 5%;
+    right: 5%;
+    bottom: 2%;
+    font-size: 1.5rem;
+    margin: 2% auto;
+    background-color: rgba(193, 205, 153, 0.6);
+  }
+
+  .input-location {
+    display: flex;
+    justify-content: center;
+  }
+
+  .input-departure, .input-destination{
+    margin: 5% 8%;
+    width: 80%; 
+    text-align: center; 
+  }
+  
+  .label{
+    margin-right: 3%;
+  }
+
+  #departure{
+    padding: 8% 8%;
+    vertical-align: middle;
+  }
+
+  #destination {
+    padding: 10% 10%;
+    vertical-align: middle;
+  }
+
+  .input-budget {
+    margin: 9% auto;
+    width: 100%; 
+    text-align: center; 
+  }
+
+  #budget {
+    width: 10rem;
+    margin: auto 5%;
+  }
+
+  .input-btn {
+    margin: 5% auto 2% auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  #btn {
+    font-size: 2rem;
+    padding: 10% 70%;
+  }
+}
+
 
 /*-----------------------------------------FOOTER-----------------------------------*/
 

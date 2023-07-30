@@ -14,6 +14,19 @@
     background: #3dabeb;
     }
 
+@media (max-width: 900px) {
+    .destination__article{
+    width:90%;
+    }
+  #menu__toggle {
+    color: whitesmoke;
+    }
+  #menu__items {
+    background-color:rgba(61, 171, 235, 0.4);
+    border: 1px solid #ddd;
+    }
+}
+
 /*-----HEADER IMG----------*/
 
 #header-banner{ 
