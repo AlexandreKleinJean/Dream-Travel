@@ -11,6 +11,10 @@
   .menu__text-title{
     display:none;
   }
+
+  #header-banner{
+    height:53vh;
+  }
 }  
 
 /*-------------------------------HEADER NAV--------------------------*/

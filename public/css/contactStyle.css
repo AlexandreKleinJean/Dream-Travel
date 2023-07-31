@@ -8,17 +8,18 @@
 }
 
 .menu__item{
-  background-image: linear-gradient(to right,rgb(221, 217, 216),rgb(221, 217, 216) 50%,white 50%);
+  background-image: linear-gradient(to right,rgb(68, 66, 65),rgb(68, 66, 65) 50%,white 50%);
   }
 
 .menu__item:before{ 
-  background: rgb(221, 217, 216);
+  background: rgb(68, 66, 65);
   } 
 
 @media (max-width: 900px) {
   
   #menu__toggle {
     color: rgb(68, 66, 65);
+    text-shadow: white 1px 0 10px;
   }
   #menu__items {
     background-color:rgb(68, 66, 65, 0.4);
@@ -69,7 +70,7 @@
   text-align: center;
   background-color: whitesmoke;
   margin: 5% 25%;
-  padding: 3% 0;
+  padding: 1% 0;
   border: 1px solid black;
   border-radius: 3%;
 }
@@ -93,18 +94,26 @@
 }
 
 .submit-btn {
-  padding: 1% 2%;
   font-size: 1rem;
   background-color: rgb(99, 98, 97);
   color: white;
-  padding:10% 15%;
+  padding: 1rem 5rem;
+  margin: 2% auto 0 auto;
   border: none;
-  border-radius: 4%;
+  border-radius: 4rem;
   cursor: pointer;
 }
 
 .submit-btn:hover {
   background-color: rgb(141, 138, 137);
+}
+
+@media (max-width: 900px) {
+  
+  .contact-form {
+    margin: 5% 10%;
+  }
+  
 }
 
 /*-----------------------------------FOOTER------------------------*/

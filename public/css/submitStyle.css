@@ -3,43 +3,41 @@
 /*-----------HEADER NAV----------*/
 
 #menu__logo{
-    color: rgb(168, 79, 38);
+    color: rgb(68, 66, 65);
     text-shadow: white 1px 0 10px;
+  }
+  
+  .menu__item{
+    background-image: linear-gradient(to right,rgb(68, 66, 65),rgb(68, 66, 65) 50%,white 50%);
     }
   
-.menu__item{
-    background-image: linear-gradient(to right,rgb(168, 79, 38),rgb(168, 79, 38) 50%,whitesmoke 50%);
-    }
-  
-.menu__item:before{ 
-    background: rgb(168, 79, 38);
+  .menu__item:before{ 
+    background: rgb(68, 66, 65);
     } 
+  
+  @media (max-width: 900px) {
+    
+    #menu__toggle {
+      color: rgb(68, 66, 65);
+      text-shadow: white 1px 0 10px;
+    }
+    #menu__items {
+      background-color:rgb(68, 66, 65, 0.4);
+      border: 1px solid #ddd;
+    }
+  }
   
 /*-----HEADER IMG----------*/
   
 #header-banner{ 
     background-image: url(../img/contact.png);
     }
-  
-/*--------HEADER TEXT/FORM------*/
-  
+
+/*--------HEADER TEXT--------*/
+
 .menu__text-title{
     color:whitesmoke;
     text-shadow: black 1px 0 10px;
-    }
-  
-.header__form{
-    bottom: 50%;
-    }
-  
-#btn{
-    color:whitesmoke;
-    font-weight: bolder;
-    background-color:rgb(168, 79, 38);
-    }
-    
-#btn:hover{
-    background-color: rgb(185, 94, 52);
     }
   
 /*---------------------------MAIN-----------------------*/
@@ -53,16 +51,47 @@
     font-size: 2rem;
     margin: 3% auto; 
     line-height: 150%;
+    text-align: center;
     }
 
 #home{
     padding: 1% 1%;
     color: white;
-    background-color: rgb(185, 94, 52);
+    background-color: rgb(98, 95, 94);
     border-radius: 5%;
     margin: 4% auto 2% auto; 
     }
 
 #home:hover{
-    background-color: rgb(168, 79, 38);
+    background-color: rgb(68, 66, 65);
     }
+
+@media (max-width: 900px) {
+  
+    .thanks{
+        vertical-align: middle;
+        font-size: 1.4rem;
+        margin: 15% auto 10% auto; 
+        line-height: 250%;
+        }
+
+    #home{
+        padding: 1% 5%;
+        margin: 8% auto 5% auto; 
+        }
+}
+
+
+/*-----------------------------------FOOTER------------------------*/
+
+.footer{
+    background-color: rgb(99, 98, 97);
+  }
+
+@media (max-width: 900px) {
+  
+    .footer{
+        position: fixed;
+        width: 100%;
+      }
+}

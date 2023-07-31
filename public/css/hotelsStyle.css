@@ -31,6 +31,7 @@
 
 #header-banner{ 
     background-image: url(../img/hotels.png);
+    background-position:50% 30%;
   }
 
 /*--------HEADER TEXT/FORM------*/
@@ -100,11 +101,7 @@
     padding: 3% 4%;
     transition: 500ms;
   }
-  
-  .hotel__article:hover .hotel__article-front {
-    height: 45%;
-  }
-  
+
   .visible {
     display: flex;
     flex-direction: row;
@@ -112,6 +109,12 @@
     align-items: center;
   }
   
+@media (min-width: 901px) {
+  
+  .hotel__article:hover .hotel__article-front {
+    height: 45%;
+  }
+    
   .hidden {
     display: none;
     justify-content: center;
@@ -124,6 +127,7 @@
     font-size: 1.5rem;
     white-space: nowrap;
   }
+}
   
   #hotel__article-name {
     white-space: nowrap;
@@ -138,6 +142,32 @@
     white-space: nowrap;
     text-align: right;
   }
+
+@media (max-width: 900px) {
+  
+  .hotel__article-front {
+    height: 33%;
+  }
+
+  .hotel__article {
+    width: 90%;
+  }
+
+  #hotel__article-country {
+    font-size: 1.5rem;
+  }
+
+  #hotel__article-price {
+    font-size: 1.5rem;
+    margin-top: 2%;
+    margin-right: 2%;
+  }
+
+  #hotel__article-read{
+    display:none;
+  }
+
+}
 
 /*------------------------------SEE MORE HOTELS------------------------*/
 
@@ -164,6 +194,15 @@
 .load-more-button:hover::after {
   opacity: 1;
 }
+
+
+@media (max-width: 900px) {
+  
+  .load-more-button::after {
+    content: "\2193";
+    display: block;
+    opacity: 1;
+  }
 
 /*-----------------------------------FOOTER------------------------*/
 

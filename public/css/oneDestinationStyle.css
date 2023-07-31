@@ -6,7 +6,7 @@
 #menu__logo{
     font-size:1.5rem;
     font-weight: bold;
-    color: #0d4186;
+    color: rgba(13, 65, 134, 1);
     padding: 1% 1%;
     width: 40%;
     text-align: center;
@@ -15,12 +15,24 @@
 
   .menu__item{
 
-    background-image: linear-gradient(to right,#236ccc,#236ccc 50%,#0d4186 50%);
+    background-image: linear-gradient(to right,#236ccc,#236ccc 50%,rgba(13, 65, 134, 1) 50%);
     }
   
 .menu__item:before{ 
   background: #236ccc;
   }
+
+@media (max-width: 900px) {
+  
+  #menu__toggle {
+    color: rgba(13, 65, 134, 1);
+    text-shadow: white 1px 0 10px;
+    }
+  #menu__items {
+    background-color:rgba(245, 245, 245, 0.4);
+    border: 1px solid rgba(13, 65, 134, 1);
+  }
+}
   
 
 /*-----HEADER IMG----------*/

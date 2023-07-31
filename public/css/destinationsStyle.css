@@ -17,11 +17,14 @@
   }
 
 @media (max-width: 900px) {
+
   .destination__article{
   width:90%;
   }
+  
   #menu__toggle {
     color: #da5101;
+    text-shadow: white 1px 0 10px;
   }
   
   #menu__items {
