@@ -12,9 +12,9 @@
                 <div id="imgR">
                 <div id="imgP">
                     <div class="images">
-                        <img src="/img/<%= hotel.image_general %>.png" alt="<%= hotel.image_general %>">
-                        <img src="/img/<%= hotel.image_restaurant %>.png" alt="<%= hotel.image_restaurant %>">
-                        <img src="/img/<%= hotel.image_pool %>.png" alt="<%= hotel.image_pool %>">
+                        <img id="image1" src="/img/<%= hotel.image_general %>.png" alt="<%= hotel.image_general %>">
+                        <img id="image2"src="/img/<%= hotel.image_restaurant %>.png" alt="<%= hotel.image_restaurant %>">
+                        <img id="image3" src="/img/<%= hotel.image_pool %>.png" alt="<%= hotel.image_pool %>">
                     </div>
                 </div> 
                 </div> 
@@ -35,6 +35,9 @@
             <div class="hotel__article-description">
                 <p><%= hotel.description %></p>
             </div>
+            <div class="oneImage">
+                <img src="/img/<%= hotel.image_general %>.png" alt="<%= hotel.image_general %>">
+            </div>
             <div class="hotel__article-booking">
                 <a id="hotel__article-booking-rooms" href="/hotels/rooms/<%= hotel.id %>">Available rooms</a>
                 <a id="hotel__article-booking-favorite" href="/favorites/add/<%= hotel.id %>">Add to favorites</a>
@@ -43,8 +46,8 @@
                 <p id="hotel__article__rate-price">$ <%= hotel.price %></p>
                 <p id="hotel__article__rate-review"><%= hotel.review %> &#9733; / 10</p>
             </div>
-            
         </div> 
+        
         <div class="notification">
             <p class="notification-text"> This hotel is full. Try again later.</p>
             <span class="notification-close">&times;</span>

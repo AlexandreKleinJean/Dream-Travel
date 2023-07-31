@@ -7,14 +7,25 @@
     text-shadow: white 1px 0 10px;
   }
   
-  .menu__item{
+.menu__item{
+  background-image: linear-gradient(to right,rgb(167, 161, 161),rgb(167, 161, 161) 50%,whitesmoke 50%);
+  }
   
-    background-image: linear-gradient(to right,rgb(167, 161, 161),rgb(167, 161, 161) 50%,whitesmoke 50%);
+.menu__item:before{ 
+  background: rgb(167, 161, 161);
+  }
+
+@media (max-width: 900px) {
+
+  #menu__toggle {
+    color: rgb(99, 97, 97);
+    text-shadow: white 1px 0 10px;
     }
-  
-  .menu__item:before{ 
-    background: rgb(167, 161, 161);
+  #menu__items {
+    background-color:rgb(99, 97, 97, 0.4);
+    border: 1px solid #ddd;
     }
+}
     
   /*-----HEADER IMG----------*/
     
@@ -45,45 +56,37 @@
     margin: 5% auto 10% auto;
     }
   
-  .searchResult__title, .flight__title, .searchResult__departure-arrival{
+.flight__title{
     display:flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 3% ;
     }
   
-.searchResult{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 3rem;
-    margin-bottom: 4%;
-    }
-  
-.searchResult__articles{
+.flight__articles{
     margin: 5% 5%;
     }
   
-.searchResult__article{
-      display:flex;
-      justify-content: center;
-      justify-content: space-evenly;
-      align-items: center;
-      font-size: 1.5rem;
-      padding: 2% 2%;
-      margin: 2% 5%;
-      background-image:url(../img/flightClouds.png);
-      background-size: cover;
-      background-position: 50% 10%;
-      border:1px white solid;
-      border-radius: 1rem;
-      }
-        
-.searchResult__article:hover{
+.flight__article{
+    display:flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+    padding: 4% 2%;
+    margin: 2% 5%;
+    background-image:url(../img/flightClouds.png);
+    background-size: cover;
+    background-position: 50% 10%;
+    border:1px white solid;
+    border-radius: 1rem;
     border:1px black solid;
     }
-
+    
+#flight__article-company{
+    font-style:italic;
+    }
   
 .flight__book{
     display:flex;
@@ -112,6 +115,32 @@
 #flight__book-btn:hover, #flight__back-btn:hover{
     border:1px black solid;
     }
+
+@media (max-width: 900px) {
+
+  .flight__title{
+    margin: 5% auto 10% auto;
+    font-size: 2rem;
+    }
+    
+    .flight__articles{
+      font-size: 1.6rem;
+      margin: auto 1%;
+    }
+    
+    .flight__article{
+      font-size: 1rem;
+      padding: 5% 2%;
+      margin: 8% 1%;
+    }
+
+    #flight__book-btn, #flight__back-btn{
+      font-size:1rem;
+      padding: 4% 0;
+      width: 25%;
+      border:1px black solid;
+      }
+}
   
   /*-----------------------------------------------------NOTIFICATION------------------------------------------------*/
   
@@ -126,7 +155,7 @@
     right:0;
     display: block;
     text-align: center;
-    text-align: center;
+    font-size: 1.3rem;
     padding: 1% 0;
     background-color: rgb(243, 106, 106);
   }
@@ -142,6 +171,12 @@
   
   .notification-close:hover {
     color:white;
+  }
+  
+  @media (max-width: 900px) {
+    .notification-close {
+      top: 5%;
+    }
   }
   
   /*-----------------------------------FOOTER------------------------*/

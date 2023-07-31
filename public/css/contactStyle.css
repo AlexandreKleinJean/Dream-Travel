@@ -111,7 +111,7 @@
 @media (max-width: 900px) {
   
   .contact-form {
-    margin: 5% 10%;
+    margin: 10% 10% 5% 10%;
   }
   
 }
@@ -120,4 +120,6 @@
 
 .footer{
   background-color: rgb(99, 98, 97);
+  color:whitesmoke;
+  text-shadow: black 1px 0 10px;
 }

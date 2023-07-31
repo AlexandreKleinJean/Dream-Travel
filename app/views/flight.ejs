@@ -4,11 +4,10 @@
 
 <script src="/js/flightNotification.js" defer></script>
 
-<h1 class="flight__title">Your flight</h1>
+<h1 class="flight__title">Your flight for <%= flight.destinations.country %></h1>
    
 <section class="flight__articles">
     <div class="flight__article">
-        <h2 id="flight__article-destination" class="flight__article-element"><%= flight.destinations.country %></h2>
         <h2 id="flight__article-day" class="flight__article-element">Date : <%= flight.day %></h2>
         <h2 id="flight__article-time" class="flight__article-element"> <%= flight.time %>:00</h2>
         <h2 id="flight__article-company" class="flight__article-element"><%= flight.company %></h2>

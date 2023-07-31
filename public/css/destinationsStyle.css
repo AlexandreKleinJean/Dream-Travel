@@ -17,10 +17,6 @@
   }
 
 @media (max-width: 900px) {
-
-  .destination__article{
-  width:90%;
-  }
   
   #menu__toggle {
     color: #da5101;

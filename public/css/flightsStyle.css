@@ -15,6 +15,18 @@
 .menu__item:before{ 
   background: rgb(167, 161, 161);
   }
+
+@media (max-width: 900px) {
+
+  #menu__toggle {
+    color: rgb(99, 97, 97);
+    text-shadow: white 1px 0 10px;
+    }
+  #menu__items {
+    background-color:rgb(99, 97, 97, 0.4);
+    border: 1px solid #ddd;
+    }
+}
   
 /*-----HEADER IMG----------*/
   
@@ -90,6 +102,23 @@
 #searchResult__article-company{
   font-style:italic;
   }
+
+@media (max-width: 900px) {
+  .searchResult{
+    font-size: 1.6rem;
+    margin-bottom: 8%;
+    }
+
+  .searchResult__articles{
+    margin: 5% 1% 2% 1%;
+  }
+
+  .searchResult__article{
+    font-size: 1rem;
+    padding: 5% 2%;
+    margin: 2% 1%;
+  }
+}
 
 /*-----------------------------------FOOTER------------------------*/
 

@@ -1,26 +1,28 @@
 <%- include('partials/header') %>
 <link rel="stylesheet" href="/css/favoritesStyle.css">
 
-<% if (favoritesSelection.length > 0) { %>
+<h1 class="favorites__title">Favorites</h1>
 
-    <h1 class="favorites__title">Favorites</h1>
+<% if (favoritesSelection.length > 0) { %>
 
     <div class="favorites">
 
         <% for(let hotel of favoritesSelection) { %>
 
-            <article class="hotel__article" href="/hotels/<%= hotel.id %>"> 
-                <img class="hotel__article-image" src="/img/<%= hotel.image_general %>.png" alt="<%= hotel.name %>">
-                <div class="hotel__article-text">
-                    <h1 id="hotel__article-name"><%= hotel.name %></h1>
-                    <div class="hotel__article-location">
-                        <h2 id="hotel__article-country"><%= hotel.destinations.country %>,</h2>
-                        <h2 id="hotel__article-city"><%= hotel.cities.name %></h2>
+            <article class="hotel__article"> 
+                <a href="/hotels/<%= hotel.id %>">
+                    <img class="hotel__article-image" src="/img/<%= hotel.image_general %>.png" alt="<%= hotel.name %>">
+                    <div class="hotel__article-text">
+                        <h1 id="hotel__article-name"><%= hotel.name %></h1>
+                        <div class="hotel__article-location">
+                            <h2 id="hotel__article-country"><%= hotel.destinations.country %>,</h2>
+                            <h2 id="hotel__article-city"><%= hotel.cities.name %></h2>
+                        </div>
                     </div>
-                </div>
-                <div class="hotel__article-footer">
-                    <h2 id="hotel__article-price">$ <%= hotel.price %></h2>
-                </div>
+                    <div class="hotel__article-footer">
+                        <h2 id="hotel__article-price">$ <%= hotel.price %></h2>
+                    </div>
+                </a>
                 <a class="hotel__delete-btn" href="/favorites/remove/<%= hotel.id %>">&times;</a>
             </article>
             

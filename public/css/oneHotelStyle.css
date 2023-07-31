@@ -19,6 +19,18 @@
 .menu__item:before{ 
   background: #8b20bd;
   }
+
+@media (max-width: 900px) {
+
+  #menu__toggle {
+    color: #8b20bd;
+    text-shadow: white 1px 0 10px;
+    }
+  #menu__items {
+    background-color:rgba(139, 32, 189, 0.3);
+    border: 1px solid #ddd;
+    }
+}
   
 
 /*-----HEADER IMG----------*/
@@ -63,8 +75,14 @@
     display:flex;
     justify-content: center;
     text-align: center;
-    margin: 5% 10%;
+    margin: auto 10% 3% 10%;
     }
+
+@media (max-width: 900px) {
+      .hotel__article{
+      margin: auto 1%;
+      }
+  }
 
 /*---------------------SLIDER---------------------*/
 
@@ -123,6 +141,12 @@
             transform: translateX(-1600px);
   }
 
+  @media (max-width: 900px) {
+    .sliderAndNav { 
+      display:none;
+    }  
+  }
+
 /*---------------------TEXT---------------------*/
 
 .hotel__text{
@@ -131,7 +155,7 @@
     flex-direction: column;
     justify-content: start;
     text-align: center;
-    margin: 2%;
+    margin: 2% auto;
     }
 
 .hotel__text-title{
@@ -160,6 +184,10 @@
     margin-bottom: 10%;
 }
 
+.oneImage{ 
+  display:none;
+}
+
 .hotel__article-booking{
   display: flex;
   justify-content: center;
@@ -169,9 +197,10 @@
 }
 
 #hotel__article-booking-rooms, #hotel__article-booking-favorite{
-  padding: 2% 4%;
+  padding: 4% 5%;
   background-color: #eaeaea;
   position: relative;
+  border-radius: 1rem;
   transition: 300ms;
 }
 
@@ -220,8 +249,39 @@
   color: whitesmoke;
   border: 2px solid whitesmoke;
   background-color: #8b20bd;
-  border-radius: 25%;
+  border-radius: 1rem;
   margin: 0 2%;
+}
+
+@media (max-width: 900px) {
+  .hotel__text {
+    width: 100%;
+    margin: 0 5%;
+  }
+
+  .hotel__text-title{
+    margin-top: 3%;
+    font-size: 2.5rem;
+    }
+
+  .hotel__article-description{
+    font-size: 1.2rem;
+    margin-bottom: 5%;
+  }
+
+  .oneImage {
+    display: block;
+    margin: 5% auto 10% auto;
+  }
+
+  .hotel__article-booking{
+    margin-bottom: 8%;
+  }
+
+  .hotel__article-rate{
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+  }
 }
 
 /*-----------------------------------------------------NOTIFICATION------------------------------------------------*/
@@ -237,7 +297,7 @@
   right:0;
   display: block;
   text-align: center;
-  text-align: center;
+  font-size: 1.3rem;
   padding: 1% 0;
   background-color: rgb(243, 106, 106);
 }
@@ -255,8 +315,16 @@
   color:white;
 }
 
+@media (max-width: 900px) {
+  .notification-close {
+    top: 5%;
+  }
+}
+
 /*-----------------------------------FOOTER------------------------*/
 
 .footer{
   background-color: #8b20bd;
+  color:whitesmoke;
+  text-shadow: black 1px 0 10px;
 }

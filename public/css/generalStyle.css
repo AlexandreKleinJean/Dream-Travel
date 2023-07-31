@@ -1,3 +1,8 @@
+body{
+  min-height:100vh;
+  position: relative;
+}
+
 /*-------------------------------HEADER IMG--------------------------*/
 
 #header-banner{
@@ -13,7 +18,7 @@
   }
 
   #header-banner{
-    height:53vh;
+    height:40vh;
   }
 }  
 
@@ -73,6 +78,10 @@ transition: all 0.3s ease-in-out;
   width:100%;
   }
 }
+
+#signin{
+  display:none;
+  }
 
 #login{
 font-size:1.8rem;
@@ -187,17 +196,17 @@ background-color:white;
     width: 97%;
     right: 1.5%;
     left:1.5%;
-    top:100%;
+    top:90%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5% auto;
+    margin: 3% auto;
     border-radius: 1rem;
-    height:40vh;
+    height:30vh;
   }
 
   .menu__item{
-    padding: 5% 5%;
+    padding: 2.5% 5%;
     font-size: 2rem;
   }
 
@@ -205,8 +214,12 @@ background-color:white;
     text-decoration: underline;
   }
 
-  #menu__login {
+  #login {
     display: none;
+  }
+
+  #signin {
+    display: block;
   }
   
 }
@@ -215,34 +228,38 @@ background-color:white;
 
 .menu__text-title{
   position: absolute;
-    top: 30%;
-    left: 10%;
-    bottom: 40%;
-    font-size: 3rem;
-    padding: 10% auto;
-    text-align: center;
-    text-shadow: white 1px 0 10px;
+  top: 15%;
+  left: 10%;
+  bottom: 40%;
+  font-size: 3rem;
+  padding: 10% auto;
+  text-align: center;
+  text-shadow: white 1px 0 10px;
   }
 
 .header__form {
     display: none;
     }
 
+/*-----------------------------------MAIN------------------------*/
+
+.content {
+  padding-bottom: 5rem; 
+}
+
 /*-----------------------------------FOOTER------------------------*/
 
 .footer{
-  bottom:0%;
-  margin-top:3%;
-  padding-top: 0.2%;
-  position: relative;
-  color: white;
-  text-shadow: black 1px 0 10px;
-  display:flex;
+  display: flex;
   align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;  
 }
 
 #menu__logo-2 { 
-  padding: 1% 4%;
+  padding: 0 4%;
   font-size: 200%;
   white-space: nowrap;
   text-transform:uppercase;
@@ -256,3 +273,18 @@ background-color:white;
   border-radius: 30%;
   border: 1px black solid;
  }
+
+@media (max-width: 900px) {
+
+  .footer{
+    height: 3rem;  
+  }
+
+  #menu__logo-2 { 
+    font-size: 130%;
+  }
+
+  .settings{
+    width: 3%;
+   }
+}
