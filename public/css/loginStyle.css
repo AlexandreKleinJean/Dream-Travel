@@ -14,12 +14,26 @@
   .menu__item:before{ 
     background: #c0bcb9;
     }
+
+@media (max-width: 900px) {
+  
+  #menu__toggle {
+    color: white;
+  }
+  #menu__items {
+    margin-top: 5%;
+    background-color:rgba(245, 248, 243, 0.5);
+    }
+  .menu__item {
+    }
+}
   
 /*-----HEADER IMG----------*/
   
   #header-banner{ 
     background-image: url(../img/login.png);
     height:100vh;
+    background-position:50% 30%;
   }
 
 /*-------------------------------------HEADER TEXT/FORM------------------------*/
@@ -28,26 +42,26 @@
     display:none
     }
   
-  .header__form{
-    display : none
-  } 
-  
 /*-----------------------------------------------------MAIN----------------------------------------------*/
 
+.content {
+  padding-bottom: 0rem; 
+}
 
 .container{
   position: absolute;
   width: 20vw;
-  left: 40%;
-  bottom:15%;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
 } 
 
   .login__form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 1rem;
-    padding: 1% 4%;
+    font-size: 1.2rem;
+    padding: 3% 4% 0 4%;
     text-align: center;
     background-color: rgba(245, 248, 243, 0.5);
     border-radius: 3%;
@@ -73,11 +87,33 @@
     background-color: rgba(245, 248, 243, 0.7);
     text-shadow:black 1px 0 10px;
     border-radius: 10%;
+    transition: 300ms;
     }
 
   .login__form-btn:hover{
-    background-color:rgba(226, 124, 7, 0.7);
+    background-color:rgba(226, 124, 7, 0.5);
   }
+
+@media (max-width: 900px) {
+  
+  .container{
+    width: 88%;
+    top: 42%;
+  } 
+  .login__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3% 4% 0 4%;
+}
+
+.login__form-btn{
+  margin: 7% 35% 5% 35%;
+  }
+  .login__form-input{
+    margin-bottom: 2%;
+}
+}
  
 /*-----------------------------------------FOOTER-----------------------------------*/
 

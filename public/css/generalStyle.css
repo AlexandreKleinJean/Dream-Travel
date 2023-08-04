@@ -194,34 +194,40 @@ background-color:white;
     display: none;
     position: absolute;
     width: 97%;
-    right: 1.5%;
-    left:1.5%;
-    top:90%;
+    right: 1%;
+    left:1%;
+    top:80%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 3% auto;
-    border-radius: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
     height:30vh;
   }
 
   .menu__item{
     padding: 2.5% 5%;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    border-bottom: 1px rgba(245, 245, 245, 0.7) solid;
+    margin-top: 0.5%;
+    padding-bottom: 3%;
+    width: 40%;
   }
 
-  .menu__item:hover{
-    text-decoration: underline;
+  #menu__item-destination{
+    margin-top: 5%;
   }
-
+  #menu__item-signin{
+    margin-bottom: 4%;
+    border: none;
+  }
   #login {
     display: none;
   }
-
   #signin {
     display: block;
   }
-  
 }
 
 /*-------------------------------------HEADER TEXT/FORM------------------------*/

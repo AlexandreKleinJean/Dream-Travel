@@ -22,7 +22,7 @@
     text-shadow: white 1px 0 10px;
   }
   #menu__items {
-    background-color:rgb(68, 66, 65, 0.4);
+    background-color:rgb(68, 66, 65, 0.5);
     border: 1px solid #ddd;
   }
 }
@@ -38,6 +38,7 @@
 .menu__text-title{
   color:whitesmoke;
   text-shadow: black 1px 0 10px;
+  top:25%;
   }
 
 #btn{

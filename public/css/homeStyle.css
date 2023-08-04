@@ -20,9 +20,23 @@
     color: #26860d;
   }
   #menu__items {
-    background-color:rgba(38, 167, 6, 0.4);
-    border: 1px solid #ddd;
+    background-color:rgba(193, 205, 153, 0.6);
+    margin-top: 5.5%;
+    height: 44vh;
   }
+  .menu__item {
+    font-size: 1.8rem;
+    margin-top: 2.8%;
+    padding-bottom: 4.8%;
+    width: 55%;
+  }
+  #menu__item-destination{
+    margin-top: 8.3%;
+  }
+  #menu__item-signin{
+    margin-bottom: 5%;
+  }
+
 }
 
 /*---------------HEADER IMG----------------*/
@@ -157,19 +171,7 @@
   }
 }
 
-/* Styles pour les écrans de largeur inférieure à 900px */
-@media (max-width: 900px) {
-
   @media (max-width: 900px) {
-  
-    #menu__toggle {
-      color: #26860d;
-    }
-    
-    #menu__items {
-      background-color: rgba(193, 205, 153, 0.5);
-      border: 1px solid #ddd;
-    }
     
   .header__form {
     flex-direction: column;
@@ -179,7 +181,7 @@
     right: 5%;
     bottom: 2%;
     font-size: 1.5rem;
-    margin: 2% auto;
+    margin: 2% 1%;
     background-color: rgba(193, 205, 153, 0.6);
   }
 

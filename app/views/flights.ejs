@@ -3,17 +3,16 @@
 
 <% if (availableFlights.length > 0) { %>
    
+    <div class="result-title">
+        <h2 class="searchResult__departure">From <%= departure %> </h2>
+        <h2>&#x2708;</h2>
+        <h2>&#x2708;</h2>
+        <h2>&#x2708;</h2>
+        <h2 class="searchResult__arrival">to <%= availableFlights[0].destinations.country %></h2>
+    </div>
     <section class="searchResult__articles">
-
-        <div class="searchResult">
-            <h2 class="searchResult__departure">From <%= departure %> </h2>
-            <h2>&#x2708;</h2>
-            <h2>&#x2708;</h2>
-            <h2>&#x2708;</h2>
-            <h2 class="searchResult__arrival">to <%= availableFlights[0].destinations.country %></h2>
-        </div>
         
-            <% for(let flight of availableFlights) { %>
+        <% for(let flight of availableFlights) { %>
     
             <a class="searchResult__article" href="/flights/<%= flight.id %>">
                 <h2 id="searchResult__article-day" class="searchResult__article-element">Date : <%= flight.day %></h2>
@@ -30,6 +29,9 @@
     <% } else { %>
 
     <h1 id="title__noFlights" class="searchResult__title">Sorry, we have no flights for <%= noDestination %> according to your budget &#x1F61E;</h1>
+    <div class="noFlights__btn">
+        <a id="noflights__home-btn" href="/">Home</a>
+    </div>
 
 <% } %>
 

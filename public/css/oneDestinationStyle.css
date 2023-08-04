@@ -15,7 +15,7 @@
 
   .menu__item{
 
-    background-image: linear-gradient(to right,#236ccc,#236ccc 50%,rgba(13, 65, 134, 1) 50%);
+    background-image: linear-gradient(to right,#236ccc,#236ccc 50%,white 50%);
     }
   
 .menu__item:before{ 
@@ -29,8 +29,7 @@
     text-shadow: white 1px 0 10px;
     }
   #menu__items {
-    background-color:rgba(245, 245, 245, 0.4);
-    border: 1px solid rgba(13, 65, 134, 1);
+    background-color:rgba(13, 65, 134, 0.4);
   }
 }
   

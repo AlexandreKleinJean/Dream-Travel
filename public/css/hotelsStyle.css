@@ -20,8 +20,7 @@
     color: whitesmoke;
     }
   #menu__items {
-    background-color:rgba(61, 171, 235, 0.4);
-    border: 1px solid #ddd;
+    background-color:rgba(61, 171, 235, 0.6);
     }
 }
 
@@ -35,7 +34,7 @@
 /*--------HEADER TEXT/FORM------*/
 
 .menu__text-title{
-    bottom: 40%;
+    top:12.5%;
     color:whitesmoke;
     text-shadow: none;
 }
@@ -143,6 +142,10 @@
 
 @media (max-width: 900px) {
   
+  .hotel__title{
+    font-size: 2.5rem;
+  }
+
   .hotel__article-front {
     height: 33%;
   }

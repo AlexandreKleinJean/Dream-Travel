@@ -23,7 +23,7 @@
     text-shadow: white 1px 0 10px;
     }
   #menu__items {
-    background-color:rgb(99, 97, 97, 0.4);
+    background-color:rgb(99, 97, 97, 0.6);
     border: 1px solid #ddd;
     }
 }
@@ -40,6 +40,7 @@
 .menu__text-title{
   color:whitesmoke;
   text-shadow: black 1px 0 10px;
+  top: 20%;
   }
   
 #btn{
@@ -54,25 +55,45 @@
 /*-----------------------------------------------------MAIN------------------------------------------------*/
 
 #title__noFlights{
-  margin: 5% auto 10% auto;
+  margin: 5% auto 2% auto;
   display:flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  margin-top: 3% ;
   }
 
-.searchResult{
+.noFlights__btn{
+  display:flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+#noflights__home-btn{
+  font-size:1.5rem;
+    text-align: center;
+    padding: 2% 0;
+    margin: 2% 1%;
+    width: 18%;
+    background-image:url(../img/flightClouds.png);
+    border:1px white solid;
+    border-radius: 1rem;
+  }
+
+.result-title{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  height: 10vh;
   font-size: 3rem;
-  margin-bottom: 4%;
+  background-color:rgb(168, 165, 165);
+  color: white;
+  text-shadow: black 1px 0 10px;
+  margin-bottom: 3%;
   }
-  
+
 .searchResult__articles{
-  margin: 5% 5%;
-    }
+  margin-bottom: 3%;
+}
 
 .searchResult__article{
     display:flex;
@@ -104,19 +125,19 @@
   }
 
 @media (max-width: 900px) {
-  .searchResult{
+  
+  .result-title{
     font-size: 1.6rem;
-    margin-bottom: 8%;
     }
 
   .searchResult__articles{
-    margin: 5% 1% 2% 1%;
-  }
+    margin-top: 8%;
+    }
 
   .searchResult__article{
     font-size: 1rem;
     padding: 5% 2%;
-    margin: 2% 1%;
+    margin: 3% 1%;
   }
 }
 
