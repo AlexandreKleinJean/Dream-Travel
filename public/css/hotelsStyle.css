@@ -14,7 +14,7 @@
     background: #3dabeb;
     }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
 
   #menu__toggle {
     color: whitesmoke;
@@ -106,8 +106,6 @@
     align-items: center;
   }
   
-@media (min-width: 901px) {
-  
   .hotel__article:hover .hotel__article-front {
     height: 45%;
   }
@@ -124,7 +122,6 @@
     font-size: 1.5rem;
     white-space: nowrap;
   }
-}
   
   #hotel__article-name {
     white-space: nowrap;
@@ -140,7 +137,7 @@
     text-align: right;
   }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   
   .hotel__title{
     font-size: 2.5rem;
@@ -197,14 +194,14 @@
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   
   .load-more-button::after {
     content: "\2193";
     display: block;
     opacity: 1;
   }
-
+}
 /*-----------------------------------FOOTER------------------------*/
 
 .footer{

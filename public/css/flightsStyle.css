@@ -16,7 +16,7 @@
   background: rgb(167, 161, 161);
   }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
 
   #menu__toggle {
     color: rgb(99, 97, 97);
@@ -124,7 +124,7 @@
   font-style:italic;
   }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   
   .result-title{
     font-size: 1.6rem;

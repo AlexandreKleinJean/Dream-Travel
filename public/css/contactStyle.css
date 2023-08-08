@@ -15,7 +15,7 @@
   background: rgb(68, 66, 65);
   } 
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   
   #menu__toggle {
     color: rgb(68, 66, 65);
@@ -109,7 +109,7 @@
   background-color: rgb(141, 138, 137);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   
   .contact-form {
     margin: 10% 10% 5% 10%;

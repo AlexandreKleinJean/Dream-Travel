@@ -15,17 +15,24 @@
     background: #c0bcb9;
     }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   
   #menu__toggle {
     color: white;
   }
   #menu__items {
-    margin-top: 5%;
+    margin-top: 6%;
     background-color:rgba(245, 248, 243, 0.5);
+    width: 60%;
+    padding: 13% 0;
     }
-  .menu__item {
-    }
+}
+
+@media (max-width: 600px) {
+  #menu__items {
+    height: 29vh;
+    width: 83%;
+  }
 }
   
 /*-----HEADER IMG----------*/
@@ -94,25 +101,19 @@
     background-color:rgba(226, 124, 7, 0.5);
   }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   
   .container{
-    width: 88%;
-    top: 42%;
+    width: 54%;
+    top: 45%;
+    } 
   } 
-  .login__form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 3% 4% 0 4%;
-}
 
-.login__form-btn{
-  margin: 7% 35% 5% 35%;
+@media (max-width: 600px) {
+  .container{
+    width: 75%;
+    top: 42%;
   }
-  .login__form-input{
-    margin-bottom: 2%;
-}
 }
  
 /*-----------------------------------------FOOTER-----------------------------------*/

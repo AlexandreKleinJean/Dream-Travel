@@ -14,7 +14,7 @@
     background: #e36803;
     }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
     .destination__article{
     width:90%;
     }
@@ -35,7 +35,7 @@
     height:40vh;
   }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   #header-banner{ 
     height:40vh;
   }
@@ -79,7 +79,7 @@
   background-color: #e36803;
   }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   .noFavorites{
     margin: 25% auto;
   }
@@ -178,7 +178,7 @@
     background-color: rgba(253, 253, 253, 1);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
 
   .hotel__article {
     width: 90%;

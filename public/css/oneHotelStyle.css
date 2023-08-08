@@ -20,7 +20,7 @@
   background: #893dac;
   }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
 
   #menu__toggle {
     color: #893dac;
@@ -78,7 +78,7 @@
     margin: auto 10% 3% 10%;
     }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
       .hotel__article{
       margin: auto 1%;
       }
@@ -141,7 +141,7 @@
             transform: translateX(-1600px);
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 767px) {
     .sliderAndNav { 
       display:none;
     }  
@@ -253,7 +253,7 @@
   margin: 0 2%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   .hotel__text {
     width: 100%;
     margin: 0 5%;
@@ -315,7 +315,7 @@
   color:white;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   .notification-close {
     top: 5%;
   }

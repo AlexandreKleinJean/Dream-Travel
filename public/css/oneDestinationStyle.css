@@ -22,7 +22,7 @@
   background: #236ccc;
   }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   
   #menu__toggle {
     color: rgba(13, 65, 134, 1);
@@ -118,7 +118,7 @@
   background-color:#0d4186;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
 
   .destination__article{
     display: flex;

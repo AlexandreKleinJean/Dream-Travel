@@ -14,15 +14,16 @@
   background: #26860d;
   }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   
   #menu__toggle {
     color: #26860d;
   }
   #menu__items {
     background-color:rgba(193, 205, 153, 0.6);
-    margin-top: 5.5%;
-    height: 44vh;
+    margin-top: 8%;
+    height: 40vh;
+    padding: 15%;
   }
   .menu__item {
     font-size: 1.8rem;
@@ -36,7 +37,13 @@
   #menu__item-signin{
     margin-bottom: 5%;
   }
+}
 
+@media (max-width: 600px) {
+  #menu__items {
+    height: 42vh;
+    padding: 3%;
+  }
 }
 
 /*---------------HEADER IMG----------------*/
@@ -48,7 +55,7 @@
   color: white;
 }
 
-@media (max-width : 900px) {
+@media (max-width : 767px) {
 
   #header-banner{
     background-position: 55% 50%;
@@ -171,7 +178,7 @@
   }
 }
 
-  @media (max-width: 900px) {
+  @media (max-width: 767px) {
     
   .header__form {
     flex-direction: column;
@@ -211,7 +218,7 @@
   }
 
   .input-budget {
-    margin: 9% auto;
+    margin: 8% auto 4% auto;
     width: 100%; 
     text-align: center; 
   }
@@ -230,6 +237,12 @@
   #btn {
     font-size: 2rem;
     padding: 10% 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .input-budget {
+    margin: 9% auto;
   }
 }
 

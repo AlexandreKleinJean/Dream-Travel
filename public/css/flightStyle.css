@@ -15,7 +15,7 @@
   background: rgb(167, 161, 161);
   }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
 
   #menu__toggle {
     color: rgb(99, 97, 97);
@@ -120,7 +120,7 @@
     border:1px black solid;
     }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
 
   .flight__title{
     font-size: 2rem;
@@ -186,7 +186,7 @@
     color:white;
   }
   
-  @media (max-width: 900px) {
+  @media (max-width: 767px) {
     .notification-close {
       top: 5%;
     }
