@@ -1,6 +1,7 @@
 body{
   min-height:100vh;
   position: relative;
+  font-family: 'Optima', sans-serif;
 }
 
 /*-------------------------------HEADER IMG--------------------------*/
@@ -83,7 +84,7 @@ transition: all 0.3s ease-in-out;
 
 #login{
 font-size:1.8rem;
-padding: 1%;
+padding: 25%;
 margin: 0 2%;
 border: white 1px solid;
 border-radius: 54%;

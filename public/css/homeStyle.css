@@ -7,17 +7,17 @@
 }
 
 .menu__item{
-  background-image: linear-gradient(to right,#26a706,#26860d 50%, white 50%);
+  background-image: linear-gradient(to right,#218708,#218708 50%, white 50%);
 }
 
 .menu__item:before{ 
-  background: #26860d;
+  background: #218708;
   }
 
 @media (max-width: 767px) {
   
   #menu__toggle {
-    color: #26860d;
+    color: #218708;
   }
   #menu__items {
     background-color:rgba(193, 205, 153, 0.6);
@@ -138,16 +138,17 @@
 }
 
   #btn{
-    font-size: 1.6rem;
-    padding: 10% 10%;
+    color:white;
+    font-size: 1.4rem;
+    padding: 25% 25%;
     margin: 0 20%;
     border: none;
     border-radius: 1.4rem;
-    background-color:#26860d;
+    background-color:#218708;
   }
 
   #btn:hover{
-    background-color: #26a706;
+    background-color: #3d762f;
   }
 
   @media (max-width: 1350px) {

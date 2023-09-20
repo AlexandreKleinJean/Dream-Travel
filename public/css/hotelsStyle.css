@@ -7,11 +7,11 @@
   }
 
 .menu__item{
-    background-image: linear-gradient(to right,#3dabeb,#3dabeb 50%,white 50%);
+    background-image: linear-gradient(to right,#87bfe0,#87bfe0 50%,white 50%);
     }
 
 .menu__item:before{ 
-    background: #3dabeb;
+    background: #87bfe0;
     }
 
 @media (max-width: 767px) {
@@ -20,7 +20,7 @@
     color: whitesmoke;
     }
   #menu__items {
-    background-color:rgba(61, 171, 235, 0.6);
+    background-color:#87bfe0;
     }
 }
 
@@ -45,7 +45,7 @@
     }
     
 #btn:hover{
-    background-color: #3dabeb;
+    background-color: #4090bf;
     }
 
 /*-----------------------------------------------------MAIN----------------------------------------------*/
@@ -59,7 +59,7 @@
     margin-bottom: 3%;
     color: white;
     text-shadow: black 1px 0 10px;
-    background-color: #3dabeb;
+    background-color: #2882b7;
     }
 
 .hotel__articles {
@@ -116,7 +116,7 @@
     align-items: center;
     margin: 4% 35% 0 35%;
     padding: 2% 2%;
-    background-color: #1c96dd;
+    background-color: #2882b7;
     color: white;
     border-radius: 10%;
     font-size: 1.5rem;
@@ -177,7 +177,7 @@
 
 .load-more-button{
   border:none;
-  color: #1c96dd;
+  color: #2882b7;
   font-size: 1.5rem;
   background-color: white;
 }
@@ -205,5 +205,5 @@
 /*-----------------------------------FOOTER------------------------*/
 
 .footer{
-  background-color: #3dabeb;
+  background-color: #2882b7;
 }
