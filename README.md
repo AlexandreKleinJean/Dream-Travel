@@ -2,7 +2,7 @@
 
 **Dream Travel** est un site web de voyage qui offre diverses fonctionnalités pour les voyageurs avides d'aventure et d'exploration. Que vous planifiez un voyage de rêve ou que vous recherchiez simplement des informations sur votre prochaine destination, Dream Travel est là pour vous.
 
-![Aperçu du site Dream Travel](file:///Users/alexandreklein/Desktop/Capture%20d%E2%80%99e%CC%81cran%202023-09-02%20a%CC%80%2017.25.35.png)
+![Aperçu du site Dream Travel](/img/readMe.png)
 
 ## Fonctionnalités principales
 
